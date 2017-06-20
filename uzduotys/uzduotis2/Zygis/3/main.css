@@ -1,26 +1,60 @@
-header h1 {
-    color: red;
+h1{
+    color:#000;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
-.blue-text{
-    color: blue;
+section {
+    background-color: #999999;
+    border: 1px solid #666666;
+    border-radius: 3%;
+    width: 30.5%;
+    float: left;
+    margin-left: 2%;
+    position: relative;
 }
 
-#reklama{
-    background-color: green;
+p{
+    padding: 20px;
+    padding-top: 28px;
+    font-family: 'Lato', sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.section-3{
+    margin-right: 2%;
 }
 
-.nuoroda{
-    font-size: 50px;
+.section-1-heading{
+    background-color: #eac544;
 }
 
-a:hover{
-    background-color: yellow;
+.section-2-heading{
+    background-color: #fa1d1d;
+}
+
+.section-3 h2{
+    background-color: #66dd60;
+}
+
+section h2 {
+    width: 90px;
+    /*Pozicija absolute visada turi buti naudojama su relative, kad butu kieno nors atzvilgiu absoliutus(siuo atveju relative yra sectionai) */
+    position: absolute; 
+    top: 0px; 
+    right: 0px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+    border-top: transparent;
+    border-right: transparent;
+    border-top-right-radius: 10%;
+    border-radius: 3%;
+    font-family: 'Lato', sans-serif;
     transition: 0.5s;
 }
-
+/*
+section h2:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}*/
