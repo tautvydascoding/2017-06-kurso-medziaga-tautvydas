@@ -1,0 +1,26 @@
+header h1 {
+    color: red;
+}
+
+.blue-text{
+    color: blue;
+}
+
+#reklama{
+    background-color: green;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nuoroda{
+    font-size: 50px;
+}
+
+a:hover{
+    background-color: yellow;
+    transition: 0.5s;
+}
+
