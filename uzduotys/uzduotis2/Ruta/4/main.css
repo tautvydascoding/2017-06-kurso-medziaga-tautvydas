@@ -1,0 +1,36 @@
+section {
+  margin: 1%;
+  background-color: #999;
+  border: 1px solid #666;
+  width: 31%;
+  float: left;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  padding: 20px;
+  font-size: 17px;
+}
+
+.header-1, .header-2, .header-3 {
+  width: 100px;
+  margin-top: 0;
+  float: right;
+  border: 1px solid #666;
+  text-align: center;
+}
+
+.header-1 {
+  background-color: red;
+}
+
+.header-2 {
+  background-color: brown;
+}
+
+.header-3 {
+  background-color: orange;
+}
