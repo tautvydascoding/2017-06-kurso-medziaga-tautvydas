@@ -46,6 +46,7 @@ nav li {
 #wrapper {
   background-color: #fff;
   min-height: 300px;
+  overflow: hidden;
 }
 section {
   width: 70%;
@@ -58,6 +59,9 @@ aside {
   background-color: #fa9;
   float: right;
   height: 100%;
+
+  padding-bottom: 100%;
+  margin-bottom: -100%;
 }
 .clear-float {
   clear: both;
