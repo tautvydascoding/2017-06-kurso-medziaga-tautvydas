@@ -1,0 +1,30 @@
+/* remelius iskaiciuos i plocio skaiciavima */
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(0, 58, 187);
+}
+ body {
+   width: 1024px;
+   margin-left: auto;
+   margin-right: auto;
+
+   background-color: #e2e2e2;
+ }
+
+
+header {
+  background-color: #f68 ;
+  height: 50px;
+}
+#wrapper {
+  background-color: #fff;
+  height: 300px;
+}
+footer {
+  height: 60px;
+  background-color: #ed3;
+}
