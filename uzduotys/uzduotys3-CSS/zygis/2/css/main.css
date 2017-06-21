@@ -1,0 +1,48 @@
+html {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+h1{
+    text-align: center;
+}
+
+nav{
+    background-color: #c541aa;
+    height: 50px;
+}
+
+header{
+    margin-bottom: 10px;
+}
+
+nav li{
+    float: left;
+    list-style-type: none;
+    height: inherit;
+    line-height: 50px;
+    margin: 0 20px 0 20px;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: #000000; 
+}
+
+form {
+    height: inherit;
+    line-height: 50px;
+}
+
+article {
+    width: 75%;
+    float: left;
+}
+
+aside {
+    width: 25%;
+    float: left;
+    background-color: #c541aa;
+}

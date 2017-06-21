@@ -47,8 +47,8 @@ section h2 {
     border: 1px solid black;
     border-top: transparent;
     border-right: transparent;
-    border-top-right-radius: 10%;
-    border-radius: 3%;
+    border-top-right-radius: 12%;
+    /*border-radius: 5%;*/
     font-family: 'Lato', sans-serif;
     transition: 0.5s;
 }
