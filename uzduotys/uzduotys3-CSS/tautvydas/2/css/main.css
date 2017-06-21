@@ -10,7 +10,12 @@ a {
   text-decoration: none;
 }
 h1 {
-  color: rgb(0, 58, 187);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 20px #000;
+}
+h1, h2, h3, h4 {
+     font-family: 'Abril Fatface', cursive;
 }
 
  body {
@@ -28,8 +33,9 @@ header {
 }
 nav {
   width: 66%;
-  background-color: #fff;
+  /*background-color: #fff;*/
   line-height: 51px;
+  float: left;
 }
  nav ul {
   padding: 0;
@@ -41,12 +47,33 @@ nav li {
 }
 #search {
   width: 34%;
+  float: right;
+}
+form {
+  float: right;
+  padding-right: 30px;
+  padding-top: 15px;
+  /* arba */
+  /*padding: 0 0 0 0;*/
+  /* arba */
+  /*padding: 0 0;*/
+}
+.search-box {
+  width: 240px;
+  height: 26px;
+}
+#search  button {
+  background-color: #000;
+  color: #fff;
+  padding: 5 20px;
+  border: none;
 }
 /*======END header==========*/
 #wrapper {
   background-color: #fff;
   min-height: 300px;
   overflow: hidden;
+  width: 100%;
 }
 section {
   width: 70%;
@@ -63,9 +90,6 @@ aside {
   padding-bottom: 100%;
   margin-bottom: -100%;
 }
-.clear-float {
-  clear: both;
-}
 li a {
   text-transform: uppercase;
 }
@@ -78,7 +102,13 @@ footer {
 }
 
 
-
+/*  ====naudingos funkcijos=====*/
+.clear-float {
+  clear: both;
+}
+.text-center {
+  text-align: center;
+}
 
 
 a
