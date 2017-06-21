@@ -15,16 +15,37 @@ h1 {
    background-color: #e2e2e2;
  }
 
-
+/* ==========HEASDER=========*/
 header {
   background-color: #f68 ;
   height: 50px;
 }
+/*======END header==========*/
 #wrapper {
   background-color: #fff;
-  height: 300px;
+  min-height: 300px;
+}
+section {
+  width: 70%;
+  border: solid 1px #000;
+  min-height: 300px;
+  float: left;
+}
+aside {
+  width: 30%;
+  background-color: #fa9;
+  float: right;
+}
+.clear-float {
+  clear: both;
 }
 footer {
   height: 60px;
   background-color: #ed3;
 }
+
+
+
+
+
+a
