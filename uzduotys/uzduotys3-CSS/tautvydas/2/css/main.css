@@ -2,11 +2,17 @@
 
 * {
   box-sizing: border-box;
+  /*padding: 0;
+  margin: 0;*/
 }
-
+a {
+  color: #000;
+  text-decoration: none;
+}
 h1 {
   color: rgb(0, 58, 187);
 }
+
  body {
    width: 1024px;
    margin-left: auto;
@@ -19,6 +25,22 @@ h1 {
 header {
   background-color: #f68 ;
   height: 50px;
+}
+nav {
+  width: 66%;
+  background-color: #fff;
+  line-height: 51px;
+}
+ nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  width: 24.5%;
+  text-align: center;
+}
+#search {
+  width: 34%;
 }
 /*======END header==========*/
 #wrapper {
@@ -35,9 +57,16 @@ aside {
   width: 30%;
   background-color: #fa9;
   float: right;
+  height: 100%;
 }
 .clear-float {
   clear: both;
+}
+li a {
+  text-transform: uppercase;
+}
+nav li {
+  display: inline-block;
 }
 footer {
   height: 60px;
