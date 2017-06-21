@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+
+h1{
+    color:#000;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+section {
+    background-color: #999999;
+    border: 1px solid #666666;
+    border-radius: 3%;
+    width: 30.5%;
+    float: left;
+    margin-left: 2%;
+    position: relative;
+}
+
+p{
+    padding: 20px;
+    padding-top: 28px;
+    font-family: 'Lato', sans-serif;
+}
+
+.section-3{
+    margin-right: 2%;
+}
+
+.section-1-heading{
+    background-color: #eac544;
+}
+
+.section-2-heading{
+    background-color: #fa1d1d;
+}
+
+.section-3 h2{
+    background-color: #66dd60;
+}
+
+section h2 {
+    width: 90px;
+    /*Pozicija absolute visada turi buti naudojama su relative, kad butu kieno nors atzvilgiu absoliutus(siuo atveju relative yra sectionai) */
+    position: absolute; 
+    top: 0px; 
+    right: 0px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+    border-top: transparent;
+    border-right: transparent;
+    border-top-right-radius: 12%;
+    /*border-radius: 5%;*/
+    font-family: 'Lato', sans-serif;
+    transition: 0.5s;
+}
+
+section h2:hover{
+  box-shadow: inset 0 0 0 3px black;
+}
+
+
+
+
+/*============================================================================*/
+                                /*MEDIA QUERIES TABLET*/
+/*============================================================================*/
+
+@media (max-width: 768px) {
+section {
+    width: 47%;
+    }
+.section-3 {
+    width: 96%;
+    margin-top: 2%;
+    }
+}
+
+
+/*============================================================================*/
+                                /*MEDIA QUERIES MOBILE*/
+/*============================================================================*/
+
+@media (max-width: 320px){
+    section {
+        width:96%;
+        margin-top: 2%;
+    }
+}
+
+/*============================================================================*/
+                                /*MEDIA QUERIES LAPTOP 1024*/
+/*============================================================================*/
+
+@media(max-width: 1024px) and (min-width: 769px){
+    section {
+        width: 30%;
+    }
+}

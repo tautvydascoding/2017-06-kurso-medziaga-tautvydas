@@ -1,0 +1,42 @@
+h1 {
+  color: black;
+  text-align: center;
+}
+section {
+  margin-left: 2%;
+  /*kartu su absolute*/
+  position: relative;
+  background-color: #999;
+  border: 1px solid #666;
+  width: 30.5%;
+  /*bega kaip vanduo i virsu*/
+  float: left;
+}
+.section-3 {
+  margin-right: 2%;
+}
+.pirma-spalva {
+  background-color: red;
+  border: 1px solid;
+}
+.antra-splava {
+  background-color: orange;
+  border: 1px solid;
+}
+.trecia-spalva {
+  background-color: brown;
+  border: 1px solid;
+}
+section h2 {
+  text-align: center;
+  width: 100px;
+  /*pozicija dazniausiai naudojama su relative*/
+  position: absolute;
+  /*kartu su top right left bottom*/
+  top: 0px;
+  right: 0px;
+  margin: 0;
+}
+p {
+  padding: 20px;
+}
