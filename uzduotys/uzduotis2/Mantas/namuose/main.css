@@ -1,0 +1,19 @@
+html {
+  background-color: grey;
+}
+header {
+  background-color: violet;
+}
+aside {
+  background-color: violet;
+}
+footer {
+  background-color: white;
+}
+article {
+  background-color: white;
+  width: 80%;
+}
+h4 {
+  font-family: cursive;
+}

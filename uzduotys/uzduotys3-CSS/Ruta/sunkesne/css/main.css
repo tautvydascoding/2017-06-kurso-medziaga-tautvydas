@@ -1,0 +1,19 @@
+body {
+  position: absolute;
+  margin: 4% 10%;
+  height: auto;
+  width: 80%;
+  border: 1px solid gray;
+}
+
+.image {
+  display: inline-block;
+  float: right;
+  width: 52%;
+  height: auto;
+  margin: 0;
+}
+
+#sign-up {
+  position: absolute;
+}
