@@ -5,41 +5,88 @@ html {
 }
 
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-h1{
+h1 {
     text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px grey;
+    color: #fff;
 }
 
-nav{
+nav {
     background-color: #c541aa;
     height: 50px;
 }
 
-header{
+header {
     margin-bottom: 10px;
 }
 
-nav li{
+nav ul {
+    margin: 0;
+}
+
+p,
+a {
+    font-family: 'Antic Slab', serif;
+}
+
+nav li {
     float: left;
+    /*display: inline-block;*/
     height: inherit;
     line-height: 50px;
     margin: 0 20px 0 20px;
     list-style-type: none;
-
 }
 
-nav a{
+nav a {
     text-decoration: none;
-    color: #000000; 
+    color: #000000;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
 }
 
 .search {
-    height: inherit;
+    /*height: 50px;*/
     line-height: 50px;
     float: right;
     margin-right: 20px;
+}
+
+.searchbar {
+    margin-right: 20px;
+    height: 30px;
+    width: 250px;
+}
+
+.search-button {
+    width: 70px;
+    border: none;
+    height: 30px;
+    color: #fff;
+    background-color: #000000;
+    transition: 0.3s;
+    outline: none;
+}
+
+.search-button:hover {
+    color: #c0c0c0;
+    background-color: #436ba7;
+    border-color: #436ba7;
+    outline: none;
+}
+
+.search-button:active {
+    color: #c0c0c0;
+    background-color: #2843c1;
+    outline: none;
+    transition: 0s;
 }
 
 .wrapper {
@@ -70,6 +117,18 @@ aside h2 {
     text-align: center;
 }
 
+aside li {
+    margin-bottom: 20px;
+}
+
+aside a {
+    color: #000;
+}
+
+aside a:active {
+    color: #fff;
+}
+
 footer {
     background-color: #fff;
     height: 50px;
@@ -77,6 +136,20 @@ footer {
     margin-top: 10px;
 }
 
-footer p{
-    margin: 0;
+footer p {
+    margin: 0 0 0 15px;
+}
+
+.article-head {
+    text-align: center;
+}
+
+article>p,
+article>h3 {
+    margin-left: 15px;
+}
+
+.header {
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
 }
