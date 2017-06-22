@@ -1,0 +1,28 @@
+h1 {
+    color: red;
+}
+
+.bild {
+    font-size: 43px;
+    color: #995432;
+    text-decoration: underline;
+}
+
+.container,
+.container-fluid {
+    background-color: #eaeaea;
+}
+
+.test {
+    background-color: greenyellow;
+    min-height: 300px;
+}
+
+.test-2 {
+    background-color: red;
+    min-height: 300px;
+}
+
+.orange {
+    background-color: orange;
+}

@@ -1,3 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   color: red;
+}
+.perkrovimo-ikona {
+  color: red;
+  font-size: 50px;
+}
+
+.container, .container-fluid {
+  background-color: #EAEAEA;
+}
+
+.test {
+  background-color: #E6E6E6;
+  min-height: 300px;
+}
+.red {
+    background-color: #ffb;
+}
+.orange {
+    background-color: #ffd;
+}
+.border {
+   border: 2px solid red;
+}
+.aukstis {
+  min-height: 408px;
+}
+.aukstis-200 {
+    min-height: 200px;
 }
