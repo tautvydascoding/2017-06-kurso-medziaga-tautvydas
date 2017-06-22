@@ -1,0 +1,101 @@
+/* remelius iskaiciuos i plocio skaiciavima */
+
+* {
+  box-sizing: border-box;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 20px black;
+}
+h2 {
+  text-align: center;
+}
+h1, h2, h3, h4 {
+  font-family: 'Pacifico', cursive;
+}
+ body {
+   width: 1024px;
+   margin-left: auto;
+   margin-right: auto;
+
+   background-color: #e2e2e2;
+ }
+
+/* ==========HEASDER=========*/
+header {
+  background-color: #f68 ;
+  height: 50px;
+}
+nav {
+  width: 60%;
+  /*background-color: #fff;*/
+  line-height: 51px;
+  vertical-align: middle;
+  display: inline-block;
+}
+nav li {
+  width: 24%;
+  text-align: center;
+  text-transform: uppercase;
+}
+#search {
+  width: 38%;
+  line-height: 51px;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  padding-left: 6%;
+}
+#search button {
+  width: 30%;
+  background-color: black;
+  color: white;
+  border: 0;
+  padding: 5 20px;
+
+}
+.search-box {
+  width: 180px;
+  height: 30px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+/*======END header==========*/
+#wrapper {
+  background-color: #fff;
+  min-height: 300px;
+  overflow: hidden;
+  width: 100%;
+}
+section {
+  width: 70%;
+  border: solid 1px #000;
+  min-height: 300px;
+  float: left;
+}
+aside {
+  width: 30%;
+  background-color: #fa9;
+  float: right;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+}
+.clear-float {
+  clear: both;
+}
+nav li {
+  display: inline-block;
+}
+footer {
+  height: 60px;
+  background-color: #ed3;
+}

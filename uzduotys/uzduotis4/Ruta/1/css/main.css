@@ -1,0 +1,21 @@
+.thumb-up {
+  color: green;
+  font-size: 50px;
+}
+
+.container {
+  background-color: #EAEAEA;
+}
+
+.test {
+  background-color: #E6E6E6;
+  min-height: 300px;
+}
+
+.red {
+  background-color: #ffb;
+}
+
+.orange {
+  background-color: #ffd;
+}
