@@ -1,0 +1,66 @@
+/*iskaiciuotu remelius ir turini i ploti*/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+section {
+  margin-left: 2%;
+  /*kartu su absolute*/
+  position: relative;
+  background-color: #999;
+  border: 1px solid #666;
+  width: 30%;
+  /*bega kaip vanduo i virsu*/
+  float: left;
+}
+.section-3 {
+  margin-right: 2%;
+}
+.pirma-spalva {
+  background-color: red;
+  border: 1px solid;
+}
+.antra-splava {
+  background-color: orange;
+  border: 1px solid;
+}
+.trecia-spalva {
+  background-color: brown;
+  border: 1px solid;
+}
+section h2 {
+  text-align: center;
+  width: 100px;
+  /*pozicija dazniausiai naudojama su relative*/
+  position: absolute;
+  /*kartu su top right left bottom*/
+  top: 0px;
+  right: 0px;
+  margin: 0;
+}
+p {
+  padding: 20px;
+}
+
+
+/*tablet dydis*/
+@media (max-width: 768px) {
+  section {
+    width: 47%;
+  }
+  .section-3 {
+    width: 96%;
+    margin-top: 2%;
+  }
+}
+@media (max-width: 425px) {
+  section {
+    width: 96%;
+  }
+  .section-1 {
+    margin-bottom: 2%;
+  }
+}
