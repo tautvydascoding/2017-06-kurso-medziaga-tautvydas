@@ -1,16 +1,19 @@
 .header-height {
     min-height: 150px;
     background-color: orange;
+    margin: 10px 0;
 }
 
 .navi{
     min-height: 550px;
     background-color: green;
+    /*margin-right: 10px;*/
 }
 
 .arti {
     height: 550px;
     background-color: palegoldenrod;
+    /*margin-right: 10px;*/
 }
 
 .asi {
