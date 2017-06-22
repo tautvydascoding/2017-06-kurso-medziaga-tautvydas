@@ -1,0 +1,29 @@
+.header-height {
+    min-height: 150px;
+    background-color: orange;
+}
+
+.navi{
+    min-height: 550px;
+    background-color: green;
+}
+
+.arti {
+    height: 550px;
+    background-color: palegoldenrod;
+}
+
+.asi {
+    min-height: 550px;
+    background-color: olive;    
+}
+
+.navigac {
+    min-height: 900px;
+    background-color: green;
+}
+
+.artic {
+    height: 600px;
+    background-color: palegoldenrod;
+}
