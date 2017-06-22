@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   color: red;
 }
@@ -19,4 +23,13 @@ h1 {
 }
 .orange {
     background-color: #ffd;
+}
+.border {
+   border: 2px solid red;
+}
+.aukstis {
+  min-height: 408px;
+}
+.aukstis-200 {
+    min-height: 200px;
 }
