@@ -1,0 +1,69 @@
+/*nepavykes..*/
+body {
+    background-color: gainsboro;
+    width: 1124px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 1px 7px 10px;
+    font-family: Lobster;
+}
+
+section {
+    width: 70%;
+    border: solid 1px;
+    min-height: 300px;
+    float: left;
+
+}
+
+aside {
+    width: 30%;
+    background-color: #2cbcd2;
+    float: right;
+}
+
+#clear-float {
+    clear:both;
+}
+/*========HEADER PRADZIA===========*/
+header {
+    background-color: lightpink;
+    height: 50px;
+}
+/*===========END HEADER========*/
+li {
+    font-size: 20px;
+    display: inline-block;
+    line-height: 250%;
+    text-transform: uppercase;
+    font-weight: bolder;
+   
+}
+
+ul {
+    word-spacing: 120px;
+   
+}
+input {
+    float: right;
+    margin: 5px;
+}
+#wrapper {
+    background-color: dodgerblue;
+    min-height: 300px;
+}
+#submit {
+    background-color: black;
+    color: white;
+    
+}
+footer {
+    background-color: cyan;
+    height: 50px;
+
+}
