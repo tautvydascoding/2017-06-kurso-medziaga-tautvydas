@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: pink;
+}
+.sofa {
+  color: pink;
+  font-size: 50px;
+}
+.container {
+  background-color: #eaeae;
+}
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.border {
+  border: 2px solid red;
+}
+.aukstis {
+  min-height: 408px;
+}
+.puse-aukscio {
+  min-height: 200px;
+}

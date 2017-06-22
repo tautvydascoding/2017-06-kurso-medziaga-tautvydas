@@ -5,6 +5,9 @@
 h1 {
   color: red;
 }
+h2 {
+  padding-left: 20px;
+}
 .perkrovimo-ikona {
   color: red;
   font-size: 50px;
@@ -24,6 +27,15 @@ h1 {
 .orange {
     background-color: #ffd;
 }
+.green {
+  background-color: #00ff30;
+}
+.yellow {
+    background-color: rgb(255, 255, 0);
+}
+.white {
+  background-color: #fff;
+}
 .border {
    border: 2px solid red;
 }
@@ -32,4 +44,6 @@ h1 {
 }
 .aukstis-200 {
     min-height: 200px;
+}.aukstis-100 {
+    min-height: 100px;
 }
