@@ -36,17 +36,48 @@ body {
 .email-field:focus {
     border: none;
     border-bottom: 2px solid black;
-    outline: inherit;
+    outline: #A7A7A7 solid 1px;
 }
 
 .input-field:focus {
     border: none;
     border-bottom: 2px solid black;
-    outline: inherit;
+    outline: #A7A7A7 solid 1px;
 }
+
+/*
+.email-field:hover {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: inherit;
+    transition: 0.2s;
+}
+
+.input-field:hover {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: inherit;
+    transition: 0.2s;
+}
+*/
 
 label, h1, h2 {
     text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 700;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+label {
+    letter-spacing: 2px;
 }
 
 .wrapper, header {
@@ -61,6 +92,8 @@ header {
     font-weight: bold;
     font-size: 15px;
     margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
 }
 
 .sign-up-button {
@@ -71,6 +104,7 @@ header {
     outline: #000 solid 3px;
     border: none;
     transition: 0.3s;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
 }
 
