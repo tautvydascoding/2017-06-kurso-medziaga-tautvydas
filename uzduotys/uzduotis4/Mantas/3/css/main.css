@@ -14,7 +14,7 @@ h2 {
   font-size: 50px;
 }
 .container {
-  background-color: #eaeae;
+background-color: grey;
 }
 .yellow {
   background-color: rgb(255, 255,0)
@@ -32,14 +32,15 @@ h2 {
   border: 2px solid red;
 }
 .aukstis {
-  min-height: 408px;
+  min-height: 400px;
 }
 .puse-aukscio {
-  min-height: 200px;
+  min-height: 100px;
 }
 .white {
-  background-color: #fff
+  background-color: white;
 }
-.aukstis-100 {
-  min-height: 100px;
+nav {
+  background-color: rgb(182, 175, 191);
+  height: 600px;
 }
