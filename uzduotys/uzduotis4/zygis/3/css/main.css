@@ -14,6 +14,7 @@
     height: 550px;
     background-color: palegoldenrod;
     /*margin-right: 10px;*/
+    margin: 0;
 }
 
 .asi {
@@ -29,4 +30,9 @@
 .artic {
     height: 600px;
     background-color: palegoldenrod;
+}
+
+.padding {
+    margin: 10px;   
+    padding: 10px;
 }
