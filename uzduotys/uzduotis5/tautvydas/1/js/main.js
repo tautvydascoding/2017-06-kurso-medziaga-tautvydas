@@ -37,4 +37,4 @@ function printName() {
   console.log(straipsnis);
 }
 
-printName(); 
+printName();
