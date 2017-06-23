@@ -4,39 +4,26 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+/*HEADERIO NUSTATYMAI**************/
 
 header {
-    width: 700px;
-    display: inline;
+    float: left;
+     height: 200px;
+    background-color:beige;
+    width: 60%;
 }
 
-header ul {
-    list-style: none;
-    background-color: lightpink;
-    width: 700px;
-    height: 50px;
-    
+.searchbox {
+    float: left;
+    height: 200px;
+    background-color: teal;
+    width: 40%;
 }
+.clear-float {
+  clear: both;
 
-header a {
-    color:black;
-    text-decoration: none;
-    
-}
+/*HEADERIO NUSTATYMAI******************/
 
-header li {
-    display: inline;
-    font-size:20px;
-    margin-left: 60px;    
-}
-
-form {
-    float:right;
-    display: inline;
-    
-}
-
-/*žžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžžž*/
 
 
 
