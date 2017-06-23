@@ -10,7 +10,9 @@ h1 {
   color: #fff;
   text-align: center;
   text-shadow: 0 0 20px #000;
-
+}
+h1, h2, h3, h4  {
+     font-family: 'Abril Fatface', cursive;
 }
 
 body {
@@ -22,6 +24,7 @@ body {
 /*------------HEADER-----------*/
 header {
   background-color: rgb(220, 120, 228);
+  height: 50px;
 }
 nav {
   width: 66%;
@@ -31,17 +34,15 @@ nav {
 nav ul {
   padding: 0;
   margin: 0;
-  text-align: center;
+
 }
 nav li {
-width: 24,5%;
 text-align: center;
+ width: 24.5%;
 }
 #search {
   width: 34%;
   float: right;
-  
-
 }
 form {
   float: right;
@@ -49,7 +50,7 @@ form {
   padding-top: 15px;
 }
 .search-box {
-  width: 78%;
+  width: 240px;
   height: 26px;
 }
 #search button {
@@ -57,19 +58,19 @@ form {
   color: #fff;
 
   border: none;
-  padding: 5px 18px;
+  padding: 5px 20px;
 }
 /*-----------END HEADER--------*/
 #wrapper {
   background-color: #fff;
-  height: 1020px;
+  height: 600px;
   overflow: hidden;
   width: 100%;
 }
 section {
   width: 70%;
   border: solid 1px #000;
-  min-height: 300px;
+  min-height: 600px;
   float: left;
 }
 aside {
@@ -78,16 +79,27 @@ aside {
   float: right;
   padding-bottom: 100%;
   margin-bottom: -100%;
-}
+  height: 100%;
+  }
 li a {
   text-transform: uppercase;
+
 }
-nav li {
-  display: inline-block;
-}
+
 footer {
   height: 60px;
   background-color: rgb(255, 255, 255);
   text-align: center;
+}
+nav li {
+    display: inline-block;
+}
 
+
+/*  ====naudingos funkcijos=====*/
+.clear-float {
+  clear: both;
+}
+.text-center {
+  text-align: center;
 }
