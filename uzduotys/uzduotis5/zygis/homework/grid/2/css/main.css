@@ -1,0 +1,37 @@
+.color {
+    background-color: #47be41;
+}
+
+.height-150 {
+    min-height: 150px;
+}
+
+header {
+    /*margin-bottom: 15px;*/
+}
+
+.height-500 {
+    min-height: 500px;
+}
+
+.height-350 {
+    min-height: 350px;  
+}
+
+.no-padding-left {
+    padding-left: 0;
+}
+
+.no-right-padding {
+    padding-right: 0;
+}
+
+h2 {
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+footer {
+    margin-top: -10px;
+    height: 135px;
+}
