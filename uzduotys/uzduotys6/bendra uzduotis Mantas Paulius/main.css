@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+.pirkti {
+    height: 200px;
+    width: 100%;
+  background: url("http://www.blackbeardproperties.com/wp-content/uploads/2015/01/dream-land.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+  }
+  button {
+    width: 10%;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
