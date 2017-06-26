@@ -83,7 +83,7 @@ label, h1, h2 {
     font-family: 'Lato', sans-serif;
     letter-spacing: 3px;
 }
-
+    
 h1 {
     font-weight: bold;
     font-size: 700;
@@ -117,7 +117,11 @@ header {
 .sign-up-button {
     height: 45px;
     width: 25%;
+<<<<<<< HEAD
     margin: 20px 0 5px 5px;
+=======
+    margin: 30px 0 30px 5px;
+>>>>>>> 8561c853aef43e72e1055ab87ef240cdff987108
     background: none;
     outline: #000 solid 3px;
     border: none;
@@ -149,6 +153,7 @@ header {
 @media (max-width: 320px) {
     .wrapper{
         width: 100%;
+<<<<<<< HEAD
         text-align: center;
     }
     
@@ -170,16 +175,52 @@ header {
 
 
 @media (max-width: 768px) {
+=======
+        text-align: center;;
+    }
+    
+    .explanation {
+        text-align: center;
+    }
+    
+>>>>>>> 8561c853aef43e72e1055ab87ef240cdff987108
+    header{
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+<<<<<<< HEAD
+=======
+    .gradient {
+        
+        background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    .sign-up-button {
+        width: 50%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
     header{
         text-align: center;
         width: 100%;
     }
     
+>>>>>>> 8561c853aef43e72e1055ab87ef240cdff987108
      .explanation {
         text-align: center;
     }
     
     .wrapper{
+<<<<<<< HEAD
         width:100%;
         
     }
@@ -187,6 +228,23 @@ header {
     body {
         
 /*        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));*/
+=======
+        width:100%;;
+        
+    }
+    
+    .gradient {
+        
+        background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    }
+    
+     .center {
+        text-align: center;
+    }
+    
+       .sign-up-button {
+        width: 50%;
+>>>>>>> 8561c853aef43e72e1055ab87ef240cdff987108
     }
     
 }
