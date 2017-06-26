@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+.container {
+  background-color: #000;
+}
 h1 {
   color: red;
 }
@@ -10,9 +12,6 @@ h2 {
   margin: 0;
 }
 
-.container, .container-fluid {
-  background-color: #EAEAEA;
-}
 header {
   margin-bottom: 15px;
 }
