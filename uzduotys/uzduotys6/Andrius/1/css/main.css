@@ -1,0 +1,28 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.border {
+  border: 1px solid blue;
+}
+.aukstis1 {
+  min-height: 300px;
+}
+.aukstis2 {
+  min-height: 150px;
+}
+.aukstis3 {
+  min-height: 50px;
+}
+.aukstis4 {
+  min-height: 400px;
+}
+.aukstis5 {
+  min-height: 450px;
+}
+
+h4:hover {
+  background-color: #3c0e1f;
+  color: #dbf6ff;
+}
