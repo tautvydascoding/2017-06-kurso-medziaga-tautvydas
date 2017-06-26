@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+}
+.background-img {
+  height: 100%;
+  width: 100%;
+background: url("https://unsplash.com/?photo=qvEwMfUX_DM") no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
