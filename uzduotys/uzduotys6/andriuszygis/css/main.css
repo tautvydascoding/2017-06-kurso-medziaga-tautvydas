@@ -62,6 +62,8 @@ body, html {
 
 
 /*------------------------------------------------------------*/
+                        /*---css index.html---*/
+/*------------------------------------------------------------*/
 
 
  header {
@@ -117,8 +119,9 @@ body, html {
      margin-bottom: 15px;
      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../asset/reklamos-paveikslas.jpeg) no-repeat center center scroll;
      height: 400px;
-     text-align: center;
-     line-height: 400px;
+     /*text-align: center;*/
+     /*line-height: 400px;*/
+     position: relative;
      
  }
  
@@ -126,3 +129,10 @@ body, html {
      width: 15%;
      
  } 
+
+ .ads-button {
+     position: absolute;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     left: 50%;
+ }
