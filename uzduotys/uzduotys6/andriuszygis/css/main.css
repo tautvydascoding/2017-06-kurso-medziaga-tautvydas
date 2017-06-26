@@ -1,0 +1,61 @@
+
+header {
+    height: 120px;
+    border: 1px solid black;
+}
+
+nav {
+    float: left;
+    width: 80%;
+    height: 120px;
+    line-height: 120px;
+}
+
+
+
+.menu-navigation {
+    margin: 35px 10px 30px 10px;
+    width: 20%;
+}
+
+.logo-menu {
+    width: 80%;
+    height: auto;
+    float: left;
+}
+
+.menu-img{
+    width: 20%;
+}
+
+.muscle {
+    float: right;
+    height: 100%;
+    width: auto;
+}
+
+.ne-mano-reklama {
+    min-height: 300px;
+}
+
+.article {
+    background-color: #e2e0de;
+    padding: 0 10px;
+    margin-top: 15px;
+}
+
+
+
+.advert {
+    margin-top: 15px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../asset/reklamos-paveikslas.jpeg) no-repeat center center scroll;
+    height: 400px;
+    text-align: center;
+    line-height: 400px;
+    
+}
+
+.pirk-mygtukas {
+    width: 15%;
+    
+}
