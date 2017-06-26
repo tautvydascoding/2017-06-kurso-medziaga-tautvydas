@@ -1,0 +1,90 @@
+h1 {
+  /*remelius iskaiciuos i plocio skaicaivima */
+  box-sizing: border-box;
+  color: black;
+  font-size: 34px;
+  font-family: "vibur";
+  text-align: center;
+  padding-top: 15px;
+}
+
+a {
+  font-size: 30px;
+}
+
+section {
+  margin-left: 2%;
+  border-style: solid;
+  background-color: #999;
+  border: 2px solid #black;
+  width: 29%;
+  /* bega kaip srove*/
+  float: left;
+  position: relative;
+}
+
+.section-3 {
+  font-size: 24px;
+  font-family: "Amaranth";
+  margin-right: 3%;
+  background-color: #e5d198;
+  border: 3px solid #black;
+}
+
+p {
+  padding: 15px;
+  padding-top: 35px;
+  font-family: "Amaranth";
+  font-size: 16px;
+}
+
+.first-title {
+  font-size: 24px;
+  font-family: "Amaranth";
+  background-color: #d59898;
+  border-color: black;
+}
+
+section h2 {
+  width: 100px;
+  background-color: #c14543;
+  font-size: 24px;
+  font-family: "Amaranth";
+  margin: 0;
+  padding: 0;
+  /*absolute naudojama kartu su relative */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+
+/* Tablet size */
+
+@media (max-width: 768px) {
+  section {
+    width: 47%;
+  }
+  .third-section {
+    margin-left: 2%;
+    margin-top: 2%;
+    background-color: #999;
+    border: 3px, solid: #black;
+    width: 96%;
+    float: left;
+    position: relative;
+  }
+}
+
+@media (max-width: 320px) {
+  section {
+    width: 96%;
+    margin-bottom: 4%;
+  }
+  .third-section {
+    margin-left: 2%;
+    margin-top: 2%;
+    background-color: #999;
+    width: 96%;
+  }
+}
