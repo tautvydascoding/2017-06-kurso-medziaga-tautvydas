@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+}
+h2 {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.container, .container-fluid {
+  background-color: #EAEAEA;
+}
+header {
+  margin-bottom: 15px;
+}
+footer {
+  margin-top: 15px;
+}
+#ads {
+  margin-top: 15px;
+}
+.red {
+    background-color: #ffb;
+}
+.orange {
+    background-color: #ffd;
+}
+.green {
+  background-color: #00ff30;
+}
+.yellow {
+    background-color: rgb(255, 255, 0);
+}
+.white {
+  background-color: #fff;
+}
+.border {
+   border: 2px solid red;
+}
+.aukstis {
+  min-height: 408px ;
+}
+.ausktis-300 {
+  min-height: 300px;
+}
+.aukstis-200 {
+    min-height: 200px;
+}
+.aukstis-100 {
+    min-height: 100px;
+}
+
+body, html {
+    height: 100%;
+}
+h4 [title] {
+  background-color: #000;
+  color: #fff;
+
+}
