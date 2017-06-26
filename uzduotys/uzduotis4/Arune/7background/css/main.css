@@ -1,0 +1,77 @@
+h1{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  padding-left: 20px;
+}
+.letena-ikona {
+  color: red;
+  font-size: 120px;
+}
+.container {
+  padding-top: 20px;
+}
+.test {
+  background-color: #E6E6E6;
+  min-height: 300px;
+}
+
+.red {
+  background-color: #e04c3e;
+}
+.background-img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+img {
+  border-radius: 20px;
+  padding: 10px;
+}
+body, html {
+  haight: 100%;
+}
+
+.orange {
+  background-color: #f7a607;
+}
+
+.border {
+  border: 2px solid #6f7d6d;
+}
+
+.aukstis {
+  min-height: 405px;
+}
+/* aukstis ne 400px nes prisideda border storis */
+.auktis-st {
+  min-height: 900px;
+}
+
+header {
+  margin-bottom: 15px;
+}
+
+.aukstis-200 {
+  height: 200px;
+}
+
+.purple {
+  background-color: #7e206f;
+}
+
+.yellow {
+  background-color: #e4d338;
+}
+
+.green {
+  background-color: #597144;
+}
+.nav {
+  background-color: #e0f5b5;
+
+}

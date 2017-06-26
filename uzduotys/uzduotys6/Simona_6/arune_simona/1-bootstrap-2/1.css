@@ -1,0 +1,13 @@
+h2 {
+  color: red;
+}
+
+.text-center {
+  color: #000;
+}
+
+.container {
+  width: 1000px;
+  height: 400px;
+  background-color: #F0F0F0;
+}
