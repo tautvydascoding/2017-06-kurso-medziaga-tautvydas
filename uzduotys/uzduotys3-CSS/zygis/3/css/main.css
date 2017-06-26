@@ -83,7 +83,7 @@ label, h1, h2 {
     font-family: 'Lato', sans-serif;
     letter-spacing: 3px;
 }
-
+    
 h1 {
     font-weight: bold;
     font-size: 700;
@@ -117,13 +117,13 @@ header {
 .sign-up-button {
     height: 45px;
     width: 25%;
-    margin: 20px 0 5px 5px;
+    margin: 30px 0 30px 5px;
     background: none;
     outline: #000 solid 3px;
     border: none;
     transition: 0.3s;
     font-family: 'Lato', sans-serif;
-    font-weight: bold;;
+    font-weight: bold;
 }
 
 .sign-up-button:hover{
@@ -149,7 +149,7 @@ header {
 @media (max-width: 320px) {
     .wrapper{
         width: 100%;
-        text-align: center;
+        text-align: center;;
     }
     
     .explanation {
@@ -162,10 +162,19 @@ header {
         
     }
     
-    body {
+    .gradient {
         
-/*        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));*/
+        background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
     }
+    
+    .center {
+        text-align: center;
+    }
+    
+    .sign-up-button {
+        width: 50%;
+    }
+
 }
 
 
@@ -180,13 +189,21 @@ header {
     }
     
     .wrapper{
-        width:100%;
+        width:100%;;
         
     }
     
-    body {
+    .gradient {
         
-/*        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));*/
+        background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    }
+    
+     .center {
+        text-align: center;
+    }
+    
+       .sign-up-button {
+        width: 50%;
     }
     
 }
