@@ -9,51 +9,40 @@ h2 {
   padding-left: 20px;
   margin: 0;
 }
-header {
-  margin-bottom: 15px;
-}
-footer {
-  margin-top: 15px;
-}
-#ads {
-  margin-top: 15px;
-}
-.red {
-    background-color: #ffb;
-}
-.orange {
-    background-color: #ffd;
-}
-.green {
-  background-color: #00ff30;
-}
-.yellow {
-    background-color: rgb(255, 255, 0);
-}
-.white {
-  background-color: #fff;
-}
-.border {
-   border: 2px solid red;
-}
-.aukstis {
-  min-height: 408px ;
-}
-.ausktis-300 {
-  min-height: 300px;
-}
-.aukstis-200 {
-    min-height: 200px;
-}
-.aukstis-100 {
-    min-height: 100px;
+
+.container, .container-fluid {
+  background-color: #EAEAEA;
 }
 
-body, html {
-    height: 100%;
+.luko {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-h4 [title] {
-  background-color: #000;
-  color: #fff;
 
+.reklama {
+  background-color: #3089F2;
+}
+
+#footbezdione {
+  margin-bottom: 60px;
+  margin-right: 20px;
+}
+
+.chalogo {
+  margin-right: 3px;
+}
+.tekstai {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.reklamos-btn {
+  position: absolute;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  left: 50%;
+}
+.mygtukas {
+  height: 400px;
+  width: 100%;
+  position: relative;
 }
