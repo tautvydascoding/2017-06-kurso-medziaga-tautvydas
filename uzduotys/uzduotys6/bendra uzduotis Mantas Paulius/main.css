@@ -11,7 +11,7 @@
 
 body, html {
     height: 100%;
-
+    
 }
 
 * {
@@ -19,7 +19,7 @@ body, html {
 }
 
 body {
-     background: url(pexels-photo-366429.jpeg) no-repeat left fixed;*/
+     background: url(BACK.jpg) no-repeat left fixed;*/
     -webkit-background-size: left;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -27,7 +27,8 @@ body {
     background-color: white;
     font-family: 'Poppins', sans-serif;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: ;
+    z-index:;
+    font-family: 'Athiti', sans-serif;
     
 }
 #galerijosh1 {
