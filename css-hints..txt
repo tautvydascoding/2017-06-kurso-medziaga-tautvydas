@@ -1,3 +1,8 @@
+==========musu puslapis uzimtu visu monitoriaus auksti =========
+body, html {
+    height: 100%;
+}
+===============================
 elemento centravimas
 
    width: 1024px;

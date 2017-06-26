@@ -11,26 +11,43 @@ body {
     padding: 0;
     margin: 0;
 }
+/*
+
+.logo {
+    margin-bottom: 30px;
+}
+*/
 
 .wrapper {
     width: 50%;
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+/*    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));*/
+/*    overflow: hidden;*/
+/*    border-radius: 2%;*/
+    padding: 0 10px 0 10px;
 }
 
 .input-field {
     width: 100%;
     margin-bottom: 10px;
+    height: 25px;
 }
 
 .email-field {
     width: 100%;
+    height: 25px;
+}
+
+input[type="text"] {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
 }
 
 .input-field, .email-field {
     border: none;
     border-bottom: 1px solid black;
     height: 25px;
-    transition: 0.2s
+    transition: 0.2s;
+    background: none;
 }
 
 .email-field:focus {
@@ -88,6 +105,7 @@ header {
     width: 50%;
 }
 
+
 .explanation {
     font-weight: bold;
     font-size: 15px;
@@ -99,13 +117,13 @@ header {
 .sign-up-button {
     height: 45px;
     width: 25%;
-    margin-top: 20px;
+    margin: 20px 0 5px 5px;
     background: none;
     outline: #000 solid 3px;
     border: none;
     transition: 0.3s;
     font-family: 'Lato', sans-serif;
-    font-weight: bold;
+    font-weight: bold;;
 }
 
 .sign-up-button:hover{
@@ -118,6 +136,7 @@ header {
     background-color: #0d3dce;
     outline-color: #0d3dce;
     color: #fff;
+    
 }
 
 
@@ -128,13 +147,46 @@ header {
 /*============================================================================================*/
 
 @media (max-width: 320px) {
-    wrapper{
+    .wrapper{
         width: 100%;
-        margin: 0 auto;
         text-align: center;
     }
+    
+    .explanation {
+        text-align: center;
+    }
+    
+    header{
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    body {
+        
+/*        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));*/
+    }
+}
+
+
+@media (max-width: 768px) {
     header{
         text-align: center;
         width: 100%;
     }
+    
+     .explanation {
+        text-align: center;
+    }
+    
+    .wrapper{
+        width:100%;
+        
+    }
+    
+    body {
+        
+/*        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));*/
+    }
+    
 }
