@@ -11,11 +11,16 @@
 
 body, html {
     height: 100%;
-    
 }
 
 * {
     box-sizing: border-box;
+}
+
+#galerijosh2 {
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
 }
 
 body {
@@ -30,6 +35,10 @@ body {
     z-index:;
     font-family: 'Athiti', sans-serif;
     
+}
+
+.center {
+    text-align: center;
 }
 #galerijosh1 {
     text-transform: uppercase;
