@@ -1,9 +1,16 @@
 * {
   box-sizing: border-box;
 }
-html, body {
-  height: 100%;
-}
-footer, header, nav, .ads, .article {
+.yellow {
   background-color: yellow;
+}
+aukstis-200 {
+  height: 200px;
+}
+
+header, footer {
+  height: 100px;
+}
+.article {
+  height: 300px;
 }
