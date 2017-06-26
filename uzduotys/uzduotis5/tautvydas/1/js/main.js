@@ -25,7 +25,7 @@ function  countAverage()  {
 // paleidziam f-ja
 countAverage();
 
-function printName() {
+function printName(skaicius) {
   var name = "Tomukas";
   var lname = "Tolutis";
   console.log("vardas = ", name , lname);
@@ -33,8 +33,9 @@ function printName() {
   x = 5;
   y =  "6";
   z = y + x; // z?
-  straipsnis = "Labas rytas " + name + " Kaip tau siandine sekesi?" + z;
+  straipsnis = "Labas rytas " + name + " Kaip tau siandine sekesi?" + z + skaicius;
   console.log(straipsnis);
 }
 
-printName();
+printName(3);
+printName(150);

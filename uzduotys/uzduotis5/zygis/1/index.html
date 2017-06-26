@@ -27,6 +27,24 @@
 
 
         <!--JavaScript-->
-        <script src="script/main.js"></script>
+        <script type="text/javascript">
+        
+            function test() {
+                var title = document.getElementById('title');
+                title.innerText = "naujas tekstas, maaan";
+            }
+
+
+            function test2() {
+                var ul =document.getElementsByTagName('ul')[0];
+
+                var li = document.createElement('li');
+                var node = document.createTextNode('Another list element daaaaaaaaamn');
+                li.appendChild(node);
+                ul.appendChild(li);
+
+            }
+
+        </script>
     </body>
 </html>
