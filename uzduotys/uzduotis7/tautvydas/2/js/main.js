@@ -20,6 +20,24 @@ while (i < 50) {
 // A) susikurit f-ja (x) kuri paduota atspausdina reiksme
 // B) 150 kartu paleisti sia ^ f-ja, (paduodant "i" reiksme)
 
+function print (reiksme) {   // "reiksme" - laikinas kintamasis , kuris gauna kvietimo metu suteikiama reiksme
+  console.log(reiksme);
+}
 
+i = 0;
+while (i < 150) {
+  print(i);   // kvieciame f-ja
+  i = i + 1; // didiname i reiksme, kad pasiektu 150
+}
+// --------------------------- += , ++ --------------
+i = i + 1;   // tai yra tas kas i += 1;
+i++;  // i + 1 (i padidieja vienetu)  arba mazinant  k--;
 
-//
+//  -----------texta sulipdo i viena eilute
+i = 0;
+text = "";
+while (i < 10) {
+    text += "The number is " + i;  // text = text + "The number is " + i
+    i++;
+}
+console.log(text);
