@@ -38,6 +38,7 @@ nav:hover {
 }
 
 
+
 .menu-icon {
     font-size: 45px;
     padding: 50px;
@@ -60,4 +61,17 @@ nav:hover {
 a {
     text-decoration: none;
     color: #fff;
+}
+
+.nav-list {
+    list-style-type: none;
+    /*border: 1px solid black;*/
+    height: 260px;
+    width: 250px;
+}
+
+.nav-list li {
+    height: 65px;
+    line-height: 65px;
+    border: 1px solid #fff;
 }
