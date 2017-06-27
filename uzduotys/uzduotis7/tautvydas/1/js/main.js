@@ -55,7 +55,7 @@ spausdinti (6, 32, "tingi");
 // A) sukurti f-ja, kuri isveda i konsole teksta: "Labas vakasras Kaune!"
 // B) sukurti f-ja SpausdinuVarda(vardas), kuri isveda i konsole teksta:  paduota kintamaji
 // C) sukurti f-ja kelimasKvadratu(x), kuri isveda i konsole paduoto kintamo reiksme pakelta kvadratu ( pvz x*x)
-// D) sukurti f-ja textas(x,y,z), kuri isveda i konsole x + 2, y + 4, z *2
+// D) sukurti f-ja skaiciavimai(x,y,z), kuri isveda i konsole x + 2, y + 4, z *2
 
 
 
