@@ -15,14 +15,23 @@ console.log("labas");
 // piestiEilute(45);
 // piestiStulpeli(5);
 piestiEilute = 0;
-function print (piestiEilute) {
-console.log("-");
-}
-while (piestiEilute < 40) {
 
-  piestiEilute = piestiEilute + 1;
+function print(piestiEilute) {
+  console.log("-");
+}
+// tekstas = "-";
+// while (piestiEilute < 40) {
+//   tekstas = tekstas + "-";
+//   piestiEilute = piestiEilute + 1;
+// }
+// console.log(tekstas);
+
+function piestiEilute1(x) {
   tekstas = "-";
-  tekstas = tekstas + "-";
+  while (piestiEilute < x) {
+    tekstas = tekstas + "-";
+    piestiEilute = piestiEilute + 1;
+  }
   console.log(tekstas);
-
 }
+piestiEilute1(20);
