@@ -2,13 +2,16 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> e4a665be688efe47c9339a697e052827445cef70
 
 body, html {
     height: 100%;
 
 }
-ul li {
+header ul li {
   float: left;
   width: 200px;
   height: 40px;
@@ -17,7 +20,8 @@ ul li {
   margin-right: 2px;
 list-style: none;
 }
-img {
+
+header img {
   max-width: 100px;
   max-width: 100px;
 
@@ -47,4 +51,55 @@ background-color: orange;
 }
 scetion {
   position: relative;
+<<<<<<< HEAD
+}
+
+.footer {
+  background-color: #242D36;
+  height: 200px;
+  padding: 30px 0 30px 100px;
+  text-align: center;
+}
+
+.menu {
+  color: #EBF5FB;
+  text-align: left;
+}
+
+.logo {
+  height: 60px;
+  float: left;
+  margin: 10px 0 0 24px;
+
+}
+
+.image {
+  height: 140px;
+  float: right;
+  position: absolute;
+  margin-right: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.imageSize {
+  height: 180px;
+}
+
+.farmImage {
+  height: 220px;
+}
+
+.ad {
+  margin: 32px;
+  background-color: silver;
+}
+
+.gallery {
+  margin: 26px;
+>>>>>>> 3a88f6aedb9fbfee3de5ef66160c6c95ace231a5
+=======
+>>>>>>> e4a665be688efe47c9339a697e052827445cef70
 }
