@@ -1,13 +1,49 @@
-h2 {
-  color: red;
+* {
+  box-sizing: boder-box;
+}
+
+body, html {
+  height: 100%;
 }
 
 .text-center {
   color: #000;
 }
 
+h3 {
+  text-align: center;
+}
+
+/*FIRST CONTAINER*/
 .container {
   width: 1000px;
-  height: 400px;
+  height: 100px;
+  border: 1px solid #000;
   background-color: #F0F0F0;
+}
+
+/*SECOND CONTAINER*/
+.topics {
+  width: 1000px;
+  margin: 28px;
+  border: 1px solid #000;
+  background-color: #F0F0F0;
+}
+
+.inline-block {
+  padding: 0px;
+  height: 60px;
+  margin: 5px;
+}
+
+/*THIRD CONTAINER*/
+.container-fluid {
+  height: 200px;
+  border: 1px solid #000;
+  background-color: #F0F0F0;
+  margin: 146px;
+}
+
+.padding {
+  padding: 80px;
 }
