@@ -1,0 +1,50 @@
+h1 {
+  color: red;
+  text-align: center;
+
+}
+
+section {
+  margin-left: 2%;
+  background-color: #999999;
+  border: 1px solid #666;
+  width: 30.5%;
+
+  float: left;
+  position: relative;
+}
+.section-3
+{ margin-right: 2%}
+p {
+  padding: 20px;
+}
+.first-title {
+  background-color: red;
+  width: 90px;
+
+}
+.second-title {background-color: blue;
+  width: 55px;
+
+}
+.third-title {background-color: yellow;
+width:  65px;
+}
+
+section h2 {
+  width: 100px;
+
+  margin: 0;
+  float: right;
+border: 2px solid #666;
+
+}
+
+
+
+
+
+
+
+
+}
