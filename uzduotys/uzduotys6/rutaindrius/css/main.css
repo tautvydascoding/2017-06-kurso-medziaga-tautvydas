@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e4a665be688efe47c9339a697e052827445cef70
 
 body, html {
     height: 100%;
@@ -47,6 +51,7 @@ background-color: orange;
 }
 scetion {
   position: relative;
+<<<<<<< HEAD
 }
 
 .footer {
@@ -95,4 +100,6 @@ h2 {
 .gallery {
   margin: 26px;
 >>>>>>> 3a88f6aedb9fbfee3de5ef66160c6c95ace231a5
+=======
+>>>>>>> e4a665be688efe47c9339a697e052827445cef70
 }

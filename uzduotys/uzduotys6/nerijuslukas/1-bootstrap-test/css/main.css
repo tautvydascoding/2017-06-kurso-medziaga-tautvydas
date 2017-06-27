@@ -31,3 +31,25 @@ h2 {
 .chalogo {
   margin-right: 3px;
 }
+.tekstai {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.reklamos-btn {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.mygtukas {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.background {
+  background-image: url("../beach.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
