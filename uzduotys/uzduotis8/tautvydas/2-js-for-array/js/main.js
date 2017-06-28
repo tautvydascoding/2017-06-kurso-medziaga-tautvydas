@@ -70,6 +70,8 @@ console.log("masyvas po slice 3: " + dalisVardu.join("-"));
 console.log("masyvas po slice 1: " + names.join("-"));
 
 
+console.log(Math.PI);
+
 
 
 //
