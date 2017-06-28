@@ -12,11 +12,19 @@ elemento centravimas
  ---------------------------------------
 	
     position: absolute;
-    top: 50px;
+    top: 50px;   50%
     left: 0px;
     /* norint slikti kito elmento atzvilgiu, reik uzdeti teviniam ar kitam elmentui - relative */
     position: relative;
 
+	
+   /* ---objekto centravimas (tobulas vcentras)--- */
+	.reiklamos-btn {
+  		position: absolute;
+   		transform: translate(-50%, -50%);
+   		left: 50%;
+  		top: 50%;
+	}
  ---------------------------------------
 
      float: left;
@@ -36,3 +44,7 @@ elemento centravimas
 aside { 
   padding-bottom: 100%;
   margin-bottom: -100%;
+
+
+
+

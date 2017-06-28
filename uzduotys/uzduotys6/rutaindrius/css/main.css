@@ -3,13 +3,15 @@
 }
 
 <<<<<<< HEAD
+=======
 
+>>>>>>> e4a665be688efe47c9339a697e052827445cef70
 
 body, html {
     height: 100%;
 
 }
-ul li {
+header ul li {
   float: left;
   width: 200px;
   height: 40px;
@@ -18,7 +20,8 @@ ul li {
   margin-right: 2px;
 list-style: none;
 }
-img {
+
+header img {
   max-width: 100px;
   max-width: 100px;
 
@@ -48,9 +51,7 @@ background-color: orange;
 }
 scetion {
   position: relative;
-=======
-body, html {
-    height: 100%;
+<<<<<<< HEAD
 }
 
 .footer {
@@ -99,4 +100,6 @@ h2 {
 .gallery {
   margin: 26px;
 >>>>>>> 3a88f6aedb9fbfee3de5ef66160c6c95ace231a5
+=======
+>>>>>>> e4a665be688efe47c9339a697e052827445cef70
 }

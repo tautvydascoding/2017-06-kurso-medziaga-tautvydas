@@ -1,11 +1,20 @@
+<<<<<<< HEAD
 * {
   box-sizing: boder-box;
 }
 
 body, html {
   height: 100%;
+=======
+h2 {
+  color: #657e5d;
+  text-align: center;
+>>>>>>> 0ce21191920329f13d4cd3d92c1e61112521bd5e
 }
 
+h1 {
+
+}
 .text-center {
   color: #000;
 }
@@ -28,6 +37,38 @@ h3 {
   margin: 28px;
   border: 1px solid #000;
   background-color: #F0F0F0;
+  border:1px;
+  border-color: #ed8e5c;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.img-circle {
+  width: 200px;
+  heigh: 200px;
+}
+
+footer {
+  height: 200px;
+}
+
+.ads {
+  background-color: #9ba475;
+  height: 400px;
+  position: relative;
+}
+.logo {
+  width: 10%;
+  margin: 20px;
+
+}
+.reklamos-btn {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
 
 .inline-block {
