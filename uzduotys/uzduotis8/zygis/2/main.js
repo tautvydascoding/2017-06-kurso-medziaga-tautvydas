@@ -8,39 +8,51 @@ var names = ["Enriqueta", "Sybil", "Piper", "Anh", "Carmelo", "Regan", "Synthia"
 var lastNames = ["Mcdowell", "Gates", "Mccall", "Cisneros", "Hancock", "Gaines", "Juarez", "Nolan", "Barajas", "Ware", "Orr", "Bell", "Donovan", "Rojas", "Stevenson", "Long", "Hays", "Gibson", "Meyer", "Sims", "Mcintosh", "Craig", "Haney", "Cunningham", "Hunt", "Montgomery", "Spears", "Cooke", "Gregory", "Mcknight", "Fernandez", "Hendrix", "Patton", "Bond", "Skinner", "Randolph", "Montes", "Guerra", "Bowen", "Potts", "Dyer", "Riley", "Rodgers", "Schroeder", "Ferguson", "Garrett", "Rush", "Moon", "Whitney", "Mcdaniel"];
 
 
-var items = [64, 27, 89, 99, 89, 53, 52, 39, 77, 56, 91, 56, 92, 49, 90, 63, 51, 84, 28, 49, 57, 61, 66, 73, 57, 93, 98, 64, 63, 41, 3, 39, 58, 43, 56, 60, 22, 57, 38, 8, 12, 93, 28, 83, 77, 63, 96, 45, 34, 79];
+// var items = [64, 27, 89, 99, 89, 53, 52, 39, 77, 56, 91, 56, 92, 49, 90, 63, 51, 84, 28, 49, 57, 61, 66, 73, 57, 93, 98, 64, 63, 41, 3, 39, 58, 43, 56, 60, 22, 57, 38, 8, 12, 93, 28, 83, 77, 63, 96, 45, 34, 79];
 
-//-----------------------------------Astunta uzduotis------------------------------------------//
+//-----------------------------------Astunta/Devinta uzduotis------------------------------------------//
 
-
+var items = [];
 
 function randomArray(length, minNum, maxNum) {
 
-    var randomNumbers = [];
+    
 
     for (var i = 0; i < length; i++) {
-        randomNumbers.push(Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+        items.push(Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
     }
-    return randomNumbers;
+    return items;
 }
 
 
 
-//-----------------------------------Devinta uzduotis------------------------------------------//
 
 
-var index = items.indexOf(Math.max.apply(Math, items)); // randa didziausio masyvo skaiciaus indexa
+function geraiDirba(array){
+    
+    var index = array.indexOf(Math.max.apply(Math, array)); // randa didziausio masyvo skaiciaus indexa
+
+    console.log(names[index], lastNames[index]);
+}
+
 
 
 //kitas budas
 
-var max = items[0];
-var maxIndex = 0;
+// var max = items[0];
+// var maxIndex = 0;
 
-for(var i = 0; i < items.length; i++){
-    if (items[i] > max){
-        maxIndex = i;
-        max = items[i];
-    }
+// for(var i = 0; i < items.length; i++){
+//     if (items[i] > max){
+//         maxIndex = i;
+//         max = items[i];
+//     }
+// }
+
+
+function blogaiDirba(array){
+    var index = array.indexOf(Math.min.apply(Math, array));
+
+    console.log(names[index], lastNames[index]);
 }
 
