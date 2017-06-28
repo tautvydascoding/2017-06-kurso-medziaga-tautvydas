@@ -1,0 +1,9 @@
+ var  skaiciai = [];
+ARBA
+ var skaiciai = new Array(100);
+console.log(skaiciai.toString());
+console.log(parts.join(" "));
+
+random
+ var nuoVienoIkiSimto = Math.floor(Math.random() * 100) ;
+  var nuoPenkiasdesimtIki300 = Math.round(Math.random() * 250) + 50 ;
