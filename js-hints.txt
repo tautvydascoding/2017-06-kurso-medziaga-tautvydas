@@ -1,0 +1,17 @@
+ var  skaiciai = [];
+ARBA
+ var skaiciai = new Array(100);
+console.log(skaiciai.toString());
+console.log(parts.join(" "));
+
+random
+ var nuoVienoIkiSimto = Math.floor(Math.random() * 100) ;
+  var nuoPenkiasdesimtIki300 = Math.round(Math.random() * 250) + 50 ;
+  
+  
+  //===========Array / Masyvu f-jos=========
+ console.log(names.join());  // atspausdina visus Array elementus vienoje eiluteje (atskiria kableliais)
+ 
+  names.length;  - suskaiciuoja masyvo ilgi
+  cars.sort();   // The sort() method sorts arrays
+  
