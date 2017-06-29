@@ -1,0 +1,59 @@
+ var  skaiciai = [];
+ARBA
+ var skaiciai = new Array(100);
+console.log(skaiciai.toString());
+console.log(parts.join(" "));
+
+random
+ var nuoVienoIkiSimto = Math.floor(Math.random() * 100) ;
+  var nuoPenkiasdesimtIki300 = Math.round(Math.random() * 250) + 50 ;
+  
+  
+  //===========Array / Masyvu f-jos=========
+ console.log(names.join());  // atspausdina visus Array elementus vienoje eiluteje (atskiria kableliais)
+ 
+  names.length;  - suskaiciuoja masyvo ilgi
+  fruits.sort();     // Sorts the elements of fruits 
+  fruits.reverse();         // Reverses the order of the elements
+  names.push("3 vaikai");  // i masyvo gala idedame papildoma nari
+  
+console.log("array " + names.toString() );  // masyvo visus elementus pavercia i viena teksto eilute
+console.log("array " + names.join(" : ") ); // isvesa visa masyva vienoje eiluteje, atskiriant elementus/stalcius nurodytu skirtuku " : "
+fruits.shift();            // Removes the first element is masyvo
+fruits.unshift("Lemon");    // Adds a new element i masyvo pradzia
+
+fruits.splice(2, 0, "Lemon", "Kiwi");
+The first parameter (2) defines the position where new elements should be added (spliced in). 
+The second parameter (0) defines how many elements should be removed. 
+The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+
+
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias","Linus"];
+var myChildren = myGirls.concat(myBoys);     // Concatenates (joins) myGirls and myBoys
+
+
+dalisVardu = names.slice(3); // copy nuo trecio masyvo elemento
+var citrus = fruits.slice(1, 3); // copy nuo 1 iki 3 elemento
+
+//==========================================
+
+Math.PI;            // returns 3.141592653589793
+Math.round(4.7);    // returns 5
+Math.round(4.4);    // returns 4
+Math.abs(-4.7);     // returns 4.7  // modulis (nuima minuso zenkla, jiegu skaicius neigiamas)
+Math.floor(4.7);    // returns 4  returns the value of x rounded down to its nearest 
+Math.ceil(4.4);     // returns 5   returns the value of x rounded up to its nearest 
+Math.pow(8, 2);      // returns 64  kelimas laipsniu
+Math.sqrt(64);      // returns 8  saknis
+
+
+Math.random();     // returns a random number  0 iki 0.9999999
+Math.floor(Math.random() * 11);      // returns a number between 0 and 10
+Math.floor(Math.random() * 100);     // returns a number between 0 and 99
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+}
+max(x, y, z, ..., n)	Returns the number with the highest value
+min(x, y, z, ..., n)	Returns the number with the lowest value

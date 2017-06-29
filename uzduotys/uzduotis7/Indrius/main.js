@@ -5,6 +5,7 @@ console.log("valio");
 eilute (40);
 numerisVardasPavarde ("Nr", "Vardas", "Pavarde");
 stulpelis (5);
+numberIS ();
 
 function eilute(piesia) {
 i = 0;
@@ -33,3 +34,8 @@ function stulpelis(stato) {
 
 }
 // matematikos///
+
+  }
+
+
+}
