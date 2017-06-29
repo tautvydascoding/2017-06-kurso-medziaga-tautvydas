@@ -21,11 +21,13 @@ console.warn("console blogai atvaizduoja isskleistus masyvus, bet gerai atvaizdu
 // 2) susikurti funkcija, kuri spausdina paduota skaiciu, kai paduodama reiksme (jeigu niekas nepaduodama: spausdina "-1")
 
 //------------while break-- uzduotis:----------------------------
-// surasti vardu masyve, kelintas zmogus yra "Rico" (surasti pirmaji; sunkes- surasti visus riko)
+// UZDUOTIS
+// 1A) surasti vardu masyve, kelintas zmogus yra "Rico" (surasti pirmaji; sunkes- surasti visus riko)
+// 1B) papildyti ^: jeigu tokio vardo neranda, isvesti pranesima "Nepavyko rasti...Bandykite kita zodi"
 // uzduotis:--------------------------
-// parasyti funkcija, kuri grazina masyvo elemento numeri
+// 2) parasyti funkcija, kuriai davus iekoma zodi , ji suranda jo vieta masyve (skalciuas numeri) ir si   numeri
 // uzduots:----------------------------
-// rasti pavarde masyve esancio  zmogaus vardu "Freida" (pirmojo)
+// 3) rasti pavarde masyve esancio  zmogaus vardu "Freida" (pirmojo)
 // rasti visu zmoniu vardu "Rico" pavardes
 
 
