@@ -45,3 +45,8 @@ console.log("WHILE sarasas: ", sarasas2); // sarasas2.toString; sarasas2.join(" 
 
 
  // ND: kas antra ^ masyvo elementa pakeisti i "3"
+
+ for (  i = 0; i < 50; i+=2) {
+    sarasas2[i] = 3;
+ }
+ console.log("WHILE sarasas, kas antras 3: ", sarasas2); // sarasas2.toString; sarasas2.join(" ; ");
