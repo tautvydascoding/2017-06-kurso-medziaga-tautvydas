@@ -1,3 +1,5 @@
+
+
 // =================svarbus patarimai===================:
 // ARRAY: jeigu naudoji FOR || while cikla, tai negalvojant masyve naudoti "i" (pvz.: myArray[i])
 // FOR:   "for (i = 0; i < x; i++) {"  - nesusijusi su uzdaviniu (skirtas apeit masyva/ ivykdyti daug kartu kazka)
@@ -107,7 +109,18 @@ for (y in vardai  ) {
 
 ==============Out put=====================
 JavaScript Display Possibilities
-Writing into an HTML element, using 	  innerHTML.
-Writing into the HTML output using	  document.write().
-Writing into an alert box, using	  window.alert().
-Writing into the browser console, using   console.log().
+
+Writing into the browser console, using   console.log() 
+gime = prompt("Ivesk savo gimimo data");
+console.log("Jusus gimimo data: ", gime);
+Writing into an HTML element, using 	  innerHTML = "<h1>asdfds</h2>"
+Writing into the HTML output using	  document.write()
+Writing into an alert box, using	  window.alert()
+
+
+// ===================js out put===================
+pirmojiGalerija = document.querySelector('.galerija'); // SURANDA pirma
+galerijos = document.querySelectorAll(".galerija");  // SURANDA VISUS
+galerijos[0].style.color = "blue"; // pakeiciam  teksto spalva
+  tekstas = "<h2> Mano antraste </h2>";
+galerijos[0].innerHTML += tekstas ;
