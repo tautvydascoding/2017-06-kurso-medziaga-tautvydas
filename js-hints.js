@@ -1,3 +1,19 @@
+// =================svarbus patarimai===================:
+// ARRAY: jeigu naudoji FOR || while cikla, tai negalvojant masyve naudoti "i" (pvz.: myArray[i])
+// FOR:   "for (i = 0; i < x; i++) {"  - nesusijusi su uzdaviniu (skirtas apeit masyva/ ivykdyti daug kartu kazka)
+// matricas  - visada nusipiesti ant popieriaus eskiza su testiniais duomenimis
+// matrica narys paimamas: myMatica[x][y]   x- stulpelis; y - eilute
+// matrica - pasitikritni ar nereik x ir y sukeisti vietomis (ar nesuklydai kuris stulpelis ir kuris eilute )
+// matricos ilgis daznai skiriasi nuo plocio.
+//  pvz.:
+ // for ( i < eiluciuSkaicius)
+ //    for ( k < stulpeliuSkaicius)
+//=========================================================
+
+
+
+
+
  var  skaiciai = [];
 ARBA
  var skaiciai = new Array(100);
@@ -57,3 +73,41 @@ function getRndInteger(min, max) {
 }
 max(x, y, z, ..., n)	Returns the number with the highest value
 min(x, y, z, ..., n)	Returns the number with the lowest value
+
+//=========================objects================\
+
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue"
+};
+
+// ABRA 
+
+var person = new Object();
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue";
+
+ 
+
+// FOR ciklas, kuris skirtas begti per Obj- informacija
+for (x in person{
+  console.log("reikme: " + person[x]);
+}
+
+// irgi tinkamas begti per masyva
+vardai = ["Jonas", "Tomas", "Paulius"];
+for (y in vardai  ) {
+    console.log("masyvo reikme: " + vardai[y]); 
+}
+
+
+==============Out put=====================
+JavaScript Display Possibilities
+Writing into an HTML element, using 	  innerHTML.
+Writing into the HTML output using	  document.write().
+Writing into an alert box, using	  window.alert().
+Writing into the browser console, using   console.log().
