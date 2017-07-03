@@ -1,1 +1,3 @@
-console.log("Hey");
+$
+
+$("h1").hide();
