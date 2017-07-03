@@ -8,6 +8,15 @@ $(document).ready(function(){
         $('p').hide();
     });
 
+    // paspaudus ant straipsnio jis pasisleps
+    $('p').click( function(){  // anonimine f-ja
+        $(this).hide();
+    });
+    // nenaudojant anonimines f-jos
+    $('p').click( paslepimas(this)); 
+    function paslepimas(xx) {
+       $(xx).hide(); // paslepe visus p
+    }
 
 });
 
