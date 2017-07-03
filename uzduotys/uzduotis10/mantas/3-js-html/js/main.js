@@ -1,32 +1,20 @@
 console.log("labukas");
 
-//retai naudojamas, nes isveda po js failu
-document.write(" <h2>Stebuklu salis</h2>");
-//
-var gallery = document.getElementsByClassName("galerija"); //suranda visas klases
-console.log("galerija: ", gallery);
-gallery[0].style.backgroundColor = "red";
-gallery[1].style.backgroundColor = "#b2b2";
-// sunkesnis aprasymas
+img = '<img src="http://www.50-best.com/images/friday_memes/its_too_friday.jpg" width="200px" height="100px" alt="friday" />';
+title = "<h2>Musu firmos prekes</h2>";
+gallery = document.querySelector(".galerija");
+gallery.innerHTML = title;
+gallery.style.textAlign = "center";
+// gallery.style.textAlign = "center";
+gallery.appendChild(eilute); //ideda objekta
 
-//lengvesnis//
-// document.GetElementById("reklama");
-//
+//i galerija idedam toki bloka
+for (var i = 0; i < 2; i++) {
+  var eilute = document.createElement("div");
 
-//dazniau naudojamas
-aa = document.querySelector("h1"); //suranda pati pirma
-bb = document.querySelector(".galerija");
-//document.querySelectorAll
-cc = document.querySelector("#reklama");
-
-bb.style.color = "green";
-cc.style.color = "blue";
-
-
-for (var i = 0; i < gallery.length; i++) {
-  gallery[i].style.backgroundColor = "yellow";
-}
-//--------------------------idedam img-----------//
-img = '<img src="http://www.50-best.com/images/friday_memes/its_too_friday.jpg" width="300px" height="200px" alt="friday" />';
-gallery[1].innerHTML += img;
-gallery[1].innerHTML += img;gallery[1].innerHTML += img;gallery[1].innerHTML += img;
+  for (var k = 0; k < 4; i++) {
+    eilute.innerHTML += img + " ";
+  }
+  // gallery.innerHTML = eilute; //deda tik tekstus
+  gallery.appendChild(eilute); //ideda objekta
+};
