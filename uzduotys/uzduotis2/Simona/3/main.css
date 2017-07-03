@@ -1,0 +1,15 @@
+h1 {
+  color: red;
+}
+header h1 {
+  color: purple
+}
+a {
+  font-size: 10px;
+}
+#reklama {
+  background-color: green
+}
+.mėlynas-tekstas {
+  color: black
+}
