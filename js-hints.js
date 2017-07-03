@@ -124,3 +124,10 @@ galerijos = document.querySelectorAll(".galerija");  // SURANDA VISUS
 galerijos[0].style.color = "blue"; // pakeiciam  teksto spalva
   tekstas = "<h2> Mano antraste </h2>";
 galerijos[0].innerHTML += tekstas ;
+
+
+//================
+// js - pati save iskviecianti f-ja
+(function() {
+    console.log("iskvieciau save");
+})();
