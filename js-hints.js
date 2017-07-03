@@ -131,3 +131,11 @@ galerijos[0].innerHTML += tekstas ;
 (function() {
     console.log("iskvieciau save");
 })();
+
+
+//===============redirect=======
+        // similar behavior as an HTTP redirect // apsaugo vartotoja nuo Back neverendding loop
+        window.location.replace("http://google.com");	
+		
+		// similar behavior as clicking on a link
+		window.location.href = "http://google.com";

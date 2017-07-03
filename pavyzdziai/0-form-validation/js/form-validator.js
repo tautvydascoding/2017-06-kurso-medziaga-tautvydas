@@ -20,6 +20,12 @@
           form.appendChild(errorMessage);
        }
     } 
+	//else {
+	//	$(event).unbind('submit'); worked as the only method to restore the default action.
+	//   //OR
+	//	 //later you decide you want to submit
+    //   $(this).unbind('submit').submit();
+	//}
   }
   function printFromData () {
     console.log("Duomenys . Vardas: ", formData.firstName.value,
@@ -38,5 +44,6 @@
   // }
   // uzpildome forma testiniais duomenimis
   // fillForm("tautvydas", "Kaleda", "a@a.lt");
-
+ 
+  
 })();
