@@ -25,7 +25,7 @@ i = 0;
 masyvas2 = [];
 while (i < 50) {
   masyvas2[i] = 1;
-  i++;
+  i++
 }
 
 console.log(masyvas2);
