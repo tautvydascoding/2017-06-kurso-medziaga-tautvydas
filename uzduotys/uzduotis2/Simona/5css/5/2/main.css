@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+/*pading=0; mergin=0*/
+a {
+  colour: #000;
+  text-decoration: none;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 20px #000;
+}
+  h1, h2, h3, h5 {
+  font-family:'Spectral', serif;
+}
+
+body {
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e2e2e2;
+}
+
+/*HEADER*/
+header {
+  background-color: #ff80ff;
+  height: 50px;
+}
+
+nav {
+  width: 66%;
+  line-height: 50px;
+  vertical-align: center;
+  float: left;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+#search {
+  width: 34%;
+  float: right;
+}
+form {
+  float: right;
+  padding-right: 30px;
+  padding-top: 15px;
+}
+
+.search-box {
+  width: 240px;
+  height: 26px;
+}
+#search botton {
+ background-color: #000;
+ color: #fff;
+ padding: 5px 18px;
+ border: 0;
+}
+
+li a {
+  text-decoration: line-through;
+}
+
+nav li {
+  width: 24.5%;
+  text-align: center;
+  padding-top: 18px;
+}
+
+#search {
+  width: 34%;
+}
+
+#wrapper {
+  background-color: #fff;
+  min-height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+section {
+  width: 70%;
+  min-height: 300px;
+  border: solid 1px #000;
+  float: left;
+}
+
+aside {
+  width: 30%;
+  background-color: #ff80ff;
+  float: right;
+  text-align: center;
+  height: 100%;
+
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+}
+
+.clear-float {
+  clear: both;
+}
+
+li a {
+  text-transform: uppercase;
+}
+
+nav li {
+  display: inline-block;
+}
+
+/*FOOTER*/
+footer {
+  height: 60px;
+  background-color: #fff;
+  border: solid 1px #000;
+}

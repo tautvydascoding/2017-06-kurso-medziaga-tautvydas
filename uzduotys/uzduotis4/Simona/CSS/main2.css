@@ -1,0 +1,9 @@
+.container {
+  background-color: #eaeaea;
+}
+.border {
+  border: 1px solid blue;
+}
+.aukstis {
+  min-height: 400px;
+}
