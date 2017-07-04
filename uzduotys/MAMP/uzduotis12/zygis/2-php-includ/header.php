@@ -1,0 +1,11 @@
+  <header>
+        <h1>Pavadinimas</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Gallery</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+    </header>
