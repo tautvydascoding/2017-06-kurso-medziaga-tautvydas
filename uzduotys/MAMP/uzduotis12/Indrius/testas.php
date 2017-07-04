@@ -2,8 +2,6 @@
 
 
 
-// cia php kodas
-echo "Labas rytas";
 
 
 
@@ -60,3 +58,4 @@ foreach ($names as $name) {
 
 
 ?>
+>>>>>>> 6bcb0b3ff5a4f1ca01c1e501053ec17d1e23281b
