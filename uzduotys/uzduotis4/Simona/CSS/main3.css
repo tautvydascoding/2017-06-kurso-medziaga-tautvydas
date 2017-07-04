@@ -1,0 +1,29 @@
+
+h5 {
+  color: #000;
+  padding-left: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.green {
+  background-color: #93cc47;
+}
+
+.yellow {
+  background-color: #ffce44;
+}
+
+.white {
+  background-color: #fff;
+}
+.aukstis {
+  height: 100px;
+  padding-top: 20px;
+}
+.aukstis-2 {
+  height: 400px;
+}

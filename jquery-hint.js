@@ -33,6 +33,17 @@ $("p, .test, .demo");
         });
     });
 	
+	// !!! deprecated
+	$( "#foo" ).bind( "click", function() {
+	  alert( "User clicked on 'foo.'" );
+	});
+	//========on 
+	
+	   $( "#dataTable tbody tr" ).on( "click", function() {
+		  console.log( $( this ).text() );
+		});
+	
+	
     $( "<div>" )
 			.append( "<h1>xxxxx</h1>" )
 			.appendTo( "#log" );
@@ -84,10 +95,10 @@ $("#w3s").attr("href"); // paima atributa
 html("<h1>aaaa</h1>");
 text("<h1>aaaa</h1>")
 val("<h1>aaaa</h1>")
-  $("#w3s").attr("href", "https://www.w3schools.com/jquery");
+$("#w3s").attr("href", "https://www.w3schools.com/jquery");
   
   
-  append() - Inserts content at the end of the selected elements
+append() - Inserts content at the end of the selected elements
 prepend() - Inserts content at the beginning of the selected elements
 after() - Inserts content after the selected elements
 before() - Inserts content before the selected elements
@@ -95,7 +106,7 @@ $("p").append("Some appended text.");
 $("#div1").remove();
 $("#div1").empty();
 $("p").remove(".test");  //  The following example removes all <p> elements with class="test":  
-  $("p").remove(".test, .demo");
+$("p").remove(".test, .demo");
   
   
   
