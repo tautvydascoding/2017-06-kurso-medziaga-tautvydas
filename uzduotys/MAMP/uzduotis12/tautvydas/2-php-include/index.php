@@ -6,54 +6,26 @@
   </head>
   <body>
 
-    <header>
-      <nav>
-        <ul>
-          <li> HOME  </li>
-          <li> ABOUT  </li>
-          <li> GALLERY  </li>
-          <li> BLOG  </li>
-          <li> CONTACT  </li>
-        </ul>
-      </nav>
-    </header>
+
+    <!-- idedu HEADER -->
+    <?php
+        include_once("./header.php");
+    ?>
+
 
     <div id="wrapper">
       <section>
-        <article>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          </p>
-        </article>
-        <article>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          </p>
-        </article>
-        <article>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          </p>
-        </article>
-        <article>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          </p>
-        </article>
-        <article>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          </p>
-        </article>
+        <?php
+            for ($i=0; $i < 6 ; $i++) {
+              include("./article.html");
+            }
+
+         ?>
 
       </section>
     </div>
 
-
-    <footer>
-      &copy 2017
-    </footer>
-
+    <?php include_once("./footer.php"); ?>
 
 
 
