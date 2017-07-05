@@ -1,0 +1,73 @@
+.container, .container-fluid {
+    background-color: azure;
+    
+    
+}
+
+article {
+    border: solid 1px;
+    margin: 10px;
+}
+div {
+    margin: 10px;
+}
+
+ul {
+    background-color: rosybrown;
+    
+}
+
+.black {
+    background-color:black;
+
+    
+}
+
+.green {
+    background-color:burlywood
+}
+
+.orange {
+    background-color: orange;
+    
+}
+
+.pink {
+    background-color:deeppink;
+}
+
+div {
+    font-size: 30px;
+}
+
+.aukstis900 {
+    min-height: 900px;
+}
+
+.aukstis600 {
+    min-height: 600px;
+}
+
+
+img {
+    
+}
+
+
+
+.aukstis400 {
+    min-height: 400px;
+}
+
+.aukstis200 {
+    min-height: 200px;
+}
+
+.aukstis100 {
+    min-height: 100px;
+}
+
+#sonasapacia {
+    position: relative;
+}
+
