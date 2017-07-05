@@ -107,6 +107,9 @@ for (y in vardai  ) {
 }
 
 
+//=================GET VALUE===================
+vardas = document.querySelector('input[name="firstname"]').value; 
+
 ==============Out put=====================
 JavaScript Display Possibilities
 
