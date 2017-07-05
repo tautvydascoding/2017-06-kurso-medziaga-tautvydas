@@ -5,37 +5,23 @@
     <title>PhP testas</title>
   </head>
   <body>
+<?php
+include_once("./header.php");
+?>
 
-<header>
- <nav>
-   <ul>
-     <li>Home</li>
-     <li>About</li>
-     <li>Contacts</li>
-     <li>Email</li>
-     <li>Phone</li>
-   </ul>
- </nav>
-</header>
+
  <div id="wapper">
 <section>
-  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  </p>
-  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  </p>
-  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  </p>
-  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  </p>
-  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  </p>
-  
+<?php
+for ($i=0; $i < 6; $i++) {
+  include("./article.php");
+}
+ ?>
+
 </section>
 </div>
 
-<footer>
-</footer>
-
+<?php include_once("./footer.php"); ?>
 
   </body>
 </html>

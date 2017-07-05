@@ -42,11 +42,17 @@ foreach ($names as $name) {
 
 
 
+$prekes = array('pavadinimas' => $preke[0], 'kaina' => $preke[1] );
 
-
-
-
+while () {
   
+}
+
+
+
+
+
+
 }
 
 
