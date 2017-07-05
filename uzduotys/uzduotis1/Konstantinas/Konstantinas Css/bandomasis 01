@@ -1,0 +1,25 @@
+header h1 {
+color: purple;
+}
+h1 {
+  color:red;
+  }
+  h1 {
+  color:white;
+  }
+  a {
+  front size:30px;
+  }
+a .melynas-tekstas {
+background-color: red;
+}
+.melynas
+#reklama{
+bacground-color:blue;
+}
+.melynas-tekstas {
+  color: orange;
+}
+
+
+

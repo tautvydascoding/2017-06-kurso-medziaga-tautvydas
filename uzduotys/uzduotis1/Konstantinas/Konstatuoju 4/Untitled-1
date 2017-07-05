@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>4 daliu puslapis</title>
+    </head>
+    <body>
+    <h1>                         Home</h1>
+
+<a href="www.google.com">Aplankyti google</a>
+
+<ul>
+  <li> <a href="index.html"> Home </a>  </li>
+  <li> <a href="index.html" >About </a> </li>
+  <li> <a href="index.html"> Gallery  </a> </li>
+  <li> <a href="index.html"> Contacts </a> </li>
+</ul>
+
+<!-IDEA: uzduotis:
+gallery page
+about page
+</p>
+
+
+
+    </body>
+</html>    
+

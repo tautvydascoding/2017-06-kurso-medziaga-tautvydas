@@ -2,8 +2,7 @@
 
 
 
-// cia php kodas
-echo "Labas rytas";
+
 
 
 $vardas = "Tomas";
@@ -53,6 +52,10 @@ while () {
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 331cee62ab08680e4fc4a82ebaa4865fc7cba28a
 }
 
 
@@ -65,3 +68,4 @@ while () {
 
 
 ?>
+>>>>>>> 6bcb0b3ff5a4f1ca01c1e501053ec17d1e23281b
