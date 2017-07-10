@@ -1,6 +1,6 @@
 // uzduotis:
-// 1) sukurti interface "Edit" : kuri turi funkcijas: (kurios nera aprasytos (privalomos)!
-    // 0) Ar gali tureti kintamuosius????
+// 1) sukurti interface vardu "Edit" : kuris turi funkcijas: (kurios nera aprasytos (privalomos)!
+    // 0) Ar Interface gali tureti kintamuosius????
     // changeName($a)
     // isLogin()
     // getName()
