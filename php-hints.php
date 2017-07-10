@@ -16,3 +16,7 @@ print($name);
 echo "vardas $name";
 print_r($names);  // atspausdins masyva
 die("paskurtinatas tekstas ka matys vartotojas");
+
+//==========session=====
+session_start(); 
+  print_r($_SESSION);
