@@ -2,6 +2,17 @@
 
 
 
+<<<<<<< HEAD
+// cia php kodas
+echo "Labas rytas";
+
+
+$vardas = "Tomas"
+
+?>
+
+cia paprastas tekstas
+=======
 
 
 
@@ -69,3 +80,4 @@ while () {
 
 ?>
 >>>>>>> 6bcb0b3ff5a4f1ca01c1e501053ec17d1e23281b
+>>>>>>> c1b3dde5c9fea55da99caf97324b7703d3e528ce
