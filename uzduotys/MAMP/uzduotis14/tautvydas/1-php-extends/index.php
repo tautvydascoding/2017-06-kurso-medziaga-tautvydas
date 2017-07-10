@@ -52,6 +52,31 @@
     $Simba->setName("Simbackinas");
     echo "Simbos vardas: " . $Simba->getName(). "<br/>";
 
+    // uzduotis 3
+    class User   {
+      public $username = "user";
+      public $password = "ccc";
+      public $rights = "common";
+      public function Login ($name, $pass) {
+
+      }
+    }
+    class Admin extends User {
+      public function  changeUserName($nm) {
+          $this->username = $nm;
+      }
+      public function changeRights($rgt) {
+        $this->rights = $rgt;
+      }
+    }
+
+    // kuriam Admin obj.
+    $Adminas = new Admin();
+    echo "Username is : $Adminas->username";
+    $Adminas->changeUserName("Tomas");
+
+
+
 ?>
 
 

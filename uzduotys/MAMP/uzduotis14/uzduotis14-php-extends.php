@@ -18,7 +18,14 @@
 
    // uzduotis2: A) Liuto klasei susikurti PRIVATU kintamaji "name". ir uskurti 2 funkcijas jo reiksmei pakeisti ir paimti "setName($x)", "getName()".
    B) Pakeisti vardus ir atspausdinti
-    // uzduotis 3:
+
+    // uzduotis 3 - pabandyti pavelldimuma:
     // 1) sukurti dvi klases: User, Admin
     // 2) User klase turi kintamuosius : username, password, rights ir funkcija Login($name, $pass)
     // 3) Admin klase  funkcijas:  changeUserName($nm),  changeRights($rgt)
+    // 4)
+     // A) issivesti username,
+     // B) pakeisti username
+     // C) issivesti username
+     // 5)  panaudoti login funkcija
+     // A) panaudoti login funkcija , pakeitus username
