@@ -8,5 +8,11 @@ function tikrintiFormosLaukus(event) {
   vardas = document.querySelector('input[name="firstname"]').value;
   klausimas = document.querySelector('input[name="question"]').value;
   elPastas = document.querySelector('input[name="email"]').value;
-  console.log("Vardas " + vardas);
+
+    if ( vardas.length > 4 && klausimas.length > 10 && elPastas.length > 5) {
+      console.log("Jega");
+    } else {
+        pranesimas = document.querySelector('.error-message');
+        pranesimas.innerHTML += "prasome uzpildyti visus laukus iki galo";
+    }
 }
