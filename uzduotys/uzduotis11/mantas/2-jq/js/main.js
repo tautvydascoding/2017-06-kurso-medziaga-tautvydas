@@ -1,29 +1,31 @@
 console.log("tadas");
 
-//===========callback=================================
-function sendEmail( antraste, manoFunkcija) { //callback
-  //coda siunciame email//
+//viduje esantis kodas veiks tik uzsikrovus visam puslapiui
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").slideToggle(1000);
+    });
+    //paspaudus ant straipsnio jis isnyks
+    $("p").click( function() { //anonimine funkcija
+    $(this).hide(4000, pranesimas);
+    });
+//nenaudojant anonimines f-jos
+    $("p").click (paslepimas(this));
 
-  manoFunkcija();
+    function paslepimas(xx) {
+      $(xx).hide();
+    }
+    $("h1").mouseenter(function() {
+      alert('uzvedete pele ant h1');
+    } );
+    var pranesimas = function() {
+      alert("tekstas isnyko");
+    };
 
-}
-var printStatus = function () {
-  console.log("Emailas issiustas");
+    //////////////////////////////////
+});
 
-};
-var printError = function () {
-  console.log("Emailas neissiustas!");
-
-};
-sendEmail("Uzsakymo nr: 152", printError );
-//=================ASOCIATYVUS MASYVAI==============================
-//             0          1           2
-var woman = ["Marija", "Haratija", 1966];
-var man = [];
-  man["name"] = "Tomas";
-  man["lname"] = "Haratija";
-  man["date"] = "1998";
-
-console.log( "vardas " + man["name"]);
-console.log("masyvas: ", man);
-//////////////////////////////////////////////
+//js pati save iskviecia//
+(function () {
+  console.log("iskvieciau save");
+}) ();

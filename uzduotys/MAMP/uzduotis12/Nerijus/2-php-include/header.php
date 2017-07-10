@@ -1,0 +1,11 @@
+<header>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Gallery</li>
+      <li>Blog</li>
+      <li>Contacts</li>
+  </ul>
+  </nav>
+</header>

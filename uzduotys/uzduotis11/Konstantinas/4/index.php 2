@@ -1,0 +1,27 @@
+    <?php
+	
+	echo "labutaitis";
+	echo "<h1>labutaitis</h1> ";
+	
+	
+	$vardas = "Tomas";
+	
+	echo "Mano vardas $vardas <br>" ; 
+	echo 'Mano vardas $vardas <br>' ;
+	// Mano vardas Tomas
+    // Mano vardas $vardas
+	
+	// echo 'Name's  <br>'; // klaida ' nes nutraukiamos kabutes
+    echo 'Name\'s  <br>';
+
+    define("DATA_BASE_NAME", "DB_povilai");
+	define("NUMBER_OF_ARTICLES", 6);
+
+    echo "Musu duomenu base
+	
+	
+	
+	
+	
+	
+	  ?>
