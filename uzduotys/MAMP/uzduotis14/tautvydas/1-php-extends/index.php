@@ -58,7 +58,11 @@
       public $password = "ccc";
       public $rights = "common";
       public function Login ($name, $pass) {
-
+          if ( $this->username == $name && $this->password == $pass ) {
+              echo "Jums pavyko prisijungti, $name <br>";
+          } else {
+              echo "Jums nepavyko prisijungti! <br />";
+          }
       }
     }
     class Admin extends User {
@@ -69,11 +73,14 @@
         $this->rights = $rgt;
       }
     }
-
     // kuriam Admin obj.
     $Adminas = new Admin();
-    echo "Username is : $Adminas->username";
+    echo "Username is : $Adminas->username <br />";
     $Adminas->changeUserName("Tomas");
+    echo "Username is : $Adminas->username <br />";
+    $Adminas->Login("Tomas","ccc");
+    // $Adminas->Login("Karolis","ccc");
+
 
 
 
