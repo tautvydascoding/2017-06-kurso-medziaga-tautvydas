@@ -16,44 +16,9 @@
 
 <body>
 
-<div class="container">
-    <div class="row">
-
-        <?php>
     
-        include_once("./header.php"); 
-        
-        ?>
 
-<section>
-    <div class="col-md-12 green aukstis600">
-<!--        ikelia kelis kartus--------------->
-      <?php
-        
-        for($i = 0; $i < 6; $i++) {
-            include("article.php");
-        }      
-        
-
-        ?>
-<!--ikelia kelis kartus---------------------->
-    </div>
-
-</section>
-
-<footer class="text-center">
-
-    This is my footer!!!
-
-</footer>
-
-
-
-
-        </div>
-    </div>
-
-
+    
 </body>
 
 </html>
