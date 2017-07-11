@@ -82,10 +82,45 @@ INSERT INTO Customers (CustomerName, City, Country)
 	VALUES ('Cardinal', 'Stavanger', 'Norway');
 
 
+DELETE FROM table_name
+WHERE condition;
 
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
 	
 	
+ SELECT TOP 3 * FROM Customers;   
+ // BEVEIK TAS PATS
+ SELECT * FROM Customers LIMIT 3;
 	
+	
+// rikiuoti pagal kaina
+SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+
+SELECT MIN(Price) AS SmallestPrice
+FROM Products;
+
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+
+SELECT * FROM Customers
+WHERE City LIKE 'ber%';
+
+SELECT * FROM Customers
+WHERE Country IN ('Germany', 'France', 'UK');
+WHERE Country NOT IN ('Germany', 'France', 'UK');
+WHERE Country IN (SELECT Country FROM Suppliers);
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20;
+
+SELECT Orders.OrderID, Customers.CustomerName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
 	
 	
 	

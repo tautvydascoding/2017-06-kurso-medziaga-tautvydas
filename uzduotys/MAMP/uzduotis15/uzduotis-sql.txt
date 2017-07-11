@@ -1,5 +1,11 @@
-// uzduotis 1: istrinti gydytoja "Jo"
-// uzduotis 2 : (po daktaro atleidimo) visu pacientu, kuriu daktaras buvo "Jo" -  daktarus pakeisti i "4"
-// uzduotis 3 : Pakeisti paciento "Tim Tor" varda i "Tomas"
-// uzduotis 4 :  visu pacientu, kurius vardas prasideda "T" -  daktarus pakeisti i "5"
-// uzduotis 5: gauti paciento "Tomo" daktaro pavarde
+// uzduotis 1:
+// A) : istrinti gydytoja "Jo"
+// B) : (po daktaro atleidimo) visu pacientu, kuriu daktaras buvo "Jo" -  daktarus pakeisti i "4"
+// C) :  Pakeisti paciento "Tim Tor" varda i "Tomas"
+// D) :  visu pacientu, kurius vardas prasideda "T" -  daktarus pakeisti i "5"
+// E) :  gauti paciento "Tomo" daktaro pavarde
+
+
+
+// uzduotis 2 - KOMANDINE PO 2X:
+// a) 
