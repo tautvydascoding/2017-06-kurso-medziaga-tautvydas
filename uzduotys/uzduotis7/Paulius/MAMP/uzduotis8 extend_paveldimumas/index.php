@@ -15,6 +15,7 @@
     
      <?php
     
+   //////////////////////////darbas pagal uzduotis lentoje
     class Gyvunas {
         public $alive = true;
         public $positionY;
@@ -59,14 +60,42 @@
     $Simba->setname("sibmukas");
     echo "simbos new vardas: " . $Simba->getname()  . "<br>";
     
-   
+   //////////////////////////darbas pagal uzduotis lentoje
     
     
+    class User {
+        public $username = "user";
+        public $password = "123";
+        public $rights = "common";
+        public function login($name, $pass){
+            if ($this->username == $name) {
+                echo "prisijungimas pavyko";} else {
+                echo "prisijungimas nepavyko";
+            }
+        }
+    }
+    
+    class Admin extends User {
+        public function changeUserName($nm){
+            $this->username = $nm;
+        }
+        public function changeRights($rght){
+            $this->rights = $rght;
+        }
+    }
+    
+    $Adminas = new Admin();
+    echo "Username is : $Adminas->username <br>";
+    $Adminas->changeUserName("Vartotojas");
+    $Adminas->Login("karolis", "coc");
+    echo "Username is : $Admin->username <br> <br>";
     
     
-    
-    
-    
+
+        
+        
+        
+     
     
     
     ?>
