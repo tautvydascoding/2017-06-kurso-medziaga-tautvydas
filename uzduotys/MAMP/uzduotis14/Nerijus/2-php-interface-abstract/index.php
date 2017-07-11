@@ -17,10 +17,32 @@ public function getName();
 
 
 abstract class User {
-  public $
+  var $name = "Tomas",
+  $password,
+  $createdDate,
+  $lastLogin;
+
+  abstract function Loguot(); // IDEA: abscts funkcijos negalima suprogramuoti, programuos tik tas kas ja paveldi
+  function clearlastLoginTime() {
+    // $this->lastLogin = date("h:i:sa")
+    $this->lastLogin = 0;
+  }
 }
 
-
+class Admin extends User implements Edit {
+  public function isLogin() {
+    // code.....
+  }
+  public function logout() {
+  // code.....
+  }
+  public function changeName($x) {
+    // code.....
+  }
+  public function getName() {
+    // code.....
+  }
+}
 
 
 
