@@ -8,7 +8,7 @@
     // 0) abstrakti klase - NEGALI TURETI ABSTRAKCIU KINTAMUJU (BET PAPRASTUS GALI)
     // A) kuri turi neprivalomus kintamuosius:
         // name, password , createdDate, lastLogin
-    // B) privaloma funkcija "Loguot()"
+    // B) privaloma funkcija "Logout()"
     // C) neprivaloma funkcija clearlastLoginTime()
 // 3) sukurti klase Admin :
     // A)  kuri panaudoja Edit ir User ~klases (implementuoti ir paveldeti)
