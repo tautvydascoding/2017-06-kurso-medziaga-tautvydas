@@ -1,0 +1,5 @@
+// uzduotis 1: istrinti gydytoja "Jo"
+// uzduotis 2 : (po daktaro atleidimo) visu pacientu, kuriu daktaras buvo "Jo" -  daktarus pakeisti i "4"
+// uzduotis 3 : Pakeisti paciento "Tim Tor" varda i "Tomas"
+// uzduotis 4 :  visu pacientu, kurius vardas prasideda "T" -  daktarus pakeisti i "5"
+// uzduotis 5: gauti paciento "Tomo" daktaro pavarde

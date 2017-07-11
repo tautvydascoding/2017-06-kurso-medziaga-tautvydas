@@ -130,6 +130,12 @@ INSERT INTO img  VALUES  ('', 'pic-4622.GIF', '4');
 
 
 
+
+
+
+
+
+
 //=====Ats.:=======
 3) sprendimas
 UPDATE pacients
