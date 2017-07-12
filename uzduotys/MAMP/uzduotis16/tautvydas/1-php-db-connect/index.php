@@ -61,13 +61,13 @@
 
       // uzsuotis:
       // sukurti f-ja deleteUser($connect, $id)
-      // sukurti f-ja getUsers($connect) , kuri grazina surikiuota sarasa vartotoju
+      //~ sukurti f-ja getUsers($connect) , kuri grazina surikiuota sarasa vartotoju
       // sukurti f-ja getUser($connect, $id)
       // sukurti f-ja editUser($connect, $id)
 
       function deleteUser($connet, $id) {
           $sql = "DELETE FROM users
-                  WHERE id = $id";
+                  WHERE id = $id   ";
           $status = mysqli_query($connet, $sql);
           if($status) {
             echo "Vartotojas nr: $id istrintas sekmingai ";
@@ -75,9 +75,43 @@
             echo "Istrinti vartotjo nr: $id nepavyko!!! ";
           }
       }
-      deleteUser($connection, 4 );
+      // deleteUser($connection, 4);
 
+      function getUsers($connet, $kiek =99999) {
+          $sql = "SELECT * FROM users";
+          $results = mysqli_query($connet, $sql);
+
+          // mysqli_num_rows - suskaldysime result'atus eilutemis ir  tikriname ar radome kazka pagal uzklausa
+          if( mysqli_num_rows($results) > 0 ) {
+              print_r($results);
+          } else {
+              echo "Nerasta vartotoju  <br />";
+          }
+          return $results;
+      }
+      $allUsers = getUsers($connection);
+
+      // mysqli_fetch_row - paima sekanti masyva/nari is paduoto masyvo
+      $userData = mysqli_fetch_row($allUsers);
+      print_r($userData);
+      // Array ( [0] => 1 [1] => Paulius [2] => Petruskevicius [3] => p.p@petruskevicius.lt [4] => admin
      ?>
+
+     <?php
+      while ($userData) {
+         ?>
+         <div class="">
+            <h2><?php echo $userData[1]; ?> </h2>
+            <ul>
+              <li> Email: <?php echo $userData[3]; ?>  </li>
+              <li> Password: <?php echo $userData[2]; ?>  </li>
+              <li> ACC Status: <?php echo $userData[4]; ?>  </li>
+            </ul>
+         </div>
+        <?php
+        $userData = mysqli_fetch_row($allUsers); // mysqli_fetch_row - paima sekanti masyva/nari is paduoto masyvo
+    }
+    ?>     
 
   </body>
 </html>
