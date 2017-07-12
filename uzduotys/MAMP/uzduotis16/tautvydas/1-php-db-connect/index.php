@@ -116,7 +116,27 @@
     }
 
     // sukurti f-ja getUser($connect, $id)
-    function
+    function getUser($connect, $id) {
+        $sql = "SELECT * FROM users
+                WHERE  id = $id";
+        $results = mysqli_query($connect, $sql);
+
+        $data = mysqli_fetch_assoc($results);
+        if( $data ) {
+            // viskas gerai
+        } else {
+            echo " NR: $id Tokio  vartotojo neradome!!! <br>";
+        }
+        return $data;
+    }
+
+    $user =  getUser($connection, 5);
+    print_r( $user);
+    echo "Vartotojo id: " . $user['id'] . " <br />";
+    echo "Vartotojo vardas: " . $user["username"] . " <br />";
+    echo "Vartotojo slaptazodis: " . $user["pass"] . " <br />";
+    echo "Vartotojo email: " . $user["email"] . " <br />";
+
     ?>
 
   </body>
