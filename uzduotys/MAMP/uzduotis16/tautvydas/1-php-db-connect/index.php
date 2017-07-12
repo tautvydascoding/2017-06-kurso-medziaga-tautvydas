@@ -82,19 +82,22 @@
           $results = mysqli_query($connet, $sql);
 
           // mysqli_num_rows - suskaldysime result'atus eilutemis ir  tikriname ar radome kazka pagal uzklausa
-          if( mysqli_num_rows($results) > 0 ) {
-              print_r($results);
-          } else {
-              echo "Nerasta vartotoju  <br />";
-          }
+            mysqli_num_rows($results);
+          // if( mysqli_num_rows($results) > 0 ) {
+          //     print_r($results);
+          // } else {
+          //     echo "Nerasta vartotoju  <br />";
+          // }
           return $results;
       }
+      // issisaugome ka radome DB
       $allUsers = getUsers($connection);
 
       // mysqli_fetch_row - paima sekanti masyva/nari is paduoto masyvo
-      $userData = mysqli_fetch_row($allUsers);
-      print_r($userData);
-      // Array ( [0] => 1 [1] => Paulius [2] => Petruskevicius [3] => p.p@petruskevicius.lt [4] => admin
+      $userData = mysqli_fetch_row($allUsers); //  1 | Paulius   | Petruskevicius | p.p@petruskevicius.lt | admin
+      $userData = mysqli_fetch_row($allUsers); //  2 | Rima      | Jankauskiene   | rimute@google.lt      | user
+      $userData = mysqli_fetch_row($allUsers); //  3 | Tomulis   | drako          | a@a.lt          | moderator
+      // print_r($userData);
      ?>
 
      <?php
@@ -111,7 +114,10 @@
         <?php
         $userData = mysqli_fetch_row($allUsers); // mysqli_fetch_row - paima sekanti masyva/nari is paduoto masyvo
     }
-    ?>     
+
+    // sukurti f-ja getUser($connect, $id)
+    function
+    ?>
 
   </body>
 </html>
