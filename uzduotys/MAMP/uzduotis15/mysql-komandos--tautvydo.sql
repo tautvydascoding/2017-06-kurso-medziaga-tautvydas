@@ -1,8 +1,8 @@
-﻿mysql> show databases; //
+﻿mysql> 
 
-use duomenuBazesPavadinimas; 
-
-mysql> show tables;
+show databases; 
+use duomenuBazesPavadinimas;  
+show tables;
 
 
 SELECT USER, PASSWORD, password_expired FROM user;
@@ -39,13 +39,7 @@ use duomenuBazesPavadinimas;   // pasikeisti DB  pries kuriant lenteles
       name VARCHAR(30) not NULL,
       lname VARCHAR(30) NOT NULL
 	  );
-	  
-CREATE TABLE IF NOT EXISTS doctors (
-	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	name VARCHAR(25) NOT NULL,
-	lname VARCHAR(35) NOT NULL
-	);
-
+ 
 	  
 CREATE TABLE IF NOT EXISTS pacients ( 
      id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
@@ -55,10 +49,10 @@ CREATE TABLE IF NOT EXISTS pacients (
      );
 	 
 CREATE TABLE IF NOT EXISTS img ( 
-     id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
-     name VARCHAR(60) not NULL,
-     doctor_id INT(6) NOT NULL
-     );
+	 id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
+	 name VARCHAR(60) not NULL,
+	 doctor_id INT(6) NOT NULL
+	 );
 
 // -------SQL komandos----------------------
 ` - geros kabutes
@@ -67,13 +61,13 @@ CREATE TABLE IF NOT EXISTS img (
 
 
 SELECT column1, column2, ...
-FROM table_name
-WHERE condition1 AND condition2 AND condition3 ...;
-WHERE condition1 OR condition2 OR condition3 ...;
-WHERE NOT condition;
-WHERE CustomerName LIKE 'a%';  // PRASIDEDA "a" zodis
-ORDER BY column1, column2, ... ASC|DESC;
-ORDER BY Country ASC, CustomerName DESC;
+	FROM table_name 
+	WHERE condition1 AND condition2 AND condition3 ...;
+	WHERE condition1 OR condition2 OR condition3 ...;
+	WHERE NOT condition;
+	WHERE CustomerName LIKE 'a%'; 				 // PRASIDEDA "a" zodis
+	ORDER BY column1, column2, ... ASC|DESC;     // rikiavimas 
+	ORDER BY Country ASC, CustomerName DESC;
 
 INSERT INTO table_name
 	VALUES (value1, value2, value3, ...);
@@ -82,10 +76,43 @@ INSERT INTO Customers (CustomerName, City, Country)
 	VALUES ('Cardinal', 'Stavanger', 'Norway');
 
 
+DELETE FROM table_name
+	WHERE condition;
 
+UPDATE table_name
+	SET column1 = value1, column2 = value2, ...
+	WHERE condition;
+		
+	
+ SELECT TOP 3 * FROM Customers;   
+ // BEVEIK TAS PATS
+ SELECT * FROM Customers LIMIT 3;
 	
 	
-	
+// rikiuoti pagal kaina
+SELECT MIN(column_name)
+	FROM table_name
+	WHERE condition;
+
+SELECT MIN(Price) AS SmallestPrice
+	FROM Products;	
+
+SELECT AVG(column_name)
+	FROM table_name
+	WHERE condition;
+
+SELECT * FROM Customers
+	WHERE City LIKE 'ber%'; 
+	WHERE Country IN ('Germany', 'France', 'UK');
+	WHERE Country NOT IN ('Germany', 'France', 'UK');
+	WHERE Country IN (SELECT Country FROM Suppliers);
+
+SELECT * FROM Products
+	WHERE Price BETWEEN 10 AND 20;
+
+SELECT Orders.OrderID, Customers.CustomerName
+	FROM Orders
+	INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
 	
 	
 	
@@ -103,13 +130,16 @@ INSERT INTO Customers (CustomerName, City, Country)
 //-------------DOCTORS----------
 INSERT INTO doctors  VALUES  ('', 'Tom', 'Opsa');
 INSERT INTO doctors  VALUES  ('', 'Paul', 'Tor');
+INSERT INTO doctors  VALUES  ('', 'Jo', 'Oto');
+INSERT INTO doctors  VALUES  ('', 'Lili', 'Lekso');
+INSERT INTO doctors  VALUES  ('', 'Timy', 'So');
 //-------------PACIENTS---------------
-INSERT INTO pacients  VALUES  ('', 'Ari', 'Amon', '3');
-INSERT INTO pacients  VALUES  ('', 'Tim', 'Taros', '2');
-INSERT INTO pacients  VALUES  ('', 'Ana', 'Tomson', '2');
-INSERT INTO pacients  VALUES  ('', 'Tom', 'Alis', '3');
-INSERT INTO pacients  VALUES  ('', 'Karis', 'Katis', '1');
-INSERT INTO pacients  VALUES  ('', 'Jo', 'Oporas', '5');
+	INSERT INTO pacients  VALUES  ('', 'Ari', 'Amon', '3');
+	INSERT INTO pacients  VALUES  ('', 'Tim', 'Taros', '2');
+	INSERT INTO pacients  VALUES  ('', 'Ana', 'Tomson', '2');
+	INSERT INTO pacients  VALUES  ('', 'Tom', 'Alis', '3');
+	INSERT INTO pacients  VALUES  ('', 'Karis', 'Katis', '1');
+	INSERT INTO pacients  VALUES  ('', 'Jo', 'Oporas', '5');
 //-------------IMG---------------
 INSERT INTO img  VALUES  ('', 'pic-46.jpg', '5');
 INSERT INTO img  VALUES  ('', 'pic-46.PNG', '1');
@@ -142,14 +172,39 @@ UPDATE pacients
   SET doctor_id = 6
   WHERE name like 'T%';
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 4) sprendimas
-SELECT doctors.lname
-FROM pacients, doctors
-WHERE pacients.name = 'Tom' AND pacients.doctor_id = doctors.id;
+SELECT doctors.lname     	// ko ieskome ir ka grazins
+	FROM pacients, doctors  // su kokiomis lentelemis dirbsime
+	WHERE pacients.name = 'Tom' AND pacients.doctor_id = doctors.id;
 
 // OR
 
-SELECT doctors.lname
-FROM doctors
-INNER JOIN pacients ON pacients.doctor_id = doctors.id
-WHERE pacients.name = 'Tom' AND pacients.password = $pass;
+SELECT doctors.lname      // ko ieskome ir ka grazins
+	FROM doctors          // pagal kurios lenteles duomenis
+	INNER JOIN pacients ON pacients.doctor_id = doctors.id
+	WHERE pacients.name = 'Tom';     /// AND pacients.password = $pass;
+
+	
+	
+SELECT doctors.lname     	 
+	FROM pacients, doctors   
+	WHERE pacients.name = 'Tom' AND pacients.doctor_id = doctors.id;
+// OR
+SELECT doctors.lname      
+	FROM doctors          
+	INNER JOIN pacients ON pacients.doctor_id = doctors.id
+	WHERE pacients.name = 'Tom';     
