@@ -61,9 +61,21 @@
 
       // uzsuotis:
       // sukurti f-ja deleteUser($connect, $id)
-      // sukurti f-ja getUsers($connect)
+      // sukurti f-ja getUsers($connect) , kuri grazina surikiuota sarasa vartotoju
       // sukurti f-ja getUser($connect, $id)
       // sukurti f-ja editUser($connect, $id)
+
+      function deleteUser($connet, $id) {
+          $sql = "DELETE FROM users
+                  WHERE id = $id";
+          $status = mysqli_query($connet, $sql);
+          if($status) {
+            echo "Vartotojas nr: $id istrintas sekmingai ";
+          } else {
+            echo "Istrinti vartotjo nr: $id nepavyko!!! ";
+          }
+      }
+      deleteUser($connection, 4 );
 
      ?>
 
