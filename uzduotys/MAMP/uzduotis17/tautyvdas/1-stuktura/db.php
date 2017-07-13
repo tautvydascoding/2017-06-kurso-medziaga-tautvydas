@@ -108,9 +108,33 @@
       }
       $visiStraipsniai = getArticles(4);
 
-      print_r($visiStraipsniai);
+      // print_r($visiStraipsniai);
       // $data = mysqli_fetch_assoc($results);
 
+      function getArticlesByTittle($searchTerm ) {
+            $sql = " SELECT * FROM articles
+                      WHERE title like '%$searchTerm%'; ";
+            $connect = connect_DB();
+            $results = mysqli_query($connect, $sql);
+
+            if( !$results) {
+              echo "Neapvyko rasti  straipsniu!!! ". mysqli_error($connect) . " <br>";
+           }  else {
+              // kadangi mums grista daug duomenu, juos reik sudalinti dalimis
+              // mysqli_num_rows - suskaldysime result'atus eilutemis ir  tikriname ar radome kazka pagal uzklausa
+              mysqli_num_rows($results);
+           }
+            return $results;
+      }
+      $ieskomasStraipsnis =  getArticlesByTittle("Zuvis");
+      //TESTUOJAME
+      // print_r($ieskomasStraipsnis); 
+      // $data = mysqli_fetch_row($ieskomasStraipsnis);
+      // if ($data) {
+      //   echo "Radome: " . $data[1] ;
+      // } else {
+      //   echo "Neradomoe ieskomos frazes <br />";
+      // }
 
 
 
