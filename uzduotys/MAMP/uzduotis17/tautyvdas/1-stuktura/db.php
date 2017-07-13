@@ -28,7 +28,7 @@
         }
         return $connection;
       }
-      connect_DB();
+      // connect_DB();
 
       function createArticle($title, $content, $user_ID) {
           $sql = "INSERT INTO articles
@@ -41,10 +41,24 @@
               echo "Sveikiname, Jusu straipsnis sukurtas <br>";
          }
       }
-      createArticle("Zuvo geles", "Mociutes darzeli istrype vaikai", 1);
+      // createArticle("Zuvo geles", "Mociutes darzeli istrype vaikai", 1);
 
-
+// default time ( bet veikia tik kai darai INSERT naudojant myPhpAdmin)
 //ALTER TABLE `articles` CHANGE `date` `date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP;
+
+      function editeArticle($id_kuri_keiciam, $title, $content, $user_ID) {
+          $sql = "UPDATE articles
+                  SET   title='$title', content='$content', user_ID ='$user_ID'
+                  WHERE id = $id_kuri_keiciam";
+          $connect = connect_DB();
+          $status = mysqli_query($connect, $sql);
+          if( !$status) {
+            echo "Neapvyko redaguoti straipsnio!!!  <br>";
+         } else {
+              echo "Sveikiname, Jusu straipsnis redaguotas <br>";
+         }
+      }
+      // editeArticle(4,"Zuvo geles", "Mociutes darzeli istrype kralikai", 2);
 
 
 
