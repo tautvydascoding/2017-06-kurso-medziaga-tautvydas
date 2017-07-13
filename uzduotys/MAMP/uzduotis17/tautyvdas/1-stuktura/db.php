@@ -10,7 +10,7 @@
             // SELECT * FROM articles
             //   WHERE
 
-
+              echo "db.php";
 
 
 
