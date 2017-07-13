@@ -8,5 +8,11 @@
 
 
       <!-- is kitos lenteles paimsime autoriu -->
-      <h6>autoriaus vardas</h6>
+      <?php
+        $connection = connect_DB();
+        $user_id = $straipsnis['user_ID'];
+        // randame autoriu
+        $user = getUser($connection, $user_id  );
+      ?>
+      <h6> <?php echo $user['username'] . " email: " .  $user['email'] ; ?></h6>
 </article>
