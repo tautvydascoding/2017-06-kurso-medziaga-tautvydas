@@ -7,12 +7,12 @@
 
   <section>
     <?php
-       $visiStraipsniai = getArticles();
+       $visiStraipsniai = getArticles(7);
        // mysqli_fetch - paima is is visu gautu straipsniu viena
        $straipsnis = mysqli_fetch_assoc($visiStraipsniai);
-        while ( $straipsnis ) {
+        while ( $straipsnis   ) {
             include('./article.php'); // idedam straipsni
-            
+
             // !!! mysqli_fetch - paima is is visu gautu straipsniu sekanti
             $straipsnis = mysqli_fetch_assoc($visiStraipsniai);
         }

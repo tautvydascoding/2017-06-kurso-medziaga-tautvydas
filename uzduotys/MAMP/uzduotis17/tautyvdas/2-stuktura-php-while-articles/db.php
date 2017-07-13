@@ -128,13 +128,92 @@
       }
       $ieskomasStraipsnis =  getArticlesByTittle("Zuvis");
       //TESTUOJAME
-      // print_r($ieskomasStraipsnis); 
+      // print_r($ieskomasStraipsnis);
       // $data = mysqli_fetch_row($ieskomasStraipsnis);
       // if ($data) {
       //   echo "Radome: " . $data[1] ;
       // } else {
       //   echo "Neradomoe ieskomos frazes <br />";
       // }
+
+
+ // ===========================USER===============
+
+
+ function createUser($connection) {
+     // id | username | pass | email  | rights
+   //  mysqli_query("INSERT INTO users VALUES ('', 'Tomulis', 'drako', 'a@a.lt', 'moderator') ");
+    $sql = "INSERT INTO users VALUES ('', 'Tomulis', 'drako', 'a@a.lt', 'moderator') ";
+
+    // mysqli_query - ivykdo jusu SQL uzklausa/veiksmus
+    $status = mysqli_query($connection, $sql);
+    if ( $status == false) { // !$status
+       echo "Neapvyko sukurti vatrtotojo!!!  " . mysqli_error($connect) . " <br>";
+    } else {
+         echo "Sveikiname, Jusu vartototjas sukurtas <br>";
+    }
+ }
+ //createUser($connection);
+ function createUser2($connect,  $name="name", $pass='pass', $email='email', $rights='user') {
+     // id | username | pass | email  | rights
+     // !!! reikalingos SQL'ui kabutes - pvz'$name'
+    $sql = "INSERT INTO users VALUES ('', '$name', '$pass', '$email', '$rights'); ";
+
+    // mysqli_query - ivykdo jusu SQL uzklausa/veiksmus
+    $status = mysqli_query($connect, $sql);
+    if ( $status == false) { // !$status
+       echo "Nepavyko sukurti vatrtotojo!!!  " . mysqli_error($connect) . " <br>";
+    } else {
+         echo "Sveikiname, Jusu vartototjas sukurtas <br>";
+    }
+ }
+
+
+
+function deleteUser($connet, $id) {
+    $sql = "DELETE FROM users
+            WHERE id = $id   ";
+    $status = mysqli_query($connet, $sql);
+    if($status) {
+      echo "Vartotojas nr: $id istrintas sekmingai ";
+    } else {
+      echo "Istrinti vartotjo nr: $id nepavyko!!! " . mysqli_error($connect) . " <br>";
+    }
+}
+// deleteUser($connection, 4);
+
+function getUsers($connet, $kiek =99999) {
+    $sql = "SELECT * FROM users";
+    $results = mysqli_query($connet, $sql);
+
+    // mysqli_num_rows - suskaldysime result'atus eilutemis ir  tikriname ar radome kazka pagal uzklausa
+      mysqli_num_rows($results);
+    // if( mysqli_num_rows($results) > 0 ) {
+    //     print_r($results);
+    // } else {
+    //     echo "Nerasta vartotoju  <br />";
+    // }
+    return $results;
+}
+// issisaugome ka radome DB
+// $allUsers = getUsers($connection);
+
+
+
+// sukurti f-ja getUser($connect, $id)
+function getUser($connect, $id) {
+  $sql = "SELECT * FROM users
+          WHERE  id = $id";
+  $results = mysqli_query($connect, $sql);
+
+  $data = mysqli_fetch_assoc($results);
+  if( $data ) {
+      // viskas gerai
+  } else {
+      echo " NR: $id Tokio  vartotojo neradome!!! <br>";
+  }
+  return $data;
+}
 
 
 
