@@ -172,7 +172,7 @@
                 }
 
             }
-
+    
             updateUser($connection, "username", 'polas', 9);
 
         ?>
