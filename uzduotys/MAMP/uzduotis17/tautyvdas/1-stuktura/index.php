@@ -19,7 +19,7 @@
 
     <div class="container-fluid backgroudn-img">
 
-<h1>Bootstrap penktadienis</h1>
+     <h1>Bootstrap penktadienis</h1>
 
 
     </div> <!--  end container-fluid -->
