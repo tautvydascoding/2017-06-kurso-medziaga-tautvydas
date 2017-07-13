@@ -42,7 +42,7 @@
              $arPavykoSQL = mysqli_query($con, $s);
 
              if ($arPavykoSQL == false) {
-               echo "ERROR: createDoctor() - sukurti daktaro nepavyko:  ";
+               echo "ERROR: createDoctor() - sukurti daktaro nepavyko: " . mysqli_error($connect) . " <br>";
              }
         }
         // createDoctor($connection, "Bill", "Kolt" );
@@ -64,7 +64,7 @@
            if( $arPavykoSQL ) {
              echo " Pavyko ivykdyti";
            } else {
-             echo " Nepavyko ivykdyti!!!";
+             echo " Nepavyko ivykdyti!!!" . mysqli_error($connect) . " <br>";
            }
        }
 		//  insertUser($con, "Kaleda", "Perrauskutis", "aaa123", 3312477713);
@@ -74,7 +74,7 @@
             $sql = "SELECT * FROM doctors WHERE id = $id";
             $result = mysqli_query($connect, $sql );
             if ($result == false) {
-                echo "ERROR: tokio daktaro nera";
+                echo "ERROR: tokio daktaro nera" . mysqli_error($connect) . " <br>";
             }
             return $result;
         }
@@ -90,7 +90,7 @@
 			  $user = mysqli_fetch_assoc($result);
 			  print_r($user);
 			} else {
-			  echo "Vartotojas nerastas!!!";
+			  echo "Vartotojas nerastas!!!" . mysqli_error($connect) . " <br>";
 			}
 		  }
 			getUser($con, 2);
@@ -107,7 +107,7 @@
 		      print_r($result);
               return $result;
           } else {
-              echo "Rasta 0 resultatu <br />";
+              echo "Rasta 0 resultatu " . mysqli_error($connect) . " <br>";
               return null;
           }
         }
@@ -181,7 +181,7 @@
 
 				$arPavyko = mysqli_query($connect, $query);
 				if (!$arPavyko) {
-				  echo "ERROR:: nepavyko sukurti paciento";
+				  echo "ERROR:: nepavyko sukurti paciento" . mysqli_error($connect) . " <br>";
 				}
 			  }
 

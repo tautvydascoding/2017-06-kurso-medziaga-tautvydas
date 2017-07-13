@@ -35,7 +35,7 @@
           // mysqli_query - ivykdo jusu SQL uzklausa/veiksmus
           $status = mysqli_query($connection, $sql);
           if ( $status == false) { // !$status
-             echo "Neapvyko sukurti vatrtotojo!!!  <br>";
+             echo "Neapvyko sukurti vatrtotojo!!!  " . mysqli_error($connect) . " <br>";
           } else {
                echo "Sveikiname, Jusu vartototjas sukurtas <br>";
           }
@@ -49,7 +49,7 @@
           // mysqli_query - ivykdo jusu SQL uzklausa/veiksmus
           $status = mysqli_query($connect, $sql);
           if ( $status == false) { // !$status
-             echo "Nepavyko sukurti vatrtotojo!!!  <br>";
+             echo "Nepavyko sukurti vatrtotojo!!!  " . mysqli_error($connect) . " <br>";
           } else {
                echo "Sveikiname, Jusu vartototjas sukurtas <br>";
           }
@@ -72,7 +72,7 @@
           if($status) {
             echo "Vartotojas nr: $id istrintas sekmingai ";
           } else {
-            echo "Istrinti vartotjo nr: $id nepavyko!!! ";
+            echo "Istrinti vartotjo nr: $id nepavyko!!! " . mysqli_error($connect) . " <br>";
           }
       }
       // deleteUser($connection, 4);

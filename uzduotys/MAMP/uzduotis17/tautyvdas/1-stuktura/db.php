@@ -36,7 +36,7 @@
           $connect = connect_DB();
           $status = mysqli_query($connect, $sql);
           if( !$status) {
-            echo "Neapvyko sukurti straipsnio!!!  <br>";
+            echo "Neapvyko sukurti straipsnio!!!" . mysqli_error($connect) . " <br>";
          } else {
               echo "Sveikiname, Jusu straipsnis sukurtas <br>";
          }
@@ -53,13 +53,63 @@
           $connect = connect_DB();
           $status = mysqli_query($connect, $sql);
           if( !$status) {
-            echo "Neapvyko redaguoti straipsnio!!!  <br>";
+            echo "Neapvyko redaguoti straipsnio!!! ". mysqli_error($connect) . " <br>";
          } else {
               echo "Sveikiname, Jusu straipsnis redaguotas <br>";
          }
       }
-      // editeArticle(4,"Zuvo geles", "Mociutes darzeli istrype kralikai", 2);
+      // editeArticle(4,"Zuvis", "Mociutes darzeli istrype kralikai", 2);
 
+
+       function deleteArticle( $id){
+           $sql = "DELETE FROM articles
+                   WHERE id = $id";
+           $connect = connect_DB();
+           $status = mysqli_query($connect, $sql);
+           if( !$status) {
+             echo "Neapvyko istrinti straipsnio!!! ". mysqli_error($connect) . " <br>";
+          } else {
+               echo "Sveikiname, Jusu straipsnis istrintas <br>";
+          }
+       }
+      //  deleteArticle(5);
+
+      function getArticle($id) {
+            $sql = "SELECT * FROM articles
+                    WHERE  id = $id";
+            $connect = connect_DB();
+            $results = mysqli_query($connect, $sql);
+
+            // mysqli_fetch_assoc - suskaldo gautus rezultatus i masyva (rows)
+            $data = mysqli_fetch_assoc($results);
+            if( $data > 0 ) {
+                // viskas gerai
+            } else {
+                echo " NR: $id tokio  straipsnio neradome!!! <br>";
+            }
+            return $data;
+      }
+      // $straipsnis = getArticle(3);
+      // echo "Straipsnio antraste:   " . $straipsnis['title'] . " <br />";
+
+      function getArticles($straipsniuSkaicius = 9999 ) {
+            $sql = "SELECT  * FROM articles  LIMIT $straipsniuSkaicius";
+            $connect = connect_DB();
+            $results = mysqli_query($connect, $sql);
+
+            if( !$results) {
+              echo "Neapvyko rasti  straipsniu!!! ". mysqli_error($connect) . " <br>";
+           }  else {
+              // kadangi mums grista daug duomenu, juos reik sudalinti dalimis
+              // mysqli_num_rows - suskaldysime result'atus eilutemis ir  tikriname ar radome kazka pagal uzklausa
+              mysqli_num_rows($results);
+           }
+            return $results;
+      }
+      $visiStraipsniai = getArticles(4);
+
+      print_r($visiStraipsniai);
+      // $data = mysqli_fetch_assoc($results);
 
 
 
