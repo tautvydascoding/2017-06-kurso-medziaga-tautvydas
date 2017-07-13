@@ -20,10 +20,15 @@
     <div class="container-fluid backgroudn-img">
 
      <h1>Bootstrap penktadienis</h1>
-      <?php
-          include_once('./home-content.php');
-       ?>
-
+        <?php
+            include_once('./home-content.php');
+         ?>
+         
+       <footer>
+          <?php
+              include_once('./footer.php');
+           ?>
+       </footer>
     </div> <!--  end container-fluid -->
 </body>
 
