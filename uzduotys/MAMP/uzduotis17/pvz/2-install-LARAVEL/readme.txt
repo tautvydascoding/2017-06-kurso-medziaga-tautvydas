@@ -1,4 +1,5 @@
 
+php -v
 
 0) copy MAMP/config/php7.13/php.ini
  paste into:
