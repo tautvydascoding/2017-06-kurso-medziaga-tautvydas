@@ -10,6 +10,8 @@
 
   include_once('./db.php');
 
+
+  // ===============ISSAUGOME straipnsni DB-je====
   // paimamae ka ivede vartotojas i forma
   $title = $_GET['article-title'] ;
   $content = $_GET['article-content'];
@@ -18,4 +20,10 @@
 
   echo "<h2>Jusu straipsnis issaugotas</h2>";
 
+  // ===============Atvaizduojame 7 straipnsni====
+  $straipsnis = getArticle(7);
+  // print_r($straipsnis);
+  echo "<h2>" . $straipsnis['title'] . "</h2>";
+  echo "<p>" . $straipsnis['content'] . "</p>";
+  echo "<h6>" . $straipsnis['date'] . "</h6>";
  ?>
