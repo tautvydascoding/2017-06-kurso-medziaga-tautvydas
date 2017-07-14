@@ -16,12 +16,57 @@
 
 <body background="miskas2.jpg">
   <header>
-    <div class="container-fluid">
+
+    <!-- Menu icons -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid menu">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Lietuvos Raudonoji knyga</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+            </div>
+            <ul>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" img src="icons/imenu.png">MENU<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html" target=""> APIE
+                <img src="icons/search.png" alt="menu" width="44" height="44" background-color="#e2e2e2" />
+              </a></li>
+
+                  <li><a href="index.html" target=""> ŽEMĖLAPIS
+                  <img src="icons/maps.png" width="44" height="44" />
+                </a></li>
+
+                  <li><a href="index.html" target=""> GALERIJA
+                  <img src="icons/gallery.png" width="44" height="44"/>
+                </a></li>
+
+                  <li><a href="index.html" target=""> KONTAKTAI
+                  <img src="icons/mail.png" width="44" height="44" />
+                </a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+
+    <div class="container-fluid pirmas">
       <div class="row1">
 
         <!-- PERMATOMAS STULPELIS -->
         <section>
-          <div class="col-xs-9">
+          <div class="col-xs-11">
             <div class="remelis">
               <!-- LOGO -->
               <div class="article">
@@ -34,120 +79,69 @@
               <div class="menu">
               </div>
 
-              <!-- OWL -->
-              <a href="index.html" target="_blank">
-                <div class="owl">
-                </div>
-              </a>
-
               <!-- FROG -->
-              <a href="index.html" target="_blank">
+              <a href="aprasymai.html" target="">
                 <div class="frog">
                 </div>
               </a>
 
+              <!-- OWL -->
+              <a href="index.html" target="">
+                <div class="owl">
+                </div>
+              </a>
+
               <!-- RABBIT -->
-              <a href="index.html" target="_blank">
+              <a href="index.html" target="">
                 <div class="rabbit">
                 </div>
               </a>
 
               <!-- TURTLE -->
-              <a href="index.html" target="_blank">
+              <a href="index.html" target="">
                 <div class="turtle">
                 </div>
             </a>
 
               <!-- SLUG -->
-              <a href="index.html" target="_blank">
+              <a href="index.html" target="">
                 <div class="slug">
                 </div>
               </a>
 
               <!-- SNAIL -->
-              <a href="index.html" target="_blank">
+              <a href="index.html" target="">
                 <div class="snail">
                 </div>
               </a>
 
               <!-- FISH -->
-              <a href="index.html" target="_blank">
+              <a href="index.html" target="">
                 <div class="fish">
                 </div>
               </a><br />
 
               <!-- CRAB -->
-              <a href="index.html" target="_blank">
+              <a href="index.html" target="">
                 <div class="crab">
                 </div>
               </a>
 
               <!-- INSECT -->
-              <a href="index.html" target="_blank">
+              <a href="index.html" target="">
                 <div class="insect">
                 </div>
             </a>
 
               <!-- SPIDERWEB -->
-              <a href="index.html" target="_blank">
+              <a href="index.html" target="">
                 <div class="spiderweb">
                 </div>
             </a>
-
-
             </div>
           </div>
         </section>
 
-        <!-- RIGHT SIDE MENU -->
-        <aside>
-          <div class="menu col-xs-1">
-
-            <!-- Menu icons -->
-            <nav class="vertical-menu">
-              <ul>
-                <li>
-                  <img class="Menu" width="44" height="44" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAr0lEQVRYR+2WwQ2AIAxF240cQTfSSXQjHcGNajx4wAQDhGowj3P7aR4//Ko0drSxeYWBvV8MwhC+EcASr1rCzDoRmb0vzdSfVHW/egJLmFkvImumoHf5oKrbbwY+LbF4I8vUH6OWyBT6pJxvzRs7hCH8q12CaK5jaKK5Dse4CtHsTTjQJ+m8cUMYwk+7BNFcxx9Ecx2ORLM3x0R9giMRVHEZhIvRJTZCOBFUcVlzhA/Bnjwt3KQfLQAAAABJRU5ErkJggg==">
-                </li><br /><br />
-
-                <!-- Find icon -->
-                <li>
-                  <a href="index.html" target="">
-                  <img class="Search" width="44" height="44" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAACqElEQVRYR+2Y4VUVMRCF51agViBUIFYgdGAHQgVqBUIFQgVCBdKBUAFagVCBUMH1XE72nGHfZDfJLu8tSn6+t9l8O3MzuRPYExt4Yrz2/wCT3DGzFy5DdwB+PnbGqiJM8oOZ7ZrZezN7GcDdmtm5mV0AOHsM+CJgkoL8amaKaulQtD8DuCidUPLcKDDJL2Z2WPKyzDOHAI4mzH8wdRCY5Dcz2w8Wu0mplwQUQWVAEpFUXgfPnwI4mAM6C0xSUVV0/bhUtIfSnOSjue96c48ATMnU/etC4LToj96CJwA+lUaJ5KmZaZP6sTdV0zngq94GOwMQSWOQP4BW9dgr/ejouRVgkgKTdrtxCUAabRokpXEvjwMAin7TiID7qZyUxkBeTdnqvi4C/uMOhRsAW02hcJNIXrvqcQvgVes7HwCn41b67UbVRstBkDw2s4/u/20A+ojq0QeWVn11mKUUBSWyWWZjwM0v9qEjqQPlu/ut+b1jwIuPsMzNOjT8ttWKRlVC/qDzudcAtqt3Rm8Cyd9m1lUb+ebImhYt80/U4f5JN+k4Jamq40/K5g2nFOS8hMz3G5ejJnsY2NNfAGqagBWZ1Li1KuiMl54U3WyE9UfGD8vIqNRl257kHeSj+4ZplhI51nFEnlbfo2NVzWbUceS8h2R276cBqBFoGiU9XdR51Cx2ktosfyVQJS+/2ChwkofSKwPjN+IYtPq+fcknOJo1twm6CLgjS+a+u5fwEeseuUtN6bHXeablaoKuAu4ZGmnV61U+N3vzk+nxqqGbgcf0EP0/B/RagdN+yFWeIk2vHXgq9EaAp0BvDLgVeqPALdAbB66FXgTwALQOoh1/JbAY4ABasLv9w2hRwA5a1wIrsIN+uOUkm2sOya3czdDiIjz20c/AYxGa+v9fLN81PN/2JV0AAAAASUVORK5CYII=">
-                  </a>
-                </li>
-
-                <!-- Home icon  -->
-                <li>
-                  <a href="index.html" target="">
-                  <img class="Home" width="44" height="44" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAABiklEQVRYR+2Y0VEDMQxEVx1QQjoIHQAl0EHSAVQCHZAOKCHQAXSQEuhAzDL2DAE7ls+6g8zIP/mI7TzvSbvxCc5syJnxIoDnfmKhMBVW1Ut+isibt+LuCifYfQK98YZ2BVbVawDPAC4S8AeAWxF58VLaDVhVNwCeKmBbEdl5QLsAN2Azpwv0MLCqUlWqaxk7EdlaJtbmDAF3wmaGIehJwKrKpmJzscmmDDYhm5FN2TW6gRMsbevLawcGPZq21wXdBZw8ljU7CpvPSWg2ozlgzMDfAiF77IC4R0upsDlgTMCFQPCCzfuYA6YJbPRYrwM0vfok8MKwpoCpAk/0WC+lq15dBP5j2JMBcwTsEAheCud9fgVMq4a54MqborHfq4hUEzSAHZ7GYgq/A6j9L2A6ro2HWQyY8Vq8CqWkzPe8FncA1xQKhUvKeNpaKBwK/1AgSiJK4j+WxB2Ah1aWpu+9avheRB5rv2m9hK4M0LzWHErzVJXrLe/fDq23nE1gA+iiUwJ4brlD4bkV/gQo7PMt98jCrwAAAABJRU5ErkJggg==">
-                  </a>
-                </li>
-
-                <!-- Map icon -->
-                <li>
-                  <a href="index.html" target="">
-                  <img class="map-marker" width="44" height="44" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAADnklEQVRYR+2YjVEUQRCFuyNQIxAiECNQIlAjECNQIlAjUCJQIhAiECIQIhAygAja+tburd7Z2b29426BquuqK7jb2Zk3r9/0z6g8MtNHhle2gDftsdkYNrOnIvJGRN6KCP+HXYjIsaryd6HNAtjMAPlNRHZGEP0UkUNVvRlDfWfAZrajqldDi5jZFxH5vJC6/wNg+d3YfCsDNrP3IvJJRPZEBMDfReQ0L2ZmByLyI4E9Zly432UC+2zquY8D9P4Q00sBhk0RCaBZh4HpVlWb3x3M36TXD6qK23vmY89E5IU//KqqbKJnkwCb2WsHCmNjxuFpxpgZ7KNb7EhV+T5oTgYbxG5U9dnSgAu35/dvReTE5RCsHPpCDYtmBmOv/KXdkIqziZeQEhtkXGNmxrs8w5BF+yzGVBn2U432Srdfu1Z/orEMSlU7c5mZ+SKXqgq4AIXWPwaTIvIybQY9//JnRAzGdmwIcHmyz/2wwGprEwGfqyqSCsCZ+Q6TLr3fPrSq4ymACTMdoLXFKwxz2pFLR4+FtvHYXkSE4tlSksgMV190zbVsVQBnPXY2bWZIhM9JDl9m9sd/Z/pW99mrUxheFTAyCPe20aPUZPIWGwAw1pHRLIDdAySUSAhVxhLg7JHBmL0xhh1wznSDLBcx+FpVB2uOjQKusEwI61VlZoZ0IpIMsst8cwDOLJ+p6n4RGrPWR9mdBXCF5TJi5MjQsktGrBVAG2fYAecMxkFEGmTKXG+0GdHT98GqmW6lsFaGr6K2OPIUD7uR/tt1vKa4qlVsszDsLHPyOXBPfDMwHdGgreY8qbCRlVPzWhh20LXug8qPrqVpjVLEuH/ADihqjFBNewjXVfysjWEHnFMwLRUHsrEHBTiHKY8OTT9YFD85Jt+vJMyM5rNtk2rd9kNjmFL0Yqy32yhgD+7UANH+LKrGonYeOxM5waxHEl5ZcTFSXjlxbuhMKMq5f+hYShwkhN2inuAKC7m0rdSd47CZ1SYtccV3YirgSQhNdVb2f+4hmlGKo7KcJDaTmnut2ZRMR2HNzmuT0tUyKc9ZOFr+vJG4FeJ5yIc5a3ccl97sVi9cplZrJYs0jmSsTj+WYixA+EQKHvJC/h0JcXXQu4coX57CcLxz6rtfOGmq0ACOlGqG2/EQQAcvE5cFzKS4hxg6edLiQFGNBetIZqHbx1wyxHDoq+f2Kf4dGrPoanbK3JMuA6dMNNeYLeBNM71leMtwwcA/t4twS2bvoAEAAAAASUVORK5CYII=">
-                </a>
-                </li>
-
-                <!-- Gallery icon -->
-                <li>
-                  <a href="index.html" target="">
-                  <img class="icon icons8-Gallery" width="44" height="44" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAEtElEQVRYR9WZ7XUWRwyFpQqACsAVJFQAriCkApwKgisAV5BQQeIKEioIrgCoAFIBUIFynonuWjv79XJsr/H+sc+7Gs0dfdyRtG537PE7htdGgCPiCQdw94u5g0TEIzN7mO8+uPuXpQNHxH0z+2FLdmvPXn8DHBHPzOwPM2MTnk9m9ou7v833AH1pZidFAWB/N7PXFXge6teUlb4m6+5nWp9yf5nZj/kbMuz595rXPSKemtk/ZvY1AQDueS76M/9yIDb/18z4jf8Bf8/M2IiDvc/NkeVBls15/yJlMURdj543aSDpe+zu6Jp9AIzSn8xsEMxDoFju5zCv3B2LtiddDhA2kpyAIqvDSpa1MgRy6DyRRYvh3ri7Dj0BDeDPWMPd5ZpBKJUQ0y00lp6IYC3W+rJmnTxk22dOZ0TggXD3ozUL47Iws6O1JFoDfB3v8jAyHmG5GBKvMqFOZ1yuLL8OTL2OEctEhHCcuTv/LwLGlbjic3VFRBAGjeZu6BliNa37kUgxs0fydFLe1xpmojUSAir6uSSBAA9UdI3AocgLd4ehSEoSF1qFIl/kAWCuCeUJsKhtcIcs7O7XfhtGBDlTActgMAvehn3mKa874W0DlhNHNDqivASM+bEyTMEJcVMLiZ0sjOvfmdmHtO77nrEigsvkITws4cFFewPO/TAUF9BgNJm7JiWAJwl3S4CJ29/MbESvk5Bdcv2eIZGguCygtpGn8x2/P2iU12dsccNuMVz2hD243gHXnqwkqerO3f3kewM8MVK5AY+pPwSYrHxcL4a9QyKtiYUpxIZaogBulxqAZ12/N+As6CcxXFisXeWVJaj2aw27awxHxBpLwMEUYkcAVna+dffj20q6iMC6YHkwc2mo1jhVLaFCp3Ydu1m4uL0xQV9klVr5ojahUMdt1RKqhYdqcQY0jca976VaE+BGXXNl7EACSSckGw3isKAU8IvV/xXqY3TW8pKmEw+3engBMO3TfZKOupOAp7Kv/Ldbx5FGW+wtRzEcEbLuiNZSSesIbuLpXb/W05WO5FRt/qiXugmAWzrTipPeMg13Wa9HBK742F/NKagmdGuORk3NFGjUMC7QU+vE5+Z3ycX0DDU0Va8PN50mPzXhaEhJDM3G2IPQoVZtA8C0iGZodY6AlVjLBr2sejVU9PM79ZWjyU+5AVvI1o4D5YBic7KWvkpzMI2YJMOGEDwHQo5DA0BrNXOrsznezelEBr3SN5qtTaq1UnOykI146K2eYqHSkTC0wwqS0fCQqeQwdi0zNw0AFRmvcz4nq6Orn989m0lGUd7/9XBXUrYZWRmzivKGpDx03taxzKSpLDULwLdmcngPQx2tzhwOHR9tMcBV35c4PtsCfNlLrUzbrwpoa32hvNgCvDj+1KifeN/4dHAQ5RUanaXGiGBusRkSc5TXf16YUF5uDrNAbxPKc/fzLnd6Gu0p75KL19xR6tQ5ytPnAA7AAETfPEhUfhNQ2EWfE5j0i4O1HjoT5fEb6yXXU97x5qAv2+ye8qCfNtJKa2LJSmPfSnlYnM8MGpPNUV77vLAJuKOfxc8H9XMAFj3gk5hGqZ/q4btQacVX5eaDAW9l8l7v7xzg/wD7xnVmkzpQGwAAAABJRU5ErkJggg==">
-                </a>
-                </li>
-
-                <!-- Message icon -->
-                <li>
-                  <a href="index.html" target="">
-                  <img class="icon icons8-Message" width="44" height="44" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAACaElEQVRYR+2Y61UbMRCF71SQUAHpgHQQqCCUkFQAVBBTQaCCUAJUkNAB6QAqACqYnG+PtGcsr+1d74OYs/MLs3pcfbrSSDLtWdie6dUseOwZex+E3f2zpC+SPo5NbE37L5Luzeyh/L5E2N0R+EvS6RsJLbu9lfTdzBhAFaXgK0ln/4nYLOPazM7XCfYgllFdSHqceACfJP2MdjSzGmz9h7sfS/pdiEP0wsyupxDt7szuomHtnJjZnyVLrBGcda54acgBtFg7WwVnotHP0GYBIH6wcHcWOAs97khl/1sFX5rZIlG/kXQYFPL7Iq7cXdQnqnj1W6j/xG+m392xxo/0rZ1gCqeGEfk1NMxChHblq66RQECVBZbjLomttrCdBefW0tQh/EPo5MrM2Elah7tDtd6mJL0moUtW6y040KZhsmAOshG0V7JSHEXKnlAli+a4J0k12WsQwYE2hPBYpM32d9mE2t3xIuVzQJXyJKrGGFRwoo3/oH0UesTT0K6SjbtTBqrs8Tn+JqobE9LgggPtuJr5d5Vs0vcyCVS7TxvDjyY4kcSXLMhIO+qCKtvVRp8Xnt9tW2tDI4lm46eT8vBEEsCv9YmrTZujEi7I4FdoE1USaCOwLDOZ4EBbXalOaoldKG6qMynhIcTPgoegOFtibIoz4ZlwBwJttjXOAs+pTQ4p3KM65f8OejYWTdcynhzyYf8gaylffsj78TYxlIY+7fDGVp+nS8EcuBEdb8l9Outbl1v0cb4Q0NjKc2uaDq7ejOotXy8Bd1Pa8n28D/edxzHrz4THpNu46MbusG/7syX6EtxWf+8I/wONGII83Ru6PgAAAABJRU5ErkJggg==">
-                  </a>
-                </li><br />
-              </ul>
-            </nav>
-          </div>
-        </aside>
 
       </div>
     </div>
