@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 10px;
+  width: 100%;
   transform-style: preserve-3d;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -33,7 +34,6 @@ body {
   position: relative;
   background-position: center;
   width: auto;
-
 }
 
 .trecias {
@@ -141,7 +141,7 @@ h9 {
 
 /*PERMATOMAS STULPELIS*/
 .col-xs-11 {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(80, 80, 80, 0.4);
   width: 1350px;
   height: 607px;
   margin-top: 3%;
@@ -214,11 +214,16 @@ h9 {
 
 /*ABOUT page*/
 .about {
-  font-size: 21px;
+  font-size: 10px;
   color: #fff;
   width: 1550px;
   height: auto;
   padding: 4%;
+}
+
+.col-xs-3 {
+  font-size: 10px;
+  text-align: justify;
 }
 
 /*END OF ABOUT PAGE*/
@@ -243,12 +248,12 @@ h9 {
 .col-xs-2 {
   padding: 2%;
   margin: 1%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(80, 80, 80, 0.4);
 }
 
 .abecele {
   margin: 0%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(80, 80, 80, 0.4);
 }
 
 h4 {
@@ -468,11 +473,20 @@ h4 {
 
 /* APRASYMAI */
 .col-xs-10 {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(80, 80, 80, 0.6);
   width: 1179px;
   height: 607px;
   margin-top: 3%;
-  margin-left: 17%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+.col-xs-1 {
+  background: rgba(80, 80, 80, 0.4);
+  width: 100px;
+  height: 607px;
+  margin-top: 3%;
+  margin-left: 0;
   margin-bottom: 3%;
 }
 
@@ -486,7 +500,7 @@ h4 {
 
 .remelis3 {
   border: solid 6px rgba(255, 255, 255, 0.5);
-  width: 310px;
+  width: 110px;
   height: 425px;
   margin-top: 11%;
   margin-right: 3%;

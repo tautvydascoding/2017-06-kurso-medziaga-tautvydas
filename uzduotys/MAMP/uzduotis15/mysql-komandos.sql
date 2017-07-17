@@ -1,6 +1,6 @@
 ﻿mysql> show databases; //
 
-use duomenuBazesPavadinimas; 
+use duomenuBazesPavadinimas;
 
 mysql> show tables;
 
@@ -16,16 +16,16 @@ SELECT * FROM user;
  GRANT ALL PRIVILEGES ON * . * TO 'tautvydas04'@'localhost' WITH GRANT OPTION;
  GRANT ALL PRIVILEGES ON * . * TO 'tautvydas06'@'localhost' WITH GRANT OPTION;
 
- 
- 
- CREATE DATABASE IF NOT EXISTS `ligonine4` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
- 
-		USER     IF NOT EXISTS 
- CREATE DATABASE IF NOT EXISTS  `hospital6` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
-		TABLE    IF NOT EXISTS 
 
-		
-		
+
+ CREATE DATABASE IF NOT EXISTS `ligonine4` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+
+		USER     IF NOT EXISTS
+ CREATE DATABASE IF NOT EXISTS  `hospital6` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+		TABLE    IF NOT EXISTS
+
+
+
 // ====== naudingos kitos:
 // reset autoincreament :
 ALTER TABLE tablename AUTO_INCREMENT = 1;   // A) budas
@@ -34,70 +34,36 @@ DBCC CHECKIDENT (mytable, RESEED, 0);       // B) budas
 //===========pvz============
 use duomenuBazesPavadinimas;   // pasikeisti DB  pries kuriant lenteles
 
- CREATE TABLE IF NOT EXISTS persons (
+ CREATE TABLE IF NOT EXISTS doctors (
       id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
       name VARCHAR(30) not NULL,
       lname VARCHAR(30) NOT NULL
 	  );
-	  
+
 CREATE TABLE IF NOT EXISTS doctors (
 	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	name VARCHAR(25) NOT NULL,
 	lname VARCHAR(35) NOT NULL
 	);
 
-	
-CREATE TABLE IF NOT EXISTS skelbimai ( 
+
+CREATE TABLE IF NOT EXISTS pacients (
      id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
-     pavadinimas VARCHAR(30) not NULL,
-     data_ VARCHAR(30) NOT NULL,
-     email VARCHAR(30) NOT NULL,
-     miestas VARCHAR(30) NOT NULL,
-     tipas VARCHAR(30) NOT NULL,
-     registracija VARCHAR(30) NOT NULL,
-     aprasymas VARCHAR(30) NOT NULL,
-     unikalus VARCHAR(30) NOT NULL,
-     nuoroda VARCHAR(30) NOT NULL,
-     telnr VARCHAR(30) NOT NULL,
-     laisvas1 VARCHAR(30) NOT NULL,
-     laisvas2 VARCHAR(30) NOT NULL
+     name VARCHAR(30) not NULL,
+     lname VARCHAR(30) NOT NULL,
+     doctor_id INT(6) NOT NULL
      );
-	 
-CREATE TABLE IF NOT EXISTS img ( 
+
+CREATE TABLE IF NOT EXISTS img (
      id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
      name VARCHAR(60) not NULL,
      doctor_id INT(6) NOT NULL
      );
 
-	 
-	 
-	 CREATE TABLE IF NOT EXISTS articles (
-	 id INT(8) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
-      title VARCHAR(30) not NULL,
-      content VARCHAR(255) NOT NULL,
-	  date VARCHAR(30) NOT NULL,
-	  user_ID VARCHAR(30) NOT NULL
-	 );
-	 
-	 
-	 INSERT INTO articles VALUES ('', 'Akistata', 'Kriminalai SUCKS Kriminalai SUCKS Kriminalai 
-	 SUCKS Kriminalai SUCKS Kriminalai SUCKS Kriminalai SUCKS  Kriminalai SUCKS ', '2000-02-03', 'Detektyve_Birute');
-	 
-	 
-	 
-	 
-	 CREATE TABLE IF NOT EXISTS articles;
-	 
-	 
-	 
-	 
-	 
-	 
-	 
 // -------SQL komandos----------------------
 ` - geros kabutes
 ' - geros kabutes
-‘  - blogos kabutes    
+‘  - blogos kabutes
 
 
 SELECT column1, column2, ...
@@ -112,13 +78,38 @@ ORDER BY Country ASC, CustomerName DESC;
 INSERT INTO table_name
 	VALUES (value1, value2, value3, ...);
 
-INSERT INTO Customers (CustomerName, City, Country)
-	VALUES ('Cardinal', 'Stavanger', 'Norway');
+INSERT INTO Customers (image_name, image_type, image_size, index) VALUES
+('didzioji_kuolinga', 'jpg', '', 'images/didzioji_kuolinga.jpg');
 
 
-	
-	
-	
+
+
+
+INSERT INTO testblob (rusies_pav, karalystes_id) VALUES
+('Ropliai', 1),
+('Varliagyviai', 1)
+;
+
+INSERT INTO aprasymai (name, description, rusys_id) VALUES
+
+
+
+
+CREATE TABLE IF NOT EXISTS karalystes_pav (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(40) NOT NULL,
+lname VARCHAR(40) NOT NULL
+);
+
+DELETE column FROM karalystes_pav
+WHERE column='lname';
+
+
+delete from rusys
+where id = 1;
+
+
+
 
 //-------------DOCTORS----------
 INSERT INTO doctors  VALUES  ('', 'Tom', 'Opsa');
