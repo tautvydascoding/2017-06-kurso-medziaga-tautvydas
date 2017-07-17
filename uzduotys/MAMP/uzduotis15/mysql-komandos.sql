@@ -34,7 +34,7 @@ DBCC CHECKIDENT (mytable, RESEED, 0);       // B) budas
 //===========pvz============
 use duomenuBazesPavadinimas;   // pasikeisti DB  pries kuriant lenteles
 
- CREATE TABLE IF NOT EXISTS doctors (
+ CREATE TABLE IF NOT EXISTS persons (
       id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
       name VARCHAR(30) not NULL,
       lname VARCHAR(30) NOT NULL
@@ -46,12 +46,21 @@ CREATE TABLE IF NOT EXISTS doctors (
 	lname VARCHAR(35) NOT NULL
 	);
 
-	  
-CREATE TABLE IF NOT EXISTS pacients ( 
+	
+CREATE TABLE IF NOT EXISTS skelbimai ( 
      id INT(6) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
-     name VARCHAR(30) not NULL,
-     lname VARCHAR(30) NOT NULL,
-     doctor_id INT(6) NOT NULL
+     pavadinimas VARCHAR(30) not NULL,
+     data_ VARCHAR(30) NOT NULL,
+     email VARCHAR(30) NOT NULL,
+     miestas VARCHAR(30) NOT NULL,
+     tipas VARCHAR(30) NOT NULL,
+     registracija VARCHAR(30) NOT NULL,
+     aprasymas VARCHAR(30) NOT NULL,
+     unikalus VARCHAR(30) NOT NULL,
+     nuoroda VARCHAR(30) NOT NULL,
+     telnr VARCHAR(30) NOT NULL,
+     laisvas1 VARCHAR(30) NOT NULL,
+     laisvas2 VARCHAR(30) NOT NULL
      );
 	 
 CREATE TABLE IF NOT EXISTS img ( 
@@ -60,6 +69,31 @@ CREATE TABLE IF NOT EXISTS img (
      doctor_id INT(6) NOT NULL
      );
 
+	 
+	 
+	 CREATE TABLE IF NOT EXISTS articles (
+	 id INT(8) UNSIGNED     AUTO_INCREMENT PRIMARY KEY,
+      title VARCHAR(30) not NULL,
+      content VARCHAR(255) NOT NULL,
+	  date VARCHAR(30) NOT NULL,
+	  user_ID VARCHAR(30) NOT NULL
+	 );
+	 
+	 
+	 INSERT INTO articles VALUES ('', 'Akistata', 'Kriminalai SUCKS Kriminalai SUCKS Kriminalai 
+	 SUCKS Kriminalai SUCKS Kriminalai SUCKS Kriminalai SUCKS  Kriminalai SUCKS ', '2000-02-03', 'Detektyve_Birute');
+	 
+	 
+	 
+	 
+	 CREATE TABLE IF NOT EXISTS articles;
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 // -------SQL komandos----------------------
 ` - geros kabutes
 ' - geros kabutes
@@ -82,20 +116,6 @@ INSERT INTO Customers (CustomerName, City, Country)
 	VALUES ('Cardinal', 'Stavanger', 'Norway');
 
 
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
