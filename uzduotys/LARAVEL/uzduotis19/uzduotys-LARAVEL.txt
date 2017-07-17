@@ -1,0 +1,11 @@
+1) atvaizduoti/isvesti visus daktarus
+2) isvesti konkretu daktara, pagal uzdota id
+3) isvesti visus pacientus, pagal duota daktaro id
+4) isvesti pacieto daktaro varda pavarde, pagal uzduota paciento id
+
+
+ 
+
+Route::get('/{aa}', function(){
+  return view('404');
+});
