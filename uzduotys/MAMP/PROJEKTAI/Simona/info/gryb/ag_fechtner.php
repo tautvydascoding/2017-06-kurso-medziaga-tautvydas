@@ -27,10 +27,10 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" >
       <div class="container-fluid menu" >
         <div class="navbar-header">
-          <a class="navbar-brand" href="../../index.html">Lietuvos Raudonoji knyga</a>
+          <a class="navbar-brand" href="../../index.php">Lietuvos Raudonoji knyga</a>
         </div>
         <ul class="nav navbar-nav">
-           <li title="Pradinis puslapis"><a href="../../index.html" target="">
+           <li title="Pradinis puslapis"><a href="../../index.php" target="">
             <img src="../../icons/home.png" alt="namai" width="40" height="40" />
             <div class="namai">
             </div>
@@ -76,19 +76,19 @@
             <div class="row-frst">
               <ul>
                 <h4><ins> Grybai </ins></h4><br>
-                <li><a href="ag_baco.php">Bačo baltikas>
+                <li><a href="ag_baco.php"><h5>Bačo baltikas</h5>
                 </a></li><br>
-                <li><a href="ag_blysk_bar.php">Blyškusis baravykas>
+                <li><a href="ag_blysk_bar.php"><h5>Blyškusis baravykas</h5>
                 </a></li><br>
-                <li><a href="ag_bronzin.php">Bronzinis baravykas>
+                <li><a href="ag_bronzin.php"><h5>Bronzinis baravykas</h5>
                 </a></li><br>
-                <li><a href="ag_laibe.php">Dubioji laibė>
+                <li><a href="ag_laibe.php"><h5>Dubioji laibė</h5>
                 </a></li><br>
-                <li><a href="ag_fechtnr.php">Fechtnerio baravykas>
+                <li><a href="ag_fechtner.php"><h5>Fechtnerio baravykas</h5>
                 </a></li><br>
-                <li><a href="ag_kremplia.php">Gyslotoji krempliabudė>
+                <li><a href="ag_kremplia.php"><h5>Gyslotoji krempliabudė</h5>
                 </a></li><br>
-                <li><a href="ag_minkstunis.php">Juosvasis minkštūnis>
+                <li><a href="ag_minkstunis.php"><h5>Juosvasis minkštūnis</h5>
                 </a></li>
 
 

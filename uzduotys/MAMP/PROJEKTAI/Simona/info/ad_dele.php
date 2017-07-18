@@ -27,10 +27,10 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" >
       <div class="container-fluid menu" >
         <div class="navbar-header">
-          <a class="navbar-brand" href="../index.html">Lietuvos Raudonoji knyga</a>
+          <a class="navbar-brand" href="../index.php">Lietuvos Raudonoji knyga</a>
         </div>
         <ul class="nav navbar-nav">
-           <li title="Pradinis puslapis"><a href="../index.html" target="">
+           <li title="Pradinis puslapis"><a href="../index.php" target="">
             <img src="../icons/home.png" alt="namai" width="40" height="40" />
             <div class="namai">
             </div>
@@ -43,6 +43,10 @@
           <li title="Galerija"><a href="#Galerija" target="">
               <img src="../icons/gallery.png" alt="galerija" width="40" height="40"/>
             </a></li>
+
+            <li title="Susiję įstatai"><a href="#istatai" target="">
+                <img src="../icons/law.png" alt="istatai" width="40" height="40"/>
+              </a></li>
 
           <li title="Susisiekime"><a href="#Susisiekime" target="">
               <img src="../icons/mail.png" alt="pastas" width="40" height="40" />
@@ -80,7 +84,7 @@
             <div class="row-frst">
               <ul>
                 <h4><ins> Dėlės </ins></h4><br>
-                <li><a href="Medicininė dėlė" target="">
+                <li><a href="ad_dele.php"><h5>Medicininė dėlė</h5>
                 </a></li><br>
 
             </ul>
@@ -115,6 +119,7 @@ Populiacij ̄ gausumas. Rūšies gausumas netirtas. Pa- grindinÎs radavietÎs
                 <div class="col-xs-4">
                   <div class="remelis3">
                     <!-- NUOTRAUKA IS DUOMENU BAZES -->
+                      <img src="dele.png" alt="dele" />
                   </div>
                 </div>
               </div>
