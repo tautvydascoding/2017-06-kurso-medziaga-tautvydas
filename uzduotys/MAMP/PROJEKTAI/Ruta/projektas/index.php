@@ -20,7 +20,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <a href="" class="thumbnail" style="position:relative">
+          <a href="read-article.php" class="thumbnail" style="position:relative">
             <img class="image" src="images/pic1.jpg" alt="...">
             <h3 class="text">Lorem ipsum dolor sit amet, consectetur.</h3>
           </a>
