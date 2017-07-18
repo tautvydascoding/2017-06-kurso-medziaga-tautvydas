@@ -54,6 +54,7 @@
       print_r($printArticle);
       $data = mysqli_fetch_row($printArticle);
       if ($data) {
+        echo "string";
         include('./article.php');
       } else {
         echo "Neradomoe ieskomos frazes <br />";

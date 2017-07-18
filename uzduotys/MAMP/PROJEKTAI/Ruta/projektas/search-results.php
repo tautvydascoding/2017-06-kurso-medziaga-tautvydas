@@ -23,42 +23,32 @@
 
             include_once('./db.php');
 
-            // $query = $_GET['query'] ;
+            $query = $_GET['query'] ;
 
             function getArticlesByQuery() {
               $sql = " SELECT * FROM articles
-                        WHERE title like '%$query%'; ";
+                        WHERE title LIKE '%".$_GET['query']."%'; "; //%$query%
               $connect = connect_DB();
               $results = mysqli_query($connect, $sql);
 
               if( !$results) {
                 echo "Neapvyko rasti straipsniu!!! ". mysqli_error($connect) . " <br>";
              }  else {
-                echo "Radome straipsniu";
                 mysqli_num_rows($results);
              }
               return $results;
             }
 
-            $articleFound =  getArticlesByQuery('query');
+            $articleFound =  getArticlesByQuery($query);
             print_r($articleFound);
-            $data = mysqli_fetch_assoc($results);
             $article = mysqli_fetch_assoc($articleFound);
 
-            // while ($article) {
-            //     include('./article.php');
-            //     $article = mysqli_fetch_assoc($articleFound);
-            // }
-
-            while ($articleFound =  getArticlesByQuery('query')) {
+            while ($article) {
                 include('./article.php');
                 $article = mysqli_fetch_assoc($articleFound);
             }
 
-
-
-
-           ?>
+            ?>
         </ul>
       </div>
     </div>
