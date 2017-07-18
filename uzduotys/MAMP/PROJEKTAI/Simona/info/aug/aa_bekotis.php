@@ -27,10 +27,10 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" >
       <div class="container-fluid menu" >
         <div class="navbar-header">
-          <a class="navbar-brand" href="../../index.html">Lietuvos Raudonoji knyga</a>
+          <a class="navbar-brand" href="../../index.php">Lietuvos Raudonoji knyga</a>
         </div>
         <ul class="nav navbar-nav">
-           <li title="Pradinis puslapis"><a href="../../index.html" target="">
+           <li title="Pradinis puslapis"><a href="../../index.php" target="">
             <img src="../../icons/home.png" alt="namai" width="40" height="40" />
             <div class="namai">
             </div>
@@ -43,6 +43,10 @@
           <li title="Galerija"><a href="#Galerija" target="">
               <img src="../../icons/gallery.png" alt="galerija" width="40" height="40"/>
             </a></li>
+
+            <li title="Susiję įstatai"><a href="#istatai" target="">
+                <img src="../../icons/law.png" alt="istatai" width="40" height="40"/>
+              </a></li>
 
           <li title="Susisiekime"><a href="#Susisiekime" target="">
               <img src="../../icons/mail.png" alt="pastas" width="40" height="40" />
@@ -76,24 +80,22 @@
             <div class="row-frst">
               <ul>
                 <h4> Augalai </h4><br>
-                <li><a href="aa_bekotis.php">Bekotis ąžuolas>
+                <li><a href="aa_bekotis.php"><h5>Bekotis ąžuolas</h5>
                 </a></li><br>
-                <li><a href="aa_berzas.php"> Beržas keružis>
+                <li><a href="aa_berzas.php"><h5>Beržas keružis</h5>
                 </a></li><br>
-                <li><a href="aa_gvazdikas.php"> Borbašo gvazdikas>
+                <li><a href="aa_gvazdikas.php"><h5>Borbašo gvazdikas</h5>
                 </a></li><br>
-                <li><a href="aa_dirvuole.php">Kvapioji dirvuolė>
+                <li><a href="aa_dirvuole.php"><h5>Kvapioji dirvuolė</h5>
                 </a></li><br>
-                <li><a href="aa_smiltyn.php">Smiltyninis gvazdikas>
+                <li><a href="aa_smiltyn.php"><h5>Smiltyninis gvazdikas</h5>
                 </a></li><br>
-                <li><a href="aa_glazute.php">Smulkialapė glažutė>
+                <li><a href="aa_glazute.php"><h5>Smulkialapė glažutė</h5>
                 </a></li><br>
-                <li><a href="aa_erika.php">Tyrulinė erika>
+                <li><a href="aa_erika.php"><h5>Tyrulinė erika</h5>
                 </a></li><br>
-                <li><a href="aa_zalsvoji.php">Žalsvoji naktižiedė>
+                <li><a href="aa_zalsvoji.php"><h5>Žalsvoji naktižiedė</h5>
                 </a></li>
-
-
 
             </ul>
             </div>
@@ -106,27 +108,28 @@
                 <div class="col-xs-4">
                   <div class="article">
                     <h4>Bekotis ąžuolas</h4>
-                    <h5><i> Quercus petraea </i></h5><br /><br />
-                    <p>
-Statusas. Á Lietuvos saugomø augalø sàraðus rûðis áraðyta nuo 1962 m.
+                    <h5><i> Quercus petraea </i></h5><br />
+                    <p><h5>Statusas. Á Lietuvos saugomø augalø sàraðus rûðis áraðyta nuo 1962 m.
 Paplitimas. Vakarø ir Vidurio Europoje, Kryme, Kau- kaze.
+
 Lietuvoje yra uþ ðiaurinës arealo ribos. Lietuvos pieti- nëje dalyje esantys ðio tipo àþuolynai yra holoceno ðiltojo subborealinio laikotarpio liekanos. Pietø Lietu- voje esanti radavietë yra arealo sala, nutolusi nuo ápieèiau esanèio pagrindinio arealo. Natûraliai auga Trako miðke (Lazdijø r.), sodinta – Àþuolijos miðke (Utenos r.), Rambyno, Begëdþiø miðkuose (Ðilutës r.).
 Biologija ir ekologija. Iki 35–45 m aukðèio medis. Þydi ir lapus skleidþia geguþës mën. Vëjadulkis. Vai- siai – gilës, þalios krinta rugsëjo pabaigoje–spalio pradþioje; paruduoja nukritusios. Dauginasi ðaknø at- þalomis ir gilëmis, kurias iðplatina paukðèiai ir þin- duoliai, kartu jie stabdo bekoèio àþuolo plitimà, nes gilëmis minta. Lietuvoje þinoma 1 radavietë plaèiala- piø arba miðriame miðke, kur aptinkamas visuose mið- ko arduose, taèiau pomiðkyje – labai menkai.
-Populiacijø gausumas. Trako miðke populiacija uþ- ima apie 70 ha plotà. Vietom bekoèiai àþuolai sudaro grynà medynà, kai kur auga kartu su paprastaisiais àþuolais, kitais plaèialapiais medþiais, paprastosiomis puðimis. Ðioje teritorijoje aptinkama bekoèiø ir pa- prastøjø àþuolø hibridø.
-                          </p>
                   </div>
                 </div>
                 <div class="col-xs-4">
                   <div class="article">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    <p><h5>Iki 35–45 m aukðèio medis. Þydi ir lapus skleidþia geguþës mën. Vëjadulkis. Vai- siai – gilës, þalios krinta rugsëjo pabaigoje–spalio pradþioje; paruduoja nukritusios. Dauginasi ðaknø at- þalomis ir gilëmis, kurias iðplatina paukðèiai ir þin- duoliai, kartu jie stabdo bekoèio àþuolo plitimà, nes gilëmis minta. Lietuvoje þinoma 1 radavietë plaèiala- piø arba miðriame miðke, kur aptinkamas visuose mið- ko arduose, taèiau pomiðkyje – labai menkai.
+                    Populiacijø gausumas. Trako miðke populiacija uþ- ima apie 70 ha plotà. Vietom bekoèiai àþuolai sudaro grynà medynà, kai kur auga kartu su paprastaisiais àþuolais, kitais plaèialapiais medþiais, paprastosiomis puðimis. Ðioje teritorijoje aptinkama bekoèiø ir pa- prastøjø àþuolø hibridø.
+            </h5></p>
+
                   </div>
                 </div>
                 <div class="col-xs-4">
                   <div class="remelis3">
                     <!-- NUOTRAUKA IS DUOMENU BAZES -->
+                    <div class="pav1">
+                      <img src="azuolas.png" alt="azuolas" />
+                    </div>
                   </div>
                 </div>
               </div>

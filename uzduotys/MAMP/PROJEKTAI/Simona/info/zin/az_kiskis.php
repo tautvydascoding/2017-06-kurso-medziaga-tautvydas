@@ -81,17 +81,17 @@
             <div class="row-frst">
               <ul>
                 <h4><ins> Žinduoliai </ins></h4><br>
-                <li><a href="az_kiskis.php">Baltasis kiškis>
+                <li><a href="az_kiskis.php"><h5>Baltasis kiškis</h5>
                 </a></li><br>
-                <li><a href="az_ruonis.php">Ilgasnukis ruonis>
+                <li><a href="az_ruonis.php"><h5>Ilgasnukis ruonis</h5>
                 </a></li><br>
-                <li><a href="az_lusis.php">Lūšis>
+                <li><a href="az_lusis.php"><h5>Lūšis</h5>
                 </a></li><br>
-                <li><a href="az_stumbras.php">Stumbras>
+                <li><a href="az_stumbras.php"><h5>Stumbras</h5>
                 </a></li><br>
-                <li><a href="az_sermuon.php">Šermuonėlis>
+                <li><a href="az_sermuon.php"><h5>Šermuonėlis</h5>
                 </a></li><br>
-                <li><a href="az_udra.php">Ūdra>
+                <li><a href="az_udra.php"><h5>Ūdra</h5>
               </a></li>
 
 

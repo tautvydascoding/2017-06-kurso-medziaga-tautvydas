@@ -74,22 +74,22 @@
           <div class="col-xs-1">
             <div class="row-frst">
               <ul>
-                <h4><ins> Augalai </ins></h4><br>
-                <li><a href="aa_bekotis.php">Bekotis ąžuolas>
+                <h4> Augalai </h4><br>
+                <li><a href="aa_bekotis.php"><h5>Bekotis ąžuolas</h5>
                 </a></li><br>
-                <li><a href="aa_berzas.php"> Beržas keružis>
+                <li><a href="aa_berzas.php"><h5>Beržas keružis</h5>
                 </a></li><br>
-                <li><a href="aa_gvazdikas.php"> Borbašo gvazdikas>
+                <li><a href="aa_gvazdikas.php"><h5>Borbašo gvazdikas</h5>
                 </a></li><br>
-                <li><a href="aa_dirvuole.php">Kvapioji dirvuolė>
+                <li><a href="aa_dirvuole.php"><h5>Kvapioji dirvuolė</h5>
                 </a></li><br>
-                <li><a href="aa_smiltyn.php">Smiltyninis gvazdikas>
+                <li><a href="aa_smiltyn.php"><h5>Smiltyninis gvazdikas</h5>
                 </a></li><br>
-                <li><a href="aa_glazute.php">Smulkialapė glažutė>
+                <li><a href="aa_glazute.php"><h5>Smulkialapė glažutė</h5>
                 </a></li><br>
-                <li><a href="aa_erika.php">Tyrulinė erika>
+                <li><a href="aa_erika.php"><h5>Tyrulinė erika</h5>
                 </a></li><br>
-                <li><a href="aa_zalsvoji.php">Žalsvoji naktižiedė>
+                <li><a href="aa_zalsvoji.php"><h5>Žalsvoji naktižiedė</h5>
                 </a></li>
 
 

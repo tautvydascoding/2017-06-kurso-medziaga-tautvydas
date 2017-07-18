@@ -159,7 +159,7 @@ h9 {
 .remelis {
   border: solid 6px rgba(255, 255, 255, 0.5);
   width: 1257px;
-  height: 515px;
+  height: 480px;
   margin-top: 3.5%;
   margin-left: 2%;
 }
@@ -169,7 +169,7 @@ h9 {
   background: rgba(80, 80, 80, 0.4);
   position: relative;
   width: 1350px;
-  height: 607px;
+  height: 567px;
   margin-top: 3%;
   margin-left: 6%;
   margin-bottom: 3%;
@@ -296,6 +296,7 @@ h9 {
   padding: 2%;
   margin: 1%;
   background: rgba(80, 80, 80, 0.4);
+  color: #fff;
 }
 
 .abecele {
@@ -308,27 +309,27 @@ h4 {
 }
 
 .col1 {
-  margin-top: 10%;
-  margin-left: 1%;
+  margin-left: 4%;
 }
 
 .col2 {
-  margin-top: 8%;
+  margin-top: 17%;
 }
 
-.col3 {
-  margin-top: 10%;
-}
 
 .col4 {
-  margin-top: 8%;
+  margin-top: 4%;
 }
 
 .col5 {
-  margin-top: 12%;
+  margin-top: 6%;
 }
 /*END OF SEARCH PAGE*/
-
+.law {
+  margin-top: 23%;
+  margin-left: 28%;
+  margin-bottom: 20%;
+}
 
 /*ANIMALS CAPTION*/
 .owl {
@@ -339,7 +340,7 @@ h4 {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  margin-top: 2.5%;
+  margin-top: 7%;
   margin-left:  400px;
 }
 
@@ -356,7 +357,7 @@ h4 {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  margin-top: 4.1%;
+  margin-top: 7%;
   margin-left: 100px;
 }
 
@@ -373,7 +374,7 @@ h4 {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  margin-top: 2.8%;
+  margin-top: 7%;
   margin-left: 750px;
 }
 
@@ -390,7 +391,7 @@ h4 {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  margin-top: 4.5%;
+  margin-top: 8%;
   margin-left: 1050px;
 }
 
@@ -407,7 +408,7 @@ h4 {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  margin-top: 11%;
+  margin-top: 14%;
   margin-left: 250px;
 }
 
@@ -424,7 +425,7 @@ h4 {
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  margin-top: 12%;
+  margin-top: 14%;
   margin-left: 900px;
 }
 
@@ -495,6 +496,11 @@ h4 {
   margin-left: 1060px;
 }
 
+.h5 {
+  text-align: justify;
+
+}
+
 .spiderweb:hover {
   background-image: url('../../icons/spider70.png');
   transition: .7s ease;
@@ -536,6 +542,7 @@ h4 {
   height: 425px;
   margin-top: 11%;
   margin-right: 3%;
+  position: relative;
 }
 /* END OF APRASYMAI */
 
@@ -564,8 +571,10 @@ div.desc {
 }
 /*END OF GALLERY*/
 
-/*KONTAKTAI*/
-
-
+.pav1 {
+  align-items: center;
+  width: auto;
+  position: absolute;
+}
 
 /*PAGE END*/

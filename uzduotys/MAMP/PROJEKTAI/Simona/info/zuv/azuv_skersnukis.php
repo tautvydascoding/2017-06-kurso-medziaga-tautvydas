@@ -27,10 +27,10 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" >
       <div class="container-fluid menu" >
         <div class="navbar-header">
-          <a class="navbar-brand" href="../../index.html">Lietuvos Raudonoji knyga</a>
+          <a class="navbar-brand" href="../../index.php">Lietuvos Raudonoji knyga</a>
         </div>
         <ul class="nav navbar-nav">
-           <li title="Pradinis puslapis"><a href="../../index.html" target="">
+           <li title="Pradinis puslapis"><a href="../../index.php" target="">
             <img src="../../icons/home.png" alt="namai" width="40" height="40" />
             <div class="namai">
             </div>
@@ -80,13 +80,13 @@
             <div class="row-frst">
               <ul>
                 <h4><ins> Žuvys </ins></h4><br>
-                <li><a href="azuv_raine.php">Ežerinė rainė>
+                <li><a href="azuv_raine.php"><h5>Ežerinė rainė</h5>
                 </a></li><br>
-                <li><a href="azuv_nege.php">Jūrinė nėgė>
+                <li><a href="azuv_nege.php"><h5>Jūrinė nėgė</h5>
                 </a></li><br>
-                <li><a href="azuv_lasisa.php">Lašiša>
+                <li><a href="azuv_lasisa.php"><h5>Lašiša</h5>
                 </a></li><br>
-                <li><a href="azuv_skersnukis.php">Skersnukis>
+                <li><a href="azuv_skersnukis.php"><h5>Skersnukis</h5>
               </a></li><br>
 
 

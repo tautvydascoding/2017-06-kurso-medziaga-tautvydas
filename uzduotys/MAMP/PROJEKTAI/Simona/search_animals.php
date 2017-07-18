@@ -27,24 +27,28 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" >
       <div class="container-fluid menu" >
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Lietuvos Raudonoji knyga</a>
+          <a class="navbar-brand" href="index.php">Lietuvos Raudonoji knyga</a>
         </div>
         <ul class="nav navbar-nav">
-           <li title="Pradinis puslapis"><a href="index.html" target="">
+           <li title="Pradinis puslapis"><a href="index.php" target="">
             <img src="icons/home.png" alt="namai" width="40" height="40" />
             <div class="namai">
             </div>
           </a></li>
 
-          <li title="Apie..."><a href="index.html#Apie" target="">
+          <li title="Apie..."><a href="index.php#Apie" target="">
             <img src="icons/apie.png" alt="apie" width="38" height="38" />
           </a></li>
 
-          <li title="Galerija"><a href="index.html#Galerija" target="">
+          <li title="Galerija"><a href="index.php#Galerija" target="">
               <img src="icons/gallery.png" alt="galerija" width="40" height="40"/>
             </a></li>
 
-          <li title="Susisiekime"><a href="index.html#Susisiekime" target="">
+            <li title="Susiję įstatai"><a href="index.php#istatai" target="">
+                <img src="icons/law.png" alt="istatai" width="40" height="40"/>
+              </a></li>
+
+          <li title="Susisiekime"><a href="index.php#Susisiekime" target="">
               <img src="icons/mail.png" alt="pastas" width="40" height="40" />
             </a></li>
 
@@ -112,7 +116,7 @@
               </a>
 
               <!-- SNAIL -->
-              <a href="index.html" target="">
+              <a href="index.php" target="">
                 <div class="snail">
                 </div>
               </a>
@@ -124,7 +128,7 @@
               </a><br />
 
               <!-- CRAB -->
-              <a href="index.html" target="">
+              <a href="index.php" target="">
                 <div class="crab">
                 </div>
               </a>
