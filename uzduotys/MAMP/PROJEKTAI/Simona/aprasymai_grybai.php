@@ -24,80 +24,63 @@
   <header>
 
     <!-- Menu icons -->
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid menu">
+    <nav class="navbar navbar-inverse navbar-fixed-top" >
+      <div class="container-fluid menu" >
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">Lietuvos Raudonoji knyga</a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-        </ul>
-
-        <form action='' method='post' class="navbar-form navbar-right">
-          <div class="input-group">
-            <input type="text" name='name' class="auto" placeholder="Search" />
-
-            <script type="text/javascript">
-              $(function() {
-
-                //autocomplete
-                $(".auto").autocomplete({
-                  source: "search.php",
-                  minLength: 1
-                });
-
-              });
-            </script>
-
-            <div class="input-group-btn">
-              <button class="btn btn-default" type="submit">
-            <div class="glyphicon glyphicon-search"></i>
-              </button>
+           <li title="Pradinis puslapis"><a href="index.html" target="">
+            <img src="icons/home.png" alt="namai" width="40" height="40" />
+            <div class="namai">
             </div>
-          </div>
-        </form>
+          </a></li>
 
-            <ul>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" img src="icons/menu.png">MENU<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="index.html" target=""> APIE
-                <img src="icons/search.png" alt="menu" width="44" height="44" background-color="#808080" />
+          <li title="Apie..."><a href="#Apie" target="">
+            <img src="icons/apie.png" alt="apie" width="38" height="38" />
+          </a></li>
+
+          <li title="Galerija"><a href="#Galerija" target="">
+              <img src="icons/gallery.png" alt="galerija" width="40" height="40"/>
+            </a></li>
+
+          <li title="Susisiekime"><a href="#Susisiekime" target="">
+              <img src="icons/mail.png" alt="pastas" width="40" height="40" />
+            </a></li>
+
+            <li title="Gyvūnai"><a href="search_animals.php" target="">
+                <img src="icons/ipaw70.png" alt="gyvunai" width="40" height="40" />
               </a></li>
 
-                  <li><a href="index.html" target=""> PAIESKA
-                  <img src="icons/maps.png" width="44" height="44" />
-                </a></li>
+            <li title="Augalai"><a href="aprasymai_augalai.php" target="">
+                <img src="icons/ileaf70.png" alt="augalai" width="40" height="40" />
+              </a></li>
+        </ul>
 
-                  <li><a href="index.html" target=""> GALERIJA
-                  <img src="icons/gallery.png" width="44" height="44"/>
-                </a></li>
-
-                  <li><a href="index.html" target=""> KONTAKTAI
-                  <img src="icons/mail.png" width="44" height="44" />
-                </a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </form>
-      </div>
-    </nav>
+          <form action="" method="post" class="navbar-form navbar-left">
+            <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Paieška" />
+                  </div>
+                  <button type="submit" class="btn btn-default">Tvirtinu</button>
+                </form>
+              </div>
+            </nav>
 
 
-    <div class="container-fluid pirmas">
+    <div class="container-fluid pirmas" style="margin-top:70px">
 <section>
       <div class="row1">
 
         <!-- RODYKLINIS MENIU -->
           <div class="col-xs-1">
             <div class="row-frst">
-              <h4> Rodykle </h4>
+              <h4><ins> Grybai </ins></h4>
               <p>
                 loremsdfkd
               </p>
             </div>
           </div>
-          
+
   <!-- APRASYMAS IS DUOMENU BAZES  -->
           <div class="col-xs-9">
             <div class="remelis2">
@@ -142,5 +125,16 @@
 
   </header>
 </body>
+
+<footer>
+  <div class="container-fluid footeriukas">
+    <div class="row-foot">
+        <div class="foot-textukas">
+          <h7> &#169 2017m. - Visos teisės saugomos </h7>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </html>

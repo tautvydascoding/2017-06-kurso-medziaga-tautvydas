@@ -7,6 +7,7 @@
   <title> LRK </title>
   <meta name="description" content="Lietuvos Raudonoji knyga, itin reti Lietuvos augalai, gyvūnai, grybai" />
   <meta name="author" content="Simona Matiukaite" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/base/minified/jquery-ui.min.css" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Spectral:300i">
   <link rel="stylesheet" type="text/css" href="bootstrap1/css/bootstrap.css" />
@@ -18,29 +19,47 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="bootstrap1/js/main.js" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-
 </head>
 
 <body>
   <header>
 
     <!-- Menu icons -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid menu">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Lietuvos Raudonoji knyga</a>
+          <a class="navbar-brand" href="index.html">Lietuvos Raudonoji knyga</a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
+          <li title="Pradinis puslapis"><a href="index.html" target="">
+            <img src="icons/home.png" alt="namai" width="40" height="40" />
+            <div class="namai">
+            </div>
+          </a></li>
+
+          <li title="Apie..."><a href="#Apie" target="">
+            <img src="icons/apie.png" alt="apie" width="38" height="38" />
+          </a></li>
+
+          <li title="Galerija"><a href="#Galerija" target="">
+              <img src="icons/gallery.png" alt="galerija" width="40" height="40"/>
+            </a></li>
+
+          <li title="Susisiekime"><a href="#Susisiekime" target="">
+              <img src="icons/mail.png" alt="pastas" width="40" height="40" />
+            </a></li>
         </ul>
 
-        <form action='' method='post' class="navbar-form navbar-right">
-          <div class="input-group">
-            <input type="text" name='name' class="auto" placeholder="Search" />
+        <form action="" method="post" class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Paieška" />
+          </div>
+          <button type="submit" class="btn btn-default">Tvirtinti</button>
+        </form>
+      </div>
+    </nav>
 
-            <script type="text/javascript">
+    <!-- <script type="text/javascript">
               $(function() {
 
                 //autocomplete
@@ -50,77 +69,36 @@
                 });
 
               });
-            </script>
+            </script> -->
 
-            <div class="input-group-btn">
-              <button class="btn btn-default" type="submit">
-            <i class="glyphicon glyphicon-search"></i>
-              </button>
-            </div>
-          </div>
-        </form>
-
-        <ul>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" img src="icons/imenu.png">MENU<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="index.html" target=""> APIE
-                <img src="icons/search.png" alt="menu" width="44" height="44" background-color="#e2e2e2" />
-              </a></li>
-
-              <li><a href="index.html" target=""> ŽEMĖLAPIS
-                  <img src="icons/maps.png" width="44" height="44" />
-                </a></li>
-
-              <li><a href="index.html" target=""> GALERIJA
-                  <img src="icons/gallery.png" width="44" height="44"/>
-                </a></li>
-
-              <li><a href="index.html" target=""> KONTAKTAI
-                  <img src="icons/mail.png" width="44" height="44" />
-                </a></li>
-            </ul>
-          </li>
-        </ul>
-        </form>
-      </div>
-    </nav>
-
-
-    <div class="container-fluid pirmas">
+    <div class="container-fluid pirmas" style="margin-top:70px">
       <div class="row1">
 
         <!-- PERMATOMAS STULPELIS -->
         <section1>
-          <div class="permatomas col-xs-11">
+          <div class="col-xs-11 permatomas">
             <div id="remelis2" class="remelis">
-
-              <!-- LOGO -->
-              <div class="article">
-                <p>
-                  <h4>LIETUVOS <br />RAUDONOJI <br />KNYGA </h4>
-                </p>
-              </div>
 
               <!-- Center icons -->
               <div class="center-icons">
 
                 <!-- BEAR & PAW -->
-                <a href="search_animals.html" target="">
+                <a href="search_animals.php" target="">
                   <div class="paw">
                   </div>
                 </a>
 
                 <!-- TRIFORCE -->
-                <img class="triforce" src="triangle.png" alt="triforce" width="300" height="300"><br/>
+                <img class="triforce" src="icons\triangle.png" alt="triangle" width="300" height="300"><br/>
 
                 <!-- MUSHROOM -->
-                <a href="index.html" target="">
+                <a href="aprasymai_grybai.php" target="">
                   <div class="mushroom">
                   </div>
                 </a>
 
                 <!-- LEAF & TREE -->
-                <a href="index.html" target="">
+                <a href="aprasymai_augalai.php" target="">
                   <div class="leaf">
                   </div>
                 </a>
@@ -128,41 +106,49 @@
               </div>
             </div>
           </div>
+
         </section1>
       </div>
     </div>
-
   </header>
 
   <wrapper>
     <!-- ABOUT PAGE -->
-    <section2>
+    <section2 id="Apie">
       <div class="container antras">
-        <!-- ABOUT section  -->
-        <div class="row2">
-          <div class="about col-xs-12">
-            <div class="rowinarow1">
+
+        <div class="row1">
+          <div class="col-xs-10">
+
+          </div>
+          <div class="row-3">
+
+          </div>
+          <div class="col-xs-4 geltonas">
+            <div class="article-1">
               <p>
-                <h1> APIE Lietuvos Raudonąją knygą</h1>
+                <h1> Apie Lietuvos Raudonąją knygą</h1>
               </p><br /><br />
-              <div class="rowinarow2">
-                <div class="col-xs-3">
-                  <p>
-                    <h4> Lietuvos raudonoji knyga – tai ne tik retų ir nykstančių rūšių sąrašai, aprašymai, bet ir teisinis dokumentas, kuriuo remiantis šalyje organizuojama šių rūšių apsauga, sudaromi gamtotvarkos planai joms išsaugoti. Šią knygą sudaro žinių sąvadas apie saugomų rūšių būklę ir apsaugos būdus.
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="col-xs-7 about">
+              <div class="col-xs-3 aprasymas">
+                <p>
+                  <h4> Lietuvos raudonoji knyga – tai ne tik retų ir nykstančių rūšių sąrašai, aprašymai, bet ir teisinis dokumentas, kuriuo remiantis šalyje organizuojama šių rūšių apsauga, sudaromi gamtotvarkos planai joms išsaugoti. Šią knygą sudaro žinių sąvadas apie saugomų rūšių būklę ir apsaugos būdus.
                     </h4>
-                  </p>
-                </div>
-                <div class="col-xs-3">
-                  <p>
+                </p>
+              </div>
+              <div class="col-xs-3 aprasymas">
+                <p>
                   <h4> Į Raudonąją Knygą įrašomos rūšys, kurioms gresia išnykimas sumažėjus jų skaitlingumui, pakitus arealui, pablogėjus ekologinėms sąlygoms. Įrašyti, išbraukti arba daryti kokius pakeitimus gali siūlyti mokslinės ir kitos valstybinės bei visuomeninės įstaigos ir organizacijos, atskiri mokslininkai. Pasiūlymus svarsto ir sprendimus priima prie Lietuvos Respublikos aplinkos apsaugos departamento sudaryta Lietuvos Raudonosios Knygos komisija. </h4>
 
-                  </p>
-                </div>
-                <div class="col-xs-3">
-                  <p>
-                    <h4> 2007 metų, birželio 19 dieną, Botanikos institute Verkių rūmuose buvo pristatyta ką tik išleista Lietuvos raudonoji knyga. Šį kapitalinį, beveik 800 puslapių iliustruotą Aplinkos ministerijos leidinį parengė 57 mokslininkai ir gamtininkai. Raudona knygos spalva tarsi perspėja apie retų ir nykstančių gyvūnų, augalų, kerpių bei grybų rūšių mūsų šalyje likimą. Į šią knygą įrašytos 767 rūšys. Tarp jų – 23 žinduolių, 80 paukščių, 123 vabzdžių, 221 žiedinių augalų, 93 samanų, 112 grybų, 63 kerpių ir kt.</h4>
-                  </p>
-                </div>
+                </p>
+              </div>
+              <div class="col-xs-3 aprasymas">
+                <p>
+                  <h4> 2007 metų, birželio 19 dieną, Botanikos institute Verkių rūmuose buvo pristatyta ką tik išleista Lietuvos raudonoji knyga. Šį kapitalinį, beveik 800 puslapių iliustruotą Aplinkos ministerijos leidinį parengė 57 mokslininkai ir gamtininkai. Raudona knygos spalva tarsi perspėja apie retų ir nykstančių gyvūnų, augalų, kerpių bei grybų rūšių mūsų šalyje likimą. Į šią knygą įrašytos 767 rūšys. Tarp jų – 23 žinduolių, 80 paukščių, 123 vabzdžių, 221 žiedinių augalų, 93 samanų, 112 grybų, 63 kerpių ir kt.</h4>
+                </p>
               </div>
             </div>
           </div>
@@ -170,27 +156,70 @@
       </div>
     </section2>
 
-    <section3>
+    <section3 id="Galerija">
       <div class="container trecias">
         <!-- GALERIJA -->
-        <div class="row3">
-          <div class="maps col-xs-12">
-            <div class="rowinarow3">
-              <div class="col-xs-9">
-                <h1> Galerija </h1>
-
-                <div class="your-class">
-                  <div>your content</div>
-                  <div>your content</div>
-                  <div>your content</div>
-                </div>
-
-              </div>
-            </div>
-          </div>
+        <h1>Galerija</h1><br><br />
+        <div class="gallery">
+          <a target="_self" href="kindimg/1.jpg">
+    <img src="kindimg/1.jpg" alt="Medūzgalvė trapiabudė" width="300" height="200">
+  </a>
+          <div class="desc"><h5>Medūzgalvė trapiabudė</h5></div>
         </div>
+
+        <div class="gallery">
+          <a target="_self" href="kindimg/2.jpg">
+    <img src="kindimg/2.jpg" alt="Lututė" width="300" height="200">
+  </a>
+          <div class="desc"><h5>Lututė</h5> </div>
+        </div>
+
+        <div class="gallery">
+          <a target="_self" href="kindimg/3.jpg">
+    <img src="kindimg/3.jpg" alt="Šiaurinė merkija" width="300" height="200">
+  </a>
+          <div class="desc"><h5>Šiaurinė merkija</h5></div>
+        </div>
+
+        <div class="gallery">
+          <a target="_self" href="kindimg/4.jpg">
+    <img src="kindimg/4.jpg" alt="LaumŽirgis" width="300" height="200">
+  </a>
+          <div class="desc"><h5>Mažasis karališkasis laumžirgis</h5></div>
+        </div>
+
+        <div class="gallery">
+          <a target="_self" href="kindimg/9.jpg">
+        <img src="kindimg/9.jpg" alt="Pilkoji žąsis" width="300" height="200">
+        </a>
+          <div class="desc"><h5>Pilkoji žąsis</h5></div>
+        </div>
+
+        <div class="gallery">
+          <a target="_self" href="kindimg/6.jpg">
+    <img src="kindimg/6.jpg" alt="Plovinė vištelė" width="300" height="200">
+  </a>
+          <div class="desc"><h5>Plovinė vištelė</h5></div>
+        </div>
+
+        <div class="gallery">
+          <a target="_self" href="kindimg/7.jpg">
+        <img src="kindimg/7.jpg" alt="Vapsvaėdis" width="300" height="200">
+        </a>
+          <div class="desc"><h5>Vapsvaėdis</h5></div>
+        </div>
+
+        <div class="gallery">
+          <a target="_self" href="kindimg/8.jpg">
+        <img src="kindimg/8.jpg" alt="Stepinis melsvys" width="300" height="200">
+        </a>
+          <div class="desc"><h5>Stepinis melsvys</h5></div>
+        </div>
+
       </div>
     </section3>
+
+
 
     <section4>
       <div class="container ketvirtas">
@@ -246,7 +275,7 @@
 
     <!-- KONTAKTAI -->
     <section5>
-      <div class="container penktas">
+      <div class="container penktas" id="Susisiekime">
         <div class="contacts">
 
           <h2>Susisiekite</h2>
@@ -267,20 +296,11 @@
             <textarea type="text" class="form-control" id="message" placeholder="Jūsų žinutė" name="message" style="height:80px"></textarea>
           </div>
 
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-8">
-              <div class="checkbox">
-                <label><input type="checkbox" name="remember"> Noriu gauti naujienlaiškį </label>
-              </div>
-            </div>
-          </div>
-
           <form action="save.php">
             <div class="button">
               <button type="submit" class="btn btn-default">Siųsti</button>
             </div>
           </form>
-
 
         </div>
       </div>
@@ -288,15 +308,10 @@
     </section5>
   </wrapper>
 
-
 </body>
 
-
-<!-- Mouse Scrolling icon by Icons8 -->
-
 <footer>
-  <div class="container footeris">
-
+  <div class="container-fluid footeris">
     <div class="row-foot">
       <div class="col-xs-4">
         <div class="foot-text">
