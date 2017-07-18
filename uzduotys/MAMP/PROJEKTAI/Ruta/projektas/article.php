@@ -1,5 +1,5 @@
 <li>
-  <a href="#" class="thumbnail">
+  <a href="<?php echo $article['article_id']?>" class="thumbnail">
     <div class="row">
       <div class="col-md-6">
           <img src="<?php echo $article['image']; ?>" alt="...">
