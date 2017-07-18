@@ -47,11 +47,11 @@
           <li title="Susisiekime"><a href="#Susisiekime" target="">
               <img src="icons/mail.png" alt="pastas" width="40" height="40" />
             </a></li>
-            <li title="Augalai"><a href="aprasymai_augalai.php" target="">
+            <li title="Augalai"><a href="info/aug/aa_bekotis.php" target="">
                 <img src="icons/ileaf70.png" alt="augalai" width="40" height="40" />
               </a></li>
 
-            <li title="Grybai"><a href="aprasymai_grybai.php" target="">
+            <li title="Grybai"><a href="info/gryb/ag_baco.php" target="">
                 <img src="icons/imushroom75.png" alt="Grybai" width="40" height="40" />
                 </a></li>
         </ul>

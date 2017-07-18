@@ -48,13 +48,13 @@
               <img src="icons/mail.png" alt="pastas" width="40" height="40" />
             </a></li>
 
-          <li title="Augalai"><a href="aprasymai_augalai.php" target="">
-              <img src="icons/ileaf70.png" alt="augalai" width="40" height="40" />
-            </a></li>
-
-          <li title="Grybai"><a href="aprasymai_grybai.php" target="">
-              <img src="icons/imushroom75.png" alt="Grybai" width="40" height="40" />
+            <li title="Augalai"><a href="info/aug/aa_bekotis.php" target="">
+                <img src="icons/ileaf70.png" alt="augalai" width="40" height="40" />
               </a></li>
+
+            <li title="Grybai"><a href="info/gryb/ag_baco.php" target="">
+                <img src="icons/imushroom75.png" alt="Grybai" width="40" height="40" />
+                </a></li>
 
           </ul>
 
@@ -82,31 +82,31 @@
               </div>
 
               <!-- FROG -->
-              <a href="aprasymai.php" target="">
+              <a href="info/varliag/avar_rupuz.php" target="">
                 <div class="frog">
                 </div>
               </a>
 
               <!-- OWL -->
-              <a href="index.html" target="">
+              <a href="info/pauks/ap_naras.php" target="">
                 <div class="owl">
                 </div>
               </a>
 
               <!-- RABBIT -->
-              <a href="index.html" target="">
+              <a href="info/zin/az_kiskis.php" target="">
                 <div class="rabbit">
                 </div>
               </a>
 
               <!-- TURTLE -->
-              <a href="index.html" target="">
+              <a href="info/ropl/ar_vezl.php" target="">
                 <div class="turtle">
                 </div>
             </a>
 
               <!-- SLUG -->
-              <a href="index.html" target="">
+              <a href="info/ad_dele.php" target="">
                 <div class="slug">
                 </div>
               </a>
@@ -118,7 +118,7 @@
               </a>
 
               <!-- FISH -->
-              <a href="index.html" target="">
+              <a href="info/zuv/azuv_raine.php" target="">
                 <div class="fish">
                 </div>
               </a><br />
@@ -130,13 +130,13 @@
               </a>
 
               <!-- INSECT -->
-              <a href="index.html" target="">
+              <a href="info/vabal/av_skydvabalis.php" target="">
                 <div class="insect">
                 </div>
             </a>
 
               <!-- SPIDERWEB -->
-              <a href="index.html" target="">
+              <a href="info/vor/av_vor_bor.php" target="">
                 <div class="spiderweb">
                 </div>
             </a>
