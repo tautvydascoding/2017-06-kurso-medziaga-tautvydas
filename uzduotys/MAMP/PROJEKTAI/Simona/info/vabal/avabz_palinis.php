@@ -27,10 +27,10 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" >
       <div class="container-fluid menu" >
         <div class="navbar-header">
-          <a class="navbar-brand" href="../../index.html">Lietuvos Raudonoji knyga</a>
+          <a class="navbar-brand" href="../../index.php">Lietuvos Raudonoji knyga</a>
         </div>
         <ul class="nav navbar-nav">
-           <li title="Pradinis puslapis"><a href="../../index.html" target="">
+           <li title="Pradinis puslapis"><a href="../../index.php" target="">
             <img src="../../icons/home.png" alt="namai" width="40" height="40" />
             <div class="namai">
             </div>
@@ -79,11 +79,11 @@
             <div class="row-frst">
               <ul>
                 <h4><ins> Vabzdžiai </ins></h4><br>
-                <li><a href="av_skydvabalis.php">Didysis skydvabalis>
+                <li><a href="av_skydvabalis.php"><h5>Didysis skydvabalis</h5>
                 </a></li><br>
-                <li><a href="avabz_cidarija.php">Estinė cidarija>
+                <li><a href="avabz_cidarija.php"><h5>Estinė cidarija</h5>
                 </a></li><br>
-                <li><a href="avabz_palinis.php">Palinis žvitražygis>
+                <li><a href="avabz_palinis.php"><h5>Palinis žvitražygis</h5>
                 </a></li><br>
 
 
