@@ -180,13 +180,15 @@ h9 {
   margin-top: 7px;
   margin-left: 5px;
 }
+
+
 /*PERMATOMO STULPELIO END'AS*/
 
 /*CENTER ICONS*/
 .paw {
   height: 90px;
   width: 90px;
-  background-image: url('../../icons/bear96.png');
+  background-image: url('../../icons/ipaw70.png');
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
@@ -195,7 +197,7 @@ h9 {
   margin-left: 45%;
 }
 .paw:hover {
-  background-image: url('../../icons/ipaw70.png');
+  background-image: url('../../icons/bear96.png');
   transition: .7s ease;
 }
 
@@ -208,7 +210,7 @@ h9 {
 .mushroom {
   height: 96px;
   width: 96px;
-  background-image: url('../../icons/mushroom96.png');
+  background-image: url('../../icons/imushroom75.png');
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
@@ -217,14 +219,14 @@ h9 {
   margin-left: 29%;
 }
 .mushroom:hover {
-  background-image: url('../../icons/imushroom75.png');
+  background-image: url('../../icons/mushroom96.png');
   transition: .7s ease;
 }
 
 .leaf {
   height: 75px;
   width: 75px;
-  background-image: url('../../icons/tree96.png');
+  background-image: url('../../icons/ileaf70.png');
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
@@ -233,7 +235,7 @@ h9 {
   margin-left: 61%;
 }
 .leaf:hover {
-  background-image: url('../../icons/ileaf70.png');
+  background-image: url('../../icons/tree96.png');
   transition: .7s ease;
 }
 /*END OF CENTER ICONS*/
@@ -244,14 +246,14 @@ h9 {
   color: #fff;
   width: 1550px;
   height: auto;
-  padding: 4%;
+  padding: 3%;
 }
 
 .aprasymas {
   text-align: justify;
   text-justify: inter-word;
   background-color: rgba(80, 80, 80, 0.9);
-  margin: 1%;
+  margin: 3%;
 
 }
 

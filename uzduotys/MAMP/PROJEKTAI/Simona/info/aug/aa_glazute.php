@@ -9,50 +9,51 @@
   <meta name="author" content="Simona Matiukaite" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Spectral:300i">
-  <link rel="stylesheet" type="text/css" href="bootstrap1/css/bootstrap.css" />
-  <link rel="stylesheet" type="text/css" href="bootstrap1/js/jquery-3.2.1.min.js" />
+  <link rel="stylesheet" type="text/css" href="../../bootstrap1/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="../../bootstrap1/js/jquery-3.2.1.min.js" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="bootstrap1/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="../../bootstrap1/css/main.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="bootstrap1/js/main.js" />
+  <link rel="stylesheet" type="text/css" href="../../bootstrap1/js/main.js" />
 
 
 </head>
 
-<body>
+<body background="miskas2.jpg">
   <header>
 
     <!-- Menu icons -->
     <nav class="navbar navbar-inverse navbar-fixed-top" >
       <div class="container-fluid menu" >
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Lietuvos Raudonoji knyga</a>
+          <a class="navbar-brand" href="../../index.html">Lietuvos Raudonoji knyga</a>
         </div>
         <ul class="nav navbar-nav">
-           <li title="Pradinis puslapis"><a href="index.html" target="">
-            <img src="icons/home.png" alt="namai" width="40" height="40" />
+           <li title="Pradinis puslapis"><a href="../../index.html" target="">
+            <img src="../../icons/home.png" alt="namai" width="40" height="40" />
             <div class="namai">
             </div>
           </a></li>
 
           <li title="Apie..."><a href="#Apie" target="">
-            <img src="icons/apie.png" alt="apie" width="38" height="38" />
+            <img src="../../icons/apie.png" alt="apie" width="38" height="38" />
           </a></li>
 
           <li title="Galerija"><a href="#Galerija" target="">
-              <img src="icons/gallery.png" alt="galerija" width="40" height="40"/>
+              <img src="../../icons/gallery.png" alt="galerija" width="40" height="40"/>
             </a></li>
 
           <li title="Susisiekime"><a href="#Susisiekime" target="">
-              <img src="icons/mail.png" alt="pastas" width="40" height="40" />
+              <img src="../../icons/mail.png" alt="pastas" width="40" height="40" />
             </a></li>
-            <li title="Augalai"><a href="info/aug/aa_bekotis.php" target="">
-                <img src="icons/ileaf70.png" alt="augalai" width="40" height="40" />
+
+            <li title="Gyvūnai"><a href="../../search_animals.php" target="">
+                <img src="../../icons/ipaw70.png" alt="gyvunai" width="40" height="40" />
               </a></li>
 
-            <li title="Grybai"><a href="info/gryb/ag_baco.php" target="">
-                <img src="icons/imushroom75.png" alt="Grybai" width="40" height="40" />
+            <li title="Grybai"><a href="../gryb/ag_baco.php" target="">
+                <img src="../../icons/imushroom75.png" alt="Grybai" width="40" height="40" />
                 </a></li>
         </ul>
 
@@ -73,10 +74,28 @@
         <!-- RODYKLINIS MENIU -->
           <div class="col-xs-1">
             <div class="row-frst">
-              <h4><ins> Rodyklė </ins></h4>
-              <p>
-                loremsdfkd
-              </p>
+              <ul>
+                <h4><ins> Augalai </ins></h4><br>
+                <li><a href="aa_bekotis.php">Bekotis ąžuolas>
+                </a></li><br>
+                <li><a href="aa_berzas.php"> Beržas keružis>
+                </a></li><br>
+                <li><a href="aa_gvazdikas.php"> Borbašo gvazdikas>
+                </a></li><br>
+                <li><a href="aa_dirvuole.php">Kvapioji dirvuolė>
+                </a></li><br>
+                <li><a href="aa_smiltyn.php">Smiltyninis gvazdikas>
+                </a></li><br>
+                <li><a href="aa_glazute.php">Smulkialapė glažutė>
+                </a></li><br>
+                <li><a href="aa_erika.php">Tyrulinė erika>
+                </a></li><br>
+                <li><a href="aa_zalsvoji.php">Žalsvoji naktižiedė>
+                </a></li>
+
+
+
+            </ul>
             </div>
           </div>
 
@@ -86,18 +105,16 @@
               <div class="row-snd">
                 <div class="col-xs-4">
                   <div class="article">
-                    <h4>Pavadinimas</h4>
-                    <h5> Lotyniškas pavadinimas </h5><br /><br />
+                    <h4>Smulkialapė glažutė</h4>
+                    <h5><i> Cerastium brachypetalum </i></h5><br /><br />
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+Statusas. Á Lietuvos raudonàjà knygà rûðis áraðyta nuo 1989 m.
+Paplitimas. Vakarø, Vidurio ir Pietø Europoje, Kau- kaze, Kryme.
+Lietuvoje rûðies paplitimas neiðtirtas: yra 1 herbariu- mo pavyzdys ið Rambyno regioninio parko (Ðilutës r.). Literatûroje nurodoma, kad rasta Kauno apylinkëse, taèiau tikslesniø nuorodø apie radavietæ nëra.
+Biologija ir ekologija. Vienmetis, 7–20 cm aukðèio augalas. Dauginasi sëklomis. Þydi geguþës–birþelio mën. Terofitas. Auga smiltpievëse, pakelëse.
+Populiacijø gausumas. Populiacijø bûklë ir gausu- mas Lietuvoje neþinomi.
+Grësmës ir apsauga. Nyksta pasikeitus augavietës ekologinëms sàlygoms, dël natûralios augalijos kai- tos, uþþeliant smiltpievëms.
+                          </p>
                   </div>
                 </div>
                 <div class="col-xs-4">

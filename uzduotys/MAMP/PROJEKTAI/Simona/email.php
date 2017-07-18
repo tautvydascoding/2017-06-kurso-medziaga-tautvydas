@@ -8,19 +8,20 @@
 
     <?php
 
-      echo "<h2>Laiskas siunciamas</h2>";
-
-      print_r($_GET);
-      $klientoVardas = $_GET['firstname'];
-      $klientoElPastas = $_GET['email'];
-      $klientoKlausimas = $_GET['question'];
-      $klientoSubscribe = $_GET('subscribe');
 
 
+      // print_r($_GET);
+      // $klientoVardas = $_GET['name'];
+      // $klientoElPastas = $_GET['email'];
+      // $klientoKlausimas = $_GET['message'];
 
-      require_once 'lib/PHPMailer-master/PHPMailerAutoload.php';
+
+
+      require_once 'email/lib/PHPMailer-master/PHPMailerAutoload.php';
+
 
       $mail = new PHPMailer;
+
 
       $mail->SMTPDebug = 0;                               // Enable verbose debug output
 
@@ -31,6 +32,7 @@
       $mail->Password = 'pastastestas123';                           // SMTP password
       $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
       $mail->Port = 587;                                    // TCP port to connect to
+
 
       $mail->setFrom('pastastestas@gmail.com', 'testuotojas');
       $mail->addAddress('pastastestas@gmail.com', 'Simona');     // Add a recipient
@@ -43,11 +45,13 @@
       // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
       $mail->isHTML(true);                                  // Set email format to HTML
 
+
       $mail->Subject = "Klausimas nuo: $klientoVardas";
       $mail->Body    = '<h1>Apziurejau jusu parduotuve ir kilo klausimas</h1> <b>1) </b>';
       $mail->AltBody = ' Apziurejau jusu parduotuve ir kilo klausimas \n : Kiek kainuoja ...';
-      $mail->Body    = $klientoKlausimas;
+      $mail->Body    = $klientoKlausimas . "jjjj";
       $mail->AltBody = $klientoKlausimas;
+
 
       if(!$mail->send()) {
           echo 'Žinutė negali būti išsiųsta. Bandykite dar kartą.';
