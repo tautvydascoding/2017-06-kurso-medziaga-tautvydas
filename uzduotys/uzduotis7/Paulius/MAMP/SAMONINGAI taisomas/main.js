@@ -155,16 +155,38 @@ y = n.getFullYear();
 m = n.getMonth() + 1;
 d = n.getDate();
 document.getElementById("date2").innerHTML= y + "." + m + "." + d;
-
-
     
 });
 
-///                 laikasNAV end
+
+$(document).ready(function(){
+   
+
+		$(function() {
+		$('.easy-modal').easyModal({
+			top: 200,
+			overlay: 0.2
+		});
+
+		$('.easy-modal-open').click(function(e) {
+			var target = $(this).attr('href');
+			$(target).trigger('openModal');
+			e.preventDefault();
+		});
+
+		$('.easy-modal-close').click(function(e) {
+			$('.easy-modal').trigger('closeModal');
+		});
+
+		
+	});
+	
+    
+    
+});
 
 
-//$(document).ready(function(){
-//    $('#menu').fadeIn(4000);
-//});
-//    
+
+
+
 

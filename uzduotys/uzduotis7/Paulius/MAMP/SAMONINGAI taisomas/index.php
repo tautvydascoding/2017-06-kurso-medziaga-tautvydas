@@ -50,7 +50,7 @@
         
        
     </div>
-
+    
     <script src="lib/jquery-3.2.1.min.js"></script>
     <script src="lib/tilt.jquery.js"></script>
     <script src="lib/valida.2.1.7.js"></script>
@@ -58,6 +58,9 @@
     <script type="text/javascript" src="lib/jquery.pagepiling.js"></script>
 <!--    <script type="text/javascript" src="lib/jquery-color-master/jquery.color.js"></script>-->
     <script type="text/javascript" src="main.js"></script>
+    <script src="lib/jquery.easyModal.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    
 
 </body>
 

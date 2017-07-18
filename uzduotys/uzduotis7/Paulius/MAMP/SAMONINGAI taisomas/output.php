@@ -78,37 +78,47 @@ function trintiSenusSkelbimus(){
 <div id="table-container">
     <?php
   
-  $query="SELECT * FROM skelbimai WHERE tinkamas_rodyti='tinkamas'"; 
+  $query="SELECT * FROM skelbimai WHERE miestas='Marijampoles'"; 
   $output=mysqli_query($con,$query);
+    
+    
+    
 echo '<table class="table table-responsive" border="1">';
   ?>
     <tr>
-<th>Pavadinimas</th>
+<th  class="easy-modal-open" href=".modal1">Pavadinimas</th>
+<!--
 <th>Data</th>
 <th>Email</th>
 <th>Miestas</th>
 <th>Tipas</th>
 <th>Registracija</th>
 <th>Aprasymas</th>
-
+-->
+<!--
+<h1 class="easy-modal-open" href=".modal1" >Mano modalas</h1>
+<h1 class="easy-modal modal1 easy-modal-close">Tekstux</h1>
+-->
 </tr>
     
     <?php
-    //// stulpelis ar vaizduoti ar nu
-        ///
-    
+
 
   while($row = mysqli_fetch_assoc($output))
         {
-    
+            
+            
+    echo '<h1 class="easy-modal-open" href=".modal1">HEY HO</h1>';
+            
     echo '<tr>';
-    echo "<td>" . $row['pavadinimas'] . "</td>";
-    echo "<td>" . $row['data_'] . "</td>";
-    echo "<td>" . $row['email'] . "</td>";
-    echo "<td>" . $row['miestas'] . "</td>";
-    echo "<td>" . $row['tipas'] . "</td>";
-    echo "<td>" . $row['registracija'] . "</td>";
-    echo "<td>" . $row['aprasymas'] . "</td>";
+    echo "<td class='easy-modal-open' href='.modal1'>" . $row['pavadinimas'] . "</td>";
+            
+//    echo "<td>" . $row['data_'] . "</td>";
+//    echo "<td>" . $row['email'] . "</td>";
+//    echo "<td>" . $row['miestas'] . "</td>";
+//    echo "<td>" . $row['tipas'] . "</td>";
+//    echo "<td>" . $row['registracija'] . "</td>";
+//    echo "<td>" . $row['aprasymas'] . "</td>";
       echo '</tr>';
     
   };

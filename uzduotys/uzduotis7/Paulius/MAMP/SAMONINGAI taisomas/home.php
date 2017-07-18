@@ -1,5 +1,6 @@
 <div class="section" id="section1">
     <div class="container-fluid fulscreenbug" id="background1">
+        
           
         <!--                -----------------------------   turinys  -->
         <div class="turinys">

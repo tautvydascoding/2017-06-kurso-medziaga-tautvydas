@@ -25,6 +25,9 @@ if (mysqli_num_rows($request)==0) {
 } else {
     
   $output=mysqli_query($con,$query);
+    
+    
+    
 
 echo '<table border="1"';
    echo '<tr>
